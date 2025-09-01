@@ -166,9 +166,7 @@ def replace_verb_with_blank(text, form):
             return text
         words = text.split()
         if form in words:
-            words[
-
-System: words.index(form)] = "_____"
+            words[words.index(form)] = "_____"
         else:
             logger.warning(f"Verb form '{form}' not found in sentence: {text}")
             words[-1] = "_____"
@@ -509,7 +507,7 @@ def register_user():
         if not data or not isinstance(data, dict):
             logger.error("No JSON data provided or invalid JSON")
             return jsonify({"error": "No data provided or invalid JSON"}), 400
-        full_name = data.get('full_name')  # Changed from fullName to full_name
+        full_name = data.get('full_name')
         email = data.get('email')
         password = data.get('password')
         if not full_name or not email or not password:
@@ -583,7 +581,7 @@ def login():
             "token": token,
             "user": {
                 "id": str(user["_id"]),
-                "full_name": user.get("full_name"),  # Changed from full_Name to full_name
+                "full_name": user.get("full_name"),
                 "email": email
             }
         }), 200
@@ -630,13 +628,13 @@ def update_score():
             logger.error(f"Invalid JSON data: {data}")
             return jsonify({"error": "No data provided or invalid JSON"}), 400
         user_id = data.get('user_id')
-        score = data.get('score')
-        if not user_id or score is None:
-            logger.error(f"Missing user_id or score: user_id={user_id}, score={score}")
+        score_increment = data.get('score')
+        if not user_id or score_increment is None:
+            logger.error(f"Missing user_id or score: user_id={user_id}, score={score_increment}")
             return jsonify({"error": "Missing user_id or score"}), 400
-        if not isinstance(score, (int, float)) or score < 0:
-            logger.error(f"Invalid score value: {score}")
-            return jsonify({"error": "Score must be a non-negative number"}), 400
+        if not isinstance(score_increment, (int, float)) or score_increment < 0:
+            logger.error(f"Invalid score value: {score_increment}")
+            return jsonify({"error": "Score increment must be a non-negative number"}), 400
         auth_header = request.headers.get('Authorization')
         if not auth_header or not auth_header.startswith('Bearer '):
             logger.error("No valid Authorization header provided")
@@ -648,14 +646,17 @@ def update_score():
             return jsonify({"error": "Unauthorized score update"}), 403
         result = users_collection.update_one(
             {"_id": ObjectId(user_id)},
-            {"$set": {"score": int(score)}},  # Ensure score is an integer
+            {"$inc": {"score": int(score_increment)}},  # Use $inc to add to existing score
             upsert=False
         )
         if result.matched_count == 0:
             logger.error(f"User not found: {user_id}")
             return jsonify({"error": "User not found"}), 404
-        logger.info(f"Updated score for user {user_id}: {score}")
-        return jsonify({"status": "success", "score": score}), 200
+        # Fetch the updated user document to get the new score
+        updated_user = users_collection.find_one({"_id": ObjectId(user_id)})
+        new_score = updated_user.get("score", 0)
+        logger.info(f"Incremented score for user {user_id} by {score_increment}, new score: {new_score}")
+        return jsonify({"status": "success", "score": new_score}), 200
     except jwt.ExpiredSignatureError:
         logger.error("JWT token expired")
         return jsonify({"error": "Token expired"}), 401
