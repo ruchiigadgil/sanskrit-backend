@@ -12,6 +12,9 @@ from flask_cors import CORS
 from pymongo import MongoClient
 from pymongo.errors import ConnectionFailure, ServerSelectionTimeoutError
 from bson.json_util import dumps
+import bcrypt
+import jwt
+from datetime import datetime, timedelta
 
 # Add project root to sys.path
 root_path = str(Path(__file__).resolve().parent)
@@ -42,11 +45,11 @@ CORS(app, resources={
 
 # Configuration
 MAIN_PORT = int(os.environ.get('PORT', 5000))
-# Use MONGODB_URI from environment, with a fallback for local testing
 MONGODB_URI = os.environ.get('MONGODB_URI')
 if not MONGODB_URI:
     logger.error("MONGODB_URI environment variable not set")
     MONGODB_URI = 'mongodb://localhost:27017/sanskrit_learning'  # Fallback, not used on Render
+JWT_SECRET = os.environ.get('JWT_SECRET', 'your_jwt_secret_here')  # Set in Render environment
 
 # MongoDB connection with retry
 def get_db_connection(max_retries=3, retry_delay=5):
@@ -54,7 +57,6 @@ def get_db_connection(max_retries=3, retry_delay=5):
     while attempt < max_retries:
         try:
             client = MongoClient(MONGODB_URI, serverSelectionTimeoutMS=5000)
-            # Test the connection
             client.admin.command('ping')
             db = client.get_database()
             logger.info("Connected to MongoDB")
@@ -503,19 +505,142 @@ def get_tense_questions():
 def register_user():
     if request.method == 'OPTIONS':
         return jsonify({'status': 'ok'}), 200
-    return jsonify({"error": "Registration not implemented in this version"}), 501
+    try:
+        if users_collection is None:
+            logger.error("No MongoDB connection")
+            return jsonify({"error": "No MongoDB connection"}), 503
+        data = request.get_json()
+        if not data:
+            logger.error("No JSON data provided in request")
+            return jsonify({"error": "No data provided"}), 400
+        full_name = data.get('fullName')
+        email = data.get('email')
+        password = data.get('password')
+        if not full_name or not email or not password:
+            logger.error(f"Missing required fields: fullName={full_name}, email={email}, password={'***' if password else None}")
+            return jsonify({"error": "Missing fullName, email, or password"}), 400
+        # Check if user exists
+        if users_collection.find_one({"email": email}):
+            logger.error(f"User with email {email} already exists")
+            return jsonify({"error": "Email already registered"}), 400
+        # Hash password
+        hashed_password = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
+        # Create user
+        user = {
+            "fullName": full_name,
+            "email": email,
+            "password": hashed_password,
+            "created_at": time.time(),
+            "scores": {}
+        }
+        result = users_collection.insert_one(user)
+        user_id = str(result.inserted_id)
+        # Generate JWT
+        token = jwt.encode({
+            "user_id": user_id,
+            "email": email,
+            "exp": datetime.utcnow() + timedelta(hours=24)
+        }, JWT_SECRET, algorithm="HS256")
+        logger.info(f"Registered user: {email}, user_id={user_id}")
+        return jsonify({
+            "status": "success",
+            "message": "User registered successfully",
+            "token": token,
+            "user": {
+                "id": user_id,
+                "fullName": full_name,
+                "email": email
+            }
+        }), 201
+    except Exception as e:
+        logger.error(f"Error registering user: {str(e)}")
+        return jsonify({"error": f"Failed to register user: {str(e)}"}), 500
 
 @app.route('/api/login', methods=['POST', 'OPTIONS'])
 def login():
     if request.method == 'OPTIONS':
         return jsonify({'status': 'ok'}), 200
-    return jsonify({"error": "Login not implemented in this version"}), 501
+    try:
+        if users_collection is None:
+            logger.error("No MongoDB connection")
+            return jsonify({"error": "No MongoDB connection"}), 503
+        data = request.get_json()
+        if not data:
+            logger.error("No JSON data provided in request")
+            return jsonify({"error": "No data provided"}), 400
+        email = data.get('email')
+        password = data.get('password')
+        if not email or not password:
+            logger.error(f"Missing email or password: email={email}, password={'***' if password else None}")
+            return jsonify({"error": "Missing email or password"}), 400
+        # Find user
+        user = users_collection.find_one({"email": email})
+        if not user:
+            logger.error(f"User not found: {email}")
+            return jsonify({"error": "Invalid email or password"}), 401
+        # Verify password
+        if not bcrypt.checkpw(password.encode('utf-8'), user["password"]):
+            logger.error(f"Invalid password for user: {email}")
+            return jsonify({"error": "Invalid email or password"}), 401
+        # Generate JWT
+        token = jwt.encode({
+            "user_id": str(user["_id"]),
+            "email": email,
+            "exp": datetime.utcnow() + timedelta(hours=24)
+        }, JWT_SECRET, algorithm="HS256")
+        logger.info(f"User logged in: {email}")
+        return jsonify({
+            "status": "success",
+            "message": "Login successful",
+            "token": token,
+            "user": {
+                "id": str(user["_id"]),
+                "fullName": user.get("fullName"),
+                "email": email
+            }
+        }), 200
+    except Exception as e:
+        logger.error(f"Error logging in: {str(e)}")
+        return jsonify({"error": f"Failed to login: {str(e)}"}), 500
 
 @app.route('/api/profile', methods=['GET', 'OPTIONS'])
 def get_profile():
     if request.method == 'OPTIONS':
         return jsonify({'status': 'ok'}), 200
-    return jsonify({"error": "Profile not implemented in this version"}), 501
+    try:
+        if users_collection is None:
+            logger.error("No MongoDB connection")
+            return jsonify({"error": "No MongoDB connection"}), 503
+        auth_header = request.headers.get('Authorization')
+        if not auth_header or not auth_header.startswith('Bearer '):
+            logger.error("No valid Authorization header provided")
+            return jsonify({"error": "Authorization header missing or invalid"}), 401
+        token = auth_header.split(' ')[1]
+        try:
+            payload = jwt.decode(token, JWT_SECRET, algorithms=["HS256"])
+            user_id = payload["user_id"]
+        except jwt.ExpiredSignatureError:
+            logger.error("JWT token expired")
+            return jsonify({"error": "Token expired"}), 401
+        except jwt.InvalidTokenError:
+            logger.error("Invalid JWT token")
+            return jsonify({"error": "Invalid token"}), 401
+        user = users_collection.find_one({"_id": ObjectId(user_id)})
+        if not user:
+            logger.error(f"User not found: {user_id}")
+            return jsonify({"error": "User not found"}), 404
+        return jsonify({
+            "status": "success",
+            "user": {
+                "id": str(user["_id"]),
+                "fullName": user.get("fullName"),
+                "email": user.get("email"),
+                "scores": user.get("scores", {})
+            }
+        }), 200
+    except Exception as e:
+        logger.error(f"Error fetching profile: {str(e)}")
+        return jsonify({"error": f"Failed to fetch profile: {str(e)}"}), 500
 
 @app.route('/api/update-score', methods=['POST', 'OPTIONS'])
 def update_score():
