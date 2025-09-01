@@ -10,7 +10,7 @@ import time
 from flask import Flask, jsonify, request, Response
 from flask_cors import CORS
 from pymongo import MongoClient
-from pymongo.errors import ConnectionError, ServerSelectionTimeoutError
+from pymongo.errors import ConnectionFailure, ServerSelectionTimeoutError
 from bson.json_util import dumps
 
 # Add project root to sys.path
@@ -42,11 +42,11 @@ CORS(app, resources={
 
 # Configuration
 MAIN_PORT = int(os.environ.get('PORT', 5000))
-# Use MONGODB_URI from environment, with a fallback to avoid localhost
+# Use MONGODB_URI from environment, with a fallback for local testing
 MONGODB_URI = os.environ.get('MONGODB_URI')
 if not MONGODB_URI:
     logger.error("MONGODB_URI environment variable not set")
-    MONGODB_URI = 'mongodb://localhost:27017/sanskrit_learning'  # Fallback, but should not be used on Render
+    MONGODB_URI = 'mongodb://localhost:27017/sanskrit_learning'  # Fallback, not used on Render
 
 # MongoDB connection with retry
 def get_db_connection(max_retries=3, retry_delay=5):
@@ -59,7 +59,7 @@ def get_db_connection(max_retries=3, retry_delay=5):
             db = client.get_database()
             logger.info("Connected to MongoDB")
             return db
-        except (ConnectionError, ServerSelectionTimeoutError) as e:
+        except (ConnectionFailure, ServerSelectionTimeoutError) as e:
             attempt += 1
             logger.error(f"Connection attempt {attempt}/{max_retries} failed: {str(e)}")
             if attempt < max_retries:
