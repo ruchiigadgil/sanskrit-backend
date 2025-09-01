@@ -77,6 +77,7 @@ sentences_collection = db["sentences"] if db is not None else None
 conjugations_collection = db["conjugations"] if db is not None else None
 verbs_collection = db["verbs"] if db is not None else None
 matching_game_collection = db["matching_game"] if db is not None else None
+users_collection = db["users"] if db is not None else None
 
 # Load data
 def load_sentences():
@@ -520,7 +521,48 @@ def get_profile():
 def update_score():
     if request.method == 'OPTIONS':
         return jsonify({'status': 'ok'}), 200
-    return jsonify({"error": "Score update not implemented in this version"}), 501
+    try:
+        if users_collection is None:
+            logger.error("No MongoDB connection")
+            return jsonify({"error": "No MongoDB connection"}), 503
+        data = request.get_json()
+        if not data:
+            logger.error("No JSON data provided in request")
+            return jsonify({"error": "No data provided"}), 400
+        user_id = data.get('user_id')
+        score = data.get('score')
+        game_type = data.get('game_type')  # Optional: to track scores by game type
+        if not user_id or score is None:
+            logger.error(f"Missing user_id or score: user_id={user_id}, score={score}")
+            return jsonify({"error": "Missing user_id or score"}), 400
+        if not isinstance(score, (int, float)) or score < 0:
+            logger.error(f"Invalid score value: {score}")
+            return jsonify({"error": "Score must be a non-negative number"}), 400
+        # Update or insert score in users collection
+        update_data = {
+            "user_id": user_id,
+            "updated_at": time.time()
+        }
+        if game_type:
+            update_data[f"scores.{game_type}"] = score
+        else:
+            update_data["scores.total"] = score
+        result = users_collection.update_one(
+            {"user_id": user_id},
+            {"$set": update_data},
+            upsert=True
+        )
+        logger.info(f"Updated score for user_id={user_id}, score={score}, game_type={game_type or 'total'}")
+        return jsonify({
+            "status": "success",
+            "message": f"Score updated for user {user_id}",
+            "matched_count": result.matched_count,
+            "modified_count": result.modified_count,
+            "upserted_id": str(result.upserted_id) if result.upserted_id else None
+        }), 200
+    except Exception as e:
+        logger.error(f"Error updating score: {str(e)}")
+        return jsonify({"error": f"Failed to update score: {str(e)}"}), 500
 
 @app.route('/api/test', methods=['GET'])
 def test_endpoint():
