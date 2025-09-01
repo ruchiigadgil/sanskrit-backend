@@ -12,7 +12,8 @@ from flask_cors import CORS
 from pymongo import MongoClient
 from pymongo.errors import ConnectionFailure, ServerSelectionTimeoutError
 from bson.json_util import dumps
-import bcrypt
+from bson.objectid import ObjectId
+import python3_bcrypt as bcrypt
 import jwt
 from datetime import datetime, timedelta
 
@@ -44,42 +45,42 @@ CORS(app, resources={
 })
 
 # Configuration
-MAIN_PORT = int(os.environ.get('PORT', 5000))
+MAIN_PORT = int(os.environ.get('PORT', 10000))  # Match Render's port
 MONGODB_URI = os.environ.get('MONGODB_URI')
 if not MONGODB_URI:
     logger.error("MONGODB_URI environment variable not set")
-    MONGODB_URI = 'mongodb://localhost:27017/sanskrit_learning'  # Fallback, not used on Render
-JWT_SECRET = os.environ.get('JWT_SECRET', 'your_jwt_secret_here')  # Set in Render environment
+    MONGODB_URI = 'mongodb://localhost:27017/sanskrit_learning'  # Fallback
+JWT_SECRET = os.environ.get('JWT_SECRET', 'your_jwt_secret_here')
 
-# MongoDB connection with retry
-def get_db_connection(max_retries=3, retry_delay=5):
-    attempt = 0
-    while attempt < max_retries:
+# Lazy MongoDB connection
+db = None
+sentences_collection = None
+conjugations_collection = None
+verbs_collection = None
+matching_game_collection = None
+users_collection = None
+
+def init_db():
+    global db, sentences_collection, conjugations_collection, verbs_collection, matching_game_collection, users_collection
+    if db is None:
         try:
             client = MongoClient(MONGODB_URI, serverSelectionTimeoutMS=5000)
             client.admin.command('ping')
             db = client.get_database()
+            sentences_collection = db["sentences"]
+            conjugations_collection = db["conjugations"]
+            verbs_collection = db["verbs"]
+            matching_game_collection = db["matching_game"]
+            users_collection = db["users"]
             logger.info("Connected to MongoDB")
-            return db
         except (ConnectionFailure, ServerSelectionTimeoutError) as e:
-            attempt += 1
-            logger.error(f"Connection attempt {attempt}/{max_retries} failed: {str(e)}")
-            if attempt < max_retries:
-                logger.info(f"Retrying in {retry_delay} seconds...")
-                time.sleep(retry_delay)
-        except Exception as e:
-            logger.error(f"Unexpected error connecting to MongoDB: {str(e)}")
-            return None
-    logger.error(f"Failed to connect to MongoDB after {max_retries} attempts")
-    return None
+            logger.error(f"Failed to connect to MongoDB: {str(e)}")
+            db = None
 
-# Initialize database and collections
-db = get_db_connection()
-sentences_collection = db["sentences"] if db is not None else None
-conjugations_collection = db["conjugations"] if db is not None else None
-verbs_collection = db["verbs"] if db is not None else None
-matching_game_collection = db["matching_game"] if db is not None else None
-users_collection = db["users"] if db is not None else None
+# Initialize database on first request
+@app.before_request
+def before_request():
+    init_db()
 
 # Load data
 def load_sentences():
@@ -271,7 +272,7 @@ def load_sentences_json():
         sentences_collection.delete_many({})
         sentences_collection.insert_many(data)
         global sentences
-        sentences = load_sentences()  # Reload sentences into memory
+        sentences = load_sentences()
         logger.info(f"Loaded {len(data)} sentences into MongoDB")
         return jsonify({"status": "success", "message": f"Loaded {len(data)} sentences"})
     except Exception as e:
@@ -510,22 +511,19 @@ def register_user():
             logger.error("No MongoDB connection")
             return jsonify({"error": "No MongoDB connection"}), 503
         data = request.get_json()
-        if not data:
-            logger.error("No JSON data provided in request")
-            return jsonify({"error": "No data provided"}), 400
+        if not data or not isinstance(data, dict):
+            logger.error("No JSON data provided or invalid JSON")
+            return jsonify({"error": "No data provided or invalid JSON"}), 400
         full_name = data.get('fullName')
         email = data.get('email')
         password = data.get('password')
         if not full_name or not email or not password:
             logger.error(f"Missing required fields: fullName={full_name}, email={email}, password={'***' if password else None}")
             return jsonify({"error": "Missing fullName, email, or password"}), 400
-        # Check if user exists
         if users_collection.find_one({"email": email}):
             logger.error(f"User with email {email} already exists")
             return jsonify({"error": "Email already registered"}), 400
-        # Hash password
         hashed_password = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
-        # Create user
         user = {
             "fullName": full_name,
             "email": email,
@@ -535,7 +533,6 @@ def register_user():
         }
         result = users_collection.insert_one(user)
         user_id = str(result.inserted_id)
-        # Generate JWT
         token = jwt.encode({
             "user_id": user_id,
             "email": email,
@@ -565,24 +562,21 @@ def login():
             logger.error("No MongoDB connection")
             return jsonify({"error": "No MongoDB connection"}), 503
         data = request.get_json()
-        if not data:
-            logger.error("No JSON data provided in request")
-            return jsonify({"error": "No data provided"}), 400
+        if not data or not isinstance(data, dict):
+            logger.error("No JSON data provided or invalid JSON")
+            return jsonify({"error": "No data provided or invalid JSON"}), 400
         email = data.get('email')
         password = data.get('password')
         if not email or not password:
             logger.error(f"Missing email or password: email={email}, password={'***' if password else None}")
             return jsonify({"error": "Missing email or password"}), 400
-        # Find user
         user = users_collection.find_one({"email": email})
         if not user:
             logger.error(f"User not found: {email}")
             return jsonify({"error": "Invalid email or password"}), 401
-        # Verify password
         if not bcrypt.checkpw(password.encode('utf-8'), user["password"]):
             logger.error(f"Invalid password for user: {email}")
             return jsonify({"error": "Invalid email or password"}), 401
-        # Generate JWT
         token = jwt.encode({
             "user_id": str(user["_id"]),
             "email": email,
@@ -650,20 +644,35 @@ def update_score():
         if users_collection is None:
             logger.error("No MongoDB connection")
             return jsonify({"error": "No MongoDB connection"}), 503
-        data = request.get_json()
-        if not data:
-            logger.error("No JSON data provided in request")
-            return jsonify({"error": "No data provided"}), 400
+        data = request.get_json(force=True)  # Force JSON parsing
+        if not data or not isinstance(data, dict):
+            logger.error(f"Invalid JSON data: {data}")
+            return jsonify({"error": "No data provided or invalid JSON"}), 400
         user_id = data.get('user_id')
         score = data.get('score')
-        game_type = data.get('game_type')  # Optional: to track scores by game type
+        game_type = data.get('game_type')
         if not user_id or score is None:
             logger.error(f"Missing user_id or score: user_id={user_id}, score={score}")
             return jsonify({"error": "Missing user_id or score"}), 400
         if not isinstance(score, (int, float)) or score < 0:
             logger.error(f"Invalid score value: {score}")
             return jsonify({"error": "Score must be a non-negative number"}), 400
-        # Update or insert score in users collection
+        auth_header = request.headers.get('Authorization')
+        if not auth_header or not auth_header.startswith('Bearer '):
+            logger.error("No valid Authorization header provided")
+            return jsonify({"error": "Authorization header missing or invalid"}), 401
+        token = auth_header.split(' ')[1]
+        try:
+            payload = jwt.decode(token, JWT_SECRET, algorithms=["HS256"])
+            if payload["user_id"] != user_id:
+                logger.error(f"Token user_id {payload['user_id']} does not match provided user_id {user_id}")
+                return jsonify({"error": "Invalid user_id for token"}), 401
+        except jwt.ExpiredSignatureError:
+            logger.error("JWT token expired")
+            return jsonify({"error": "Token expired"}), 401
+        except jwt.InvalidTokenError:
+            logger.error("Invalid JWT token")
+            return jsonify({"error": "Invalid token"}), 401
         update_data = {
             "user_id": user_id,
             "updated_at": time.time()
@@ -673,7 +682,7 @@ def update_score():
         else:
             update_data["scores.total"] = score
         result = users_collection.update_one(
-            {"user_id": user_id},
+            {"_id": ObjectId(user_id)},
             {"$set": update_data},
             upsert=True
         )
