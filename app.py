@@ -40,7 +40,7 @@ CORS(app, resources={
 
 # Configuration
 MAIN_PORT = int(os.environ.get('PORT', 5000))
-DATABASE_URL = os.environ.get('DATABASE_URL', 'mongodb://localhost:27017/sanskrit')
+DATABASE_URL = os.environ.get('DATABASE_URL', 'https://sanskrit-database.onrender.com')
 
 # MongoDB connection
 def get_db_connection():
