@@ -5,8 +5,6 @@ import logging
 from dotenv import load_dotenv
 import random
 import re
-import json
-import time
 from flask import Flask, jsonify, request, Response
 from flask_cors import CORS
 from pymongo import MongoClient
@@ -82,9 +80,8 @@ def init_db():
             sentences = load_sentences()
             conjugations = load_conjugations()
             verbs = load_verbs()
-            # Load sentences.json if collection is empty
-            if sentences_collection.count_documents({}) == 0:
-                load_sentences_json()
+            if not sentences:
+                logger.warning("No sentences found in MongoDB collection")
         except (ConnectionFailure, ServerSelectionTimeoutError) as e:
             logger.error(f"Failed to connect to MongoDB: {str(e)}")
             db = None
@@ -94,12 +91,12 @@ def init_db():
 def before_request():
     init_db()
 
-# Load data
+# Load data from MongoDB
 def load_sentences():
     try:
         if sentences_collection is None:
             raise Exception("No MongoDB connection")
-        return list(sentences_collection.find({
+        sentences = list(sentences_collection.find({
             "sentence": {"$exists": True},
             "verb.form": {"$exists": True},
             "verb.root": {"$exists": True},
@@ -109,8 +106,10 @@ def load_sentences():
             "subject.person": {"$exists": True},
             "subject.number": {"$exists": True}
         }))
+        logger.info(f"Loaded {len(sentences)} sentences from MongoDB")
+        return sentences
     except Exception as e:
-        logger.error(f"Error loading sentences: {str(e)}")
+        logger.error(f"Error loading sentences from MongoDB: {str(e)}")
         return []
 
 def load_conjugations():
@@ -152,27 +151,6 @@ def load_verbs():
     except Exception as e:
         logger.error(f"Error loading verbs: {str(e)}")
         return []
-
-def load_sentences_json():
-    try:
-        if sentences_collection is None:
-            logger.error("No MongoDB connection")
-            return {"status": "error", "message": "No MongoDB connection"}
-        dataset_path = Path(root_path) / "dataset" / "sentences.json"
-        if not dataset_path.exists():
-            logger.error("sentences.json not found")
-            return {"status": "error", "message": "sentences.json not found"}
-        with open(dataset_path, 'r', encoding='utf-8-sig') as f:
-            data = json.load(f)
-        sentences_collection.delete_many({})
-        sentences_collection.insert_many(data)
-        global sentences
-        sentences = load_sentences()
-        logger.info(f"Loaded {len(data)} sentences into MongoDB")
-        return {"status": "success", "message": f"Loaded {len(data)} sentences"}
-    except Exception as e:
-        logger.error(f"Error loading sentences.json: {str(e)}")
-        return {"status": "error", "message": str(e)}
 
 # Helper Functions
 def label(person, number):
@@ -281,15 +259,9 @@ def home():
             "/api/profile",
             "/api/update-score",
             "/api/status",
-            "/api/test",
-            "/api/load-sentences"
+            "/api/test"
         ]
     })
-
-@app.route('/api/load-sentences', methods=['GET'])
-def load_sentences_json_endpoint():
-    result = load_sentences_json()
-    return jsonify(result), 200 if result["status"] == "success" else 500
 
 @app.route('/api/sentences', methods=['GET'])
 def get_sentences():
@@ -437,9 +409,17 @@ def get_sentence_game():
         return jsonify({'status': 'ok'}), 200
     try:
         if not sentences:
-            logger.error("No sentences available")
-            return jsonify({"error": "No sentences available"}), 404
+            logger.error("No sentences available in MongoDB")
+            return jsonify({"error": "No sentences available in MongoDB"}), 404
         sentence_data = random.choice(sentences)
+        if not all([
+            sentence_data.get("sentence"),
+            sentence_data.get("verb"),
+            sentence_data.get("tense"),
+            sentence_data.get("subject")
+        ]):
+            logger.error(f"Invalid sentence data: {sentence_data.get('sentence', 'unknown')}")
+            return jsonify({"error": "Invalid sentence data"}), 400
         hint = {
             "subject": sentence_data.get("subject"),
             "object": sentence_data.get("object"),
@@ -466,8 +446,8 @@ def get_tense_question():
             return jsonify({"error": "No MongoDB connection"}), 503
         questions = list(sentences_collection.find({"tense": {"$exists": True, "$ne": ""}, "sentence": {"$exists": True}}))
         if not questions:
-            logger.error("No questions available in database")
-            return jsonify({"error": "No questions available"}), 404
+            logger.error("No questions available in MongoDB")
+            return jsonify({"error": "No questions available in MongoDB"}), 404
         question = random.choice(questions)
         explanation = generate_explanation(question)
         logger.info(f"Serving question: {question.get('sentence', 'Unknown')}")
@@ -495,8 +475,8 @@ def get_tense_questions():
             return jsonify({"error": "Invalid question count (1-50 allowed)"}), 400
         questions = list(sentences_collection.find({"tense": {"$exists": True, "$ne": ""}, "sentence": {"$exists": True}}))
         if not questions:
-            logger.error("No questions available in database")
-            return jsonify({"error": "No questions available", "data": []}), 404
+            logger.error("No questions available in MongoDB")
+            return jsonify({"error": "No questions available in MongoDB", "data": []}), 404
         selected_questions = random.sample(questions, min(count, len(questions)))
         cleaned_questions = [
             {
@@ -746,8 +726,8 @@ def health():
             logger.error("No MongoDB connection")
             return jsonify({"status": "unhealthy", "error": "No MongoDB connection"}), 503
         if sentences_collection.count_documents({}) == 0:
-            logger.error("No sentences available in database")
-            return jsonify({"status": "unhealthy", "error": "No sentences available"}), 500
+            logger.error("No sentences available in MongoDB")
+            return jsonify({"status": "unhealthy", "error": "No sentences available in MongoDB"}), 500
         return jsonify({"status": "healthy", "server": "sanskrit_learning_system"}), 200
     except Exception as e:
         logger.error(f"Health check failed: {str(e)}")
