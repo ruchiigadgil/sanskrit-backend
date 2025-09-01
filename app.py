@@ -6,9 +6,11 @@ from dotenv import load_dotenv
 import random
 import re
 import json
+import time
 from flask import Flask, jsonify, request, Response
 from flask_cors import CORS
 from pymongo import MongoClient
+from pymongo.errors import ConnectionError, ServerSelectionTimeoutError
 from bson.json_util import dumps
 
 # Add project root to sys.path
@@ -40,20 +42,34 @@ CORS(app, resources={
 
 # Configuration
 MAIN_PORT = int(os.environ.get('PORT', 5000))
-DATABASE_URL = os.environ.get('DATABASE_URL', 'mongodb://localhost:27017/sanskrit_learning')
+# Use MONGODB_URI from environment, with a fallback to avoid localhost
+MONGODB_URI = os.environ.get('MONGODB_URI')
+if not MONGODB_URI:
+    logger.error("MONGODB_URI environment variable not set")
+    MONGODB_URI = 'mongodb://localhost:27017/sanskrit_learning'  # Fallback, but should not be used on Render
 
-# MongoDB connection
-def get_db_connection():
-    try:
-        client = MongoClient(DATABASE_URL, serverSelectionTimeoutMS=5000)
-        # Test the connection
-        client.admin.command('ping')
-        db = client.get_database()
-        logger.info("Connected to MongoDB")
-        return db
-    except Exception as e:
-        logger.error(f"Failed to connect to MongoDB: {str(e)}")
-        return None
+# MongoDB connection with retry
+def get_db_connection(max_retries=3, retry_delay=5):
+    attempt = 0
+    while attempt < max_retries:
+        try:
+            client = MongoClient(MONGODB_URI, serverSelectionTimeoutMS=5000)
+            # Test the connection
+            client.admin.command('ping')
+            db = client.get_database()
+            logger.info("Connected to MongoDB")
+            return db
+        except (ConnectionError, ServerSelectionTimeoutError) as e:
+            attempt += 1
+            logger.error(f"Connection attempt {attempt}/{max_retries} failed: {str(e)}")
+            if attempt < max_retries:
+                logger.info(f"Retrying in {retry_delay} seconds...")
+                time.sleep(retry_delay)
+        except Exception as e:
+            logger.error(f"Unexpected error connecting to MongoDB: {str(e)}")
+            return None
+    logger.error(f"Failed to connect to MongoDB after {max_retries} attempts")
+    return None
 
 # Initialize database and collections
 db = get_db_connection()
