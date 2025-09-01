@@ -52,6 +52,11 @@ if not MONGODB_URI:
     MONGODB_URI = 'mongodb://localhost:27017/sanskrit_learning'  # Fallback
 JWT_SECRET = os.environ.get('JWT_SECRET', 'your_jwt_secret_here')
 
+# Global variables for data
+sentences = []
+conjugations = {}
+verbs = []
+
 # Lazy MongoDB connection
 db = None
 sentences_collection = None
@@ -61,7 +66,7 @@ matching_game_collection = None
 users_collection = None
 
 def init_db():
-    global db, sentences_collection, conjugations_collection, verbs_collection, matching_game_collection, users_collection
+    global db, sentences_collection, conjugations_collection, verbs_collection, matching_game_collection, users_collection, sentences, conjugations, verbs
     if db is None:
         try:
             client = MongoClient(MONGODB_URI, serverSelectionTimeoutMS=5000)
@@ -73,6 +78,13 @@ def init_db():
             matching_game_collection = db["matching_game"]
             users_collection = db["users"]
             logger.info("Connected to MongoDB")
+            # Load data after connection
+            sentences = load_sentences()
+            conjugations = load_conjugations()
+            verbs = load_verbs()
+            # Load sentences.json if collection is empty
+            if sentences_collection.count_documents({}) == 0:
+                load_sentences_json()
         except (ConnectionFailure, ServerSelectionTimeoutError) as e:
             logger.error(f"Failed to connect to MongoDB: {str(e)}")
             db = None
@@ -141,9 +153,26 @@ def load_verbs():
         logger.error(f"Error loading verbs: {str(e)}")
         return []
 
-sentences = load_sentences()
-conjugations = load_conjugations()
-verbs = load_verbs()
+def load_sentences_json():
+    try:
+        if sentences_collection is None:
+            logger.error("No MongoDB connection")
+            return {"status": "error", "message": "No MongoDB connection"}
+        dataset_path = Path(root_path) / "dataset" / "sentences.json"
+        if not dataset_path.exists():
+            logger.error("sentences.json not found")
+            return {"status": "error", "message": "sentences.json not found"}
+        with open(dataset_path, 'r', encoding='utf-8-sig') as f:
+            data = json.load(f)
+        sentences_collection.delete_many({})
+        sentences_collection.insert_many(data)
+        global sentences
+        sentences = load_sentences()
+        logger.info(f"Loaded {len(data)} sentences into MongoDB")
+        return {"status": "success", "message": f"Loaded {len(data)} sentences"}
+    except Exception as e:
+        logger.error(f"Error loading sentences.json: {str(e)}")
+        return {"status": "error", "message": str(e)}
 
 # Helper Functions
 def label(person, number):
@@ -258,26 +287,9 @@ def home():
     })
 
 @app.route('/api/load-sentences', methods=['GET'])
-def load_sentences_json():
-    try:
-        if sentences_collection is None:
-            logger.error("No MongoDB connection")
-            return jsonify({"status": "error", "message": "No MongoDB connection"}), 503
-        dataset_path = Path(root_path) / "dataset" / "sentences.json"
-        if not dataset_path.exists():
-            logger.error("sentences.json not found")
-            return jsonify({"status": "error", "message": "sentences.json not found"}), 404
-        with open(dataset_path, 'r', encoding='utf-8-sig') as f:
-            data = json.load(f)
-        sentences_collection.delete_many({})
-        sentences_collection.insert_many(data)
-        global sentences
-        sentences = load_sentences()
-        logger.info(f"Loaded {len(data)} sentences into MongoDB")
-        return jsonify({"status": "success", "message": f"Loaded {len(data)} sentences"})
-    except Exception as e:
-        logger.error(f"Error loading sentences.json: {str(e)}")
-        return jsonify({"status": "error", "message": str(e)}), 500
+def load_sentences_json_endpoint():
+    result = load_sentences_json()
+    return jsonify(result), 200 if result["status"] == "success" else 500
 
 @app.route('/api/sentences', methods=['GET'])
 def get_sentences():
