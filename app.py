@@ -166,7 +166,9 @@ def replace_verb_with_blank(text, form):
             return text
         words = text.split()
         if form in words:
-            words[words.index(form)] = "_____"
+            words[
+
+System: words.index(form)] = "_____"
         else:
             logger.warning(f"Verb form '{form}' not found in sentence: {text}")
             words[-1] = "_____"
@@ -507,21 +509,21 @@ def register_user():
         if not data or not isinstance(data, dict):
             logger.error("No JSON data provided or invalid JSON")
             return jsonify({"error": "No data provided or invalid JSON"}), 400
-        full_name = data.get('fullName')
+        full_name = data.get('full_name')  # Changed from fullName to full_name
         email = data.get('email')
         password = data.get('password')
         if not full_name or not email or not password:
-            logger.error(f"Missing required fields: fullName={full_name}, email={email}, password={'***' if password else None}")
-            return jsonify({"error": "Missing fullName, email, or password"}), 400
+            logger.error(f"Missing required fields: full_name={full_name}, email={email}, password={'***' if password else None}")
+            return jsonify({"error": "Missing full_name, email, or password"}), 400
         if users_collection.find_one({"email": email}):
             logger.error(f"User with email {email} already exists")
             return jsonify({"error": "Email already registered"}), 400
         hashed_password = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
         user = {
-            "full_name": full_name,  # Match schema
+            "full_name": full_name,
             "email": email,
             "password": hashed_password,
-            "score": 0  # Match schema
+            "score": 0
         }
         result = users_collection.insert_one(user)
         user_id = str(result.inserted_id)
@@ -537,7 +539,7 @@ def register_user():
             "token": token,
             "user": {
                 "id": user_id,
-                "full_name": full_name,  # Match schema
+                "full_name": full_name,
                 "email": email
             }
         }), 201
@@ -581,7 +583,7 @@ def login():
             "token": token,
             "user": {
                 "id": str(user["_id"]),
-                "fullName": user.get("fullName"),
+                "full_name": user.get("full_name"),  # Changed from full_Name to full_name
                 "email": email
             }
         }), 200
@@ -605,8 +607,8 @@ def profile():
             logger.error(f'User not found for ID: {decoded["user_id"]}')
             return jsonify({'error': 'User not found'}), 404
         return jsonify({
-            'full_name': user.get('full_name', 'User'),  # Use existing full_name
-            'score': user.get('score', 0)  # Use existing score
+            'full_name': user.get('full_name', 'User'),
+            'score': user.get('score', 0)
         }), 200
     except jwt.InvalidTokenError:
         logger.error('Invalid JWT token')
@@ -614,6 +616,7 @@ def profile():
     except Exception as e:
         logger.error(f'Error in profile: {str(e)}')
         return jsonify({'error': str(e)}), 500
+
 @app.route('/api/update-score', methods=['POST', 'OPTIONS'])
 def update_score():
     if request.method == 'OPTIONS':
@@ -622,13 +625,12 @@ def update_score():
         if users_collection is None:
             logger.error("No MongoDB connection")
             return jsonify({"error": "No MongoDB connection"}), 503
-        data = request.get_json(force=True)  # Force JSON parsing
+        data = request.get_json(force=True)
         if not data or not isinstance(data, dict):
             logger.error(f"Invalid JSON data: {data}")
             return jsonify({"error": "No data provided or invalid JSON"}), 400
         user_id = data.get('user_id')
         score = data.get('score')
-        game_type = data.get('game_type')
         if not user_id or score is None:
             logger.error(f"Missing user_id or score: user_id={user_id}, score={score}")
             return jsonify({"error": "Missing user_id or score"}), 400
@@ -640,38 +642,26 @@ def update_score():
             logger.error("No valid Authorization header provided")
             return jsonify({"error": "Authorization header missing or invalid"}), 401
         token = auth_header.split(' ')[1]
-        try:
-            payload = jwt.decode(token, JWT_SECRET, algorithms=["HS256"])
-            if payload["user_id"] != user_id:
-                logger.error(f"Token user_id {payload['user_id']} does not match provided user_id {user_id}")
-                return jsonify({"error": "Invalid user_id for token"}), 401
-        except jwt.ExpiredSignatureError:
-            logger.error("JWT token expired")
-            return jsonify({"error": "Token expired"}), 401
-        except jwt.InvalidTokenError:
-            logger.error("Invalid JWT token")
-            return jsonify({"error": "Invalid token"}), 401
-        update_data = {
-            "user_id": user_id,
-            "updated_at": time.time()
-        }
-        if game_type:
-            update_data[f"scores.{game_type}"] = score
-        else:
-            update_data["scores.total"] = score
+        payload = jwt.decode(token, JWT_SECRET, algorithms=["HS256"])
+        if payload["user_id"] != user_id:
+            logger.error(f"Token user_id {payload['user_id']} does not match provided user_id {user_id}")
+            return jsonify({"error": "Unauthorized score update"}), 403
         result = users_collection.update_one(
             {"_id": ObjectId(user_id)},
-            {"$set": update_data},
-            upsert=True
+            {"$set": {"score": int(score)}},  # Ensure score is an integer
+            upsert=False
         )
-        logger.info(f"Updated score for user_id={user_id}, score={score}, game_type={game_type or 'total'}")
-        return jsonify({
-            "status": "success",
-            "message": f"Score updated for user {user_id}",
-            "matched_count": result.matched_count,
-            "modified_count": result.modified_count,
-            "upserted_id": str(result.upserted_id) if result.upserted_id else None
-        }), 200
+        if result.matched_count == 0:
+            logger.error(f"User not found: {user_id}")
+            return jsonify({"error": "User not found"}), 404
+        logger.info(f"Updated score for user {user_id}: {score}")
+        return jsonify({"status": "success", "score": score}), 200
+    except jwt.ExpiredSignatureError:
+        logger.error("JWT token expired")
+        return jsonify({"error": "Token expired"}), 401
+    except jwt.InvalidTokenError:
+        logger.error("Invalid JWT token")
+        return jsonify({"error": "Invalid token"}), 401
     except Exception as e:
         logger.error(f"Error updating score: {str(e)}")
         return jsonify({"error": f"Failed to update score: {str(e)}"}), 500
