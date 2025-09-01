@@ -600,14 +600,13 @@ def profile():
             return jsonify({'error': 'Missing or invalid Authorization header'}), 400
         token = auth_header.split(' ')[1]
         decoded = jwt.decode(token, JWT_SECRET, algorithms=["HS256"])
-        user = db.users.find_one({'_id': decoded['user_id']})
+        user = users_collection.find_one({'_id': ObjectId(decoded['user_id'])})
         if not user:
             logger.error(f'User not found for ID: {decoded["user_id"]}')
             return jsonify({'error': 'User not found'}), 404
         return jsonify({
-            'username': user.get('username'),
-            'full_name': user.get('full_name', user.get('username')),
-            'score': user.get('score', 0)
+            'full_name': user.get('full_name', 'User'),  # Use existing full_name
+            'score': user.get('score', 0)  # Use existing score
         }), 200
     except jwt.InvalidTokenError:
         logger.error('Invalid JWT token')
