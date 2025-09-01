@@ -1,9 +1,10 @@
+```python
 import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
 print("sys.path:", sys.path)
 
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 from flask_cors import CORS
 import random
 from Database.db import get_db_connection
@@ -11,11 +12,16 @@ import logging
 import argparse
 
 app = Flask(__name__)
-CORS(app, resources={r"/api/*": {
-    "origins": ["http://localhost:5173"],
-    "methods": ["GET"],
-    "allow_headers": ["Content-Type"]
-}})
+CORS(app, resources={
+    r"/api/*": {
+        "origins": [
+            "http://localhost:5173",          # Local dev
+            "https://*.vercel.app"           # Vercel deployed frontend
+        ],
+        "methods": ["GET", "OPTIONS"],       # Include OPTIONS
+        "allow_headers": ["Content-Type", "Authorization"]  # Allow Authorization header
+    }
+})
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -45,8 +51,11 @@ sentences = load_sentences()
 def health():
     return jsonify({"status": "healthy", "server": "sentence_game"})
 
-@app.route('/api/get-sentence-game', methods=['GET'])
+@app.route('/api/get-sentence-game', methods=['GET', 'OPTIONS'])
 def get_sentence_game():
+    if request.method == 'OPTIONS':
+        return '', 200  # Handle preflight request
+    
     if not sentences:
         logger.warning("No sentences available")
         return jsonify({"error": "No sentences available"}), 404
@@ -74,3 +83,4 @@ if __name__ == "__main__":
     args = parser.parse_args()
     logger.info(f"Starting Sentence Game Server on port {args.port}")
     app.run(debug=False, host='0.0.0.0', port=args.port)
+```
