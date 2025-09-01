@@ -517,11 +517,10 @@ def register_user():
             return jsonify({"error": "Email already registered"}), 400
         hashed_password = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
         user = {
-            "fullName": full_name,
+            "full_name": full_name,  # Match schema
             "email": email,
             "password": hashed_password,
-            "created_at": time.time(),
-            "scores": {}
+            "score": 0  # Match schema
         }
         result = users_collection.insert_one(user)
         user_id = str(result.inserted_id)
@@ -537,7 +536,7 @@ def register_user():
             "token": token,
             "user": {
                 "id": user_id,
-                "fullName": full_name,
+                "full_name": full_name,  # Match schema
                 "email": email
             }
         }), 201
