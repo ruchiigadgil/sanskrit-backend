@@ -45,7 +45,9 @@ DATABASE_URL = os.environ.get('DATABASE_URL', 'mongodb://localhost:27017/sanskri
 # MongoDB connection
 def get_db_connection():
     try:
-        client = MongoClient(DATABASE_URL)
+        client = MongoClient(DATABASE_URL, serverSelectionTimeoutMS=5000)
+        # Test the connection
+        client.admin.command('ping')
         db = client.get_database()
         logger.info("Connected to MongoDB")
         return db
@@ -53,11 +55,12 @@ def get_db_connection():
         logger.error(f"Failed to connect to MongoDB: {str(e)}")
         return None
 
+# Initialize database and collections
 db = get_db_connection()
-sentences_collection = db["sentences"] if db else None
-conjugations_collection = db["conjugations"] if db else None
-verbs_collection = db["verbs"] if db else None
-matching_game_collection = db["matching_game"] if db else None
+sentences_collection = db["sentences"] if db is not None else None
+conjugations_collection = db["conjugations"] if db is not None else None
+verbs_collection = db["verbs"] if db is not None else None
+matching_game_collection = db["matching_game"] if db is not None else None
 
 # Load data
 def load_sentences():
@@ -229,13 +232,39 @@ def home():
             "/api/profile",
             "/api/update-score",
             "/api/status",
-            "/api/test"
+            "/api/test",
+            "/api/load-sentences"
         ]
     })
+
+@app.route('/api/load-sentences', methods=['GET'])
+def load_sentences_json():
+    try:
+        if sentences_collection is None:
+            logger.error("No MongoDB connection")
+            return jsonify({"status": "error", "message": "No MongoDB connection"}), 503
+        dataset_path = Path(root_path) / "dataset" / "sentences.json"
+        if not dataset_path.exists():
+            logger.error("sentences.json not found")
+            return jsonify({"status": "error", "message": "sentences.json not found"}), 404
+        with open(dataset_path, 'r', encoding='utf-8-sig') as f:
+            data = json.load(f)
+        sentences_collection.delete_many({})
+        sentences_collection.insert_many(data)
+        global sentences
+        sentences = load_sentences()  # Reload sentences into memory
+        logger.info(f"Loaded {len(data)} sentences into MongoDB")
+        return jsonify({"status": "success", "message": f"Loaded {len(data)} sentences"})
+    except Exception as e:
+        logger.error(f"Error loading sentences.json: {str(e)}")
+        return jsonify({"status": "error", "message": str(e)}), 500
 
 @app.route('/api/sentences', methods=['GET'])
 def get_sentences():
     try:
+        if sentences_collection is None:
+            logger.error("No MongoDB connection")
+            return jsonify({"error": "No MongoDB connection"}), 503
         sentences = list(sentences_collection.find())
         return Response(dumps(sentences), mimetype="application/json"), 200
     except Exception as e:
@@ -300,6 +329,9 @@ def get_number_game():
     if request.method == 'OPTIONS':
         return jsonify({'status': 'ok'}), 200
     try:
+        if sentences_collection is None:
+            logger.error("No MongoDB connection")
+            return jsonify({"error": "No MongoDB connection"}), 503
         all_sentences = list(sentences_collection.find({
             "object": None,
             "subject.person": {"$in": ["1", "2", "3"]},
@@ -321,6 +353,9 @@ def get_number_game():
 @app.route('/api/generate-matching-game', methods=['GET'])
 def generate_matching_game():
     try:
+        if matching_game_collection is None:
+            logger.error("No MongoDB connection")
+            return jsonify({"status": "error", "message": "No MongoDB connection"}), 503
         dataset_path = Path(root_path) / "dataset"
         if not dataset_path.exists():
             logger.error("Dataset directory not found")
@@ -345,7 +380,8 @@ def generate_matching_game():
 def get_matching_game():
     try:
         if matching_game_collection is None:
-            raise Exception("MongoDB not connected")
+            logger.error("No MongoDB connection")
+            return jsonify({"error": "No MongoDB connection"}), 503
         data = list(matching_game_collection.find({
             "subject_root": {"$exists": True},
             "verb_root": {"$exists": True},
@@ -369,7 +405,7 @@ def get_sentence_game():
         return jsonify({'status': 'ok'}), 200
     try:
         if not sentences:
-            logger.warning("No sentences available")
+            logger.error("No sentences available")
             return jsonify({"error": "No sentences available"}), 404
         sentence_data = random.choice(sentences)
         hint = {
@@ -393,6 +429,9 @@ def get_sentence_game():
 @app.route('/api/get-tense-question', methods=['GET'])
 def get_tense_question():
     try:
+        if sentences_collection is None:
+            logger.error("No MongoDB connection")
+            return jsonify({"error": "No MongoDB connection"}), 503
         questions = list(sentences_collection.find({"tense": {"$exists": True, "$ne": ""}, "sentence": {"$exists": True}}))
         if not questions:
             logger.error("No questions available in database")
@@ -415,6 +454,9 @@ def get_tense_question():
 @app.route('/api/get-tense-questions', methods=['GET'])
 def get_tense_questions():
     try:
+        if sentences_collection is None:
+            logger.error("No MongoDB connection")
+            return jsonify({"error": "No MongoDB connection"}), 503
         count = int(request.args.get("count", 5))
         if count < 1 or count > 50:
             logger.error(f"Invalid question count: {count}")
@@ -467,6 +509,9 @@ def update_score():
 @app.route('/api/test', methods=['GET'])
 def test_endpoint():
     try:
+        if db is None:
+            logger.error("No MongoDB connection")
+            return jsonify({'error': 'Database server unavailable'}), 503
         db.command('ping')
         return jsonify({"status": "Database connection successful"}), 200
     except Exception as e:
@@ -476,7 +521,7 @@ def test_endpoint():
 @app.route('/api/status', methods=['GET'])
 def system_status():
     try:
-        db_status = db.command('ping') if db else False
+        db_status = db.command('ping') if db is not None else False
     except Exception:
         db_status = False
     return jsonify({
@@ -493,7 +538,10 @@ def system_status():
 @app.route('/health', methods=['GET'])
 def health():
     try:
-        if not sentences_collection or sentences_collection.count_documents({}) == 0:
+        if sentences_collection is None:
+            logger.error("No MongoDB connection")
+            return jsonify({"status": "unhealthy", "error": "No MongoDB connection"}), 503
+        if sentences_collection.count_documents({}) == 0:
             logger.error("No sentences available in database")
             return jsonify({"status": "unhealthy", "error": "No sentences available"}), 500
         return jsonify({"status": "healthy", "server": "sanskrit_learning_system"}), 200
