@@ -590,44 +590,31 @@ def login():
         return jsonify({"error": f"Failed to login: {str(e)}"}), 500
 
 @app.route('/api/profile', methods=['GET', 'OPTIONS'])
-def get_profile():
+def profile():
     if request.method == 'OPTIONS':
         return jsonify({'status': 'ok'}), 200
     try:
-        if users_collection is None:
-            logger.error("No MongoDB connection")
-            return jsonify({"error": "No MongoDB connection"}), 503
         auth_header = request.headers.get('Authorization')
         if not auth_header or not auth_header.startswith('Bearer '):
-            logger.error("No valid Authorization header provided")
-            return jsonify({"error": "Authorization header missing or invalid"}), 401
+            logger.error('Missing or invalid Authorization header')
+            return jsonify({'error': 'Missing or invalid Authorization header'}), 400
         token = auth_header.split(' ')[1]
-        try:
-            payload = jwt.decode(token, JWT_SECRET, algorithms=["HS256"])
-            user_id = payload["user_id"]
-        except jwt.ExpiredSignatureError:
-            logger.error("JWT token expired")
-            return jsonify({"error": "Token expired"}), 401
-        except jwt.InvalidTokenError:
-            logger.error("Invalid JWT token")
-            return jsonify({"error": "Invalid token"}), 401
-        user = users_collection.find_one({"_id": ObjectId(user_id)})
+        decoded = jwt.decode(token, JWT_SECRET, algorithms=["HS256"])
+        user = db.users.find_one({'_id': decoded['user_id']})
         if not user:
-            logger.error(f"User not found: {user_id}")
-            return jsonify({"error": "User not found"}), 404
+            logger.error(f'User not found for ID: {decoded["user_id"]}')
+            return jsonify({'error': 'User not found'}), 404
         return jsonify({
-            "status": "success",
-            "user": {
-                "id": str(user["_id"]),
-                "fullName": user.get("fullName"),
-                "email": user.get("email"),
-                "scores": user.get("scores", {})
-            }
+            'username': user.get('username'),
+            'full_name': user.get('full_name', user.get('username')),
+            'score': user.get('score', 0)
         }), 200
+    except jwt.InvalidTokenError:
+        logger.error('Invalid JWT token')
+        return jsonify({'error': 'Invalid token'}), 401
     except Exception as e:
-        logger.error(f"Error fetching profile: {str(e)}")
-        return jsonify({"error": f"Failed to fetch profile: {str(e)}"}), 500
-
+        logger.error(f'Error in profile: {str(e)}')
+        return jsonify({'error': str(e)}), 500
 @app.route('/api/update-score', methods=['POST', 'OPTIONS'])
 def update_score():
     if request.method == 'OPTIONS':
