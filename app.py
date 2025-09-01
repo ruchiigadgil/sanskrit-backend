@@ -17,14 +17,14 @@ from servers.number_game import app as number_app
 from servers.sans_sent_game import app as sans_sent_app
 
 # Add root directory to Python path
-root_path = str(Path(__file__).resolve().parent.parent)
+root_path = str(Path(__file__).resolve().parent)  # Points to backend/ (src/ on Render)
 if root_path not in sys.path:
     sys.path.insert(0, root_path)
 print("Python path:", sys.path)
 print("Root directory:", root_path)
 print("Current working directory:", os.getcwd())
 print("Files in root directory:", os.listdir(root_path))
-print("Files in Database directory:", os.listdir(os.path.join(root_path, 'Database')))
+print("Files in Database directory:", os.listdir(os.path.join(root_path, 'Database')))  # Check backend/Database/
 
 try:
     from Database.db import get_db_connection
@@ -45,7 +45,7 @@ logger = logging.getLogger(__name__)
 
 app = Flask(__name__)
 CORS(app, resources={r"/api/*": {
-    "origins": ["http://localhost:5173"],  # Update with frontend URL after deployment
+    "origins": ["http://localhost:5173"],
     "methods": ["GET", "POST", "OPTIONS"],
     "allow_headers": ["Content-Type", "Authorization"]
 }})
@@ -58,7 +58,6 @@ NUMBER_GAME_PORT = 5004
 MTC_GAME_PORT = 5005
 DATABASE_URL = os.environ.get('DATABASE_URL', 'https://sanskrit-database.onrender.com')
 MAIN_PORT = int(os.environ.get('PORT', 5000))
-
 # Function to check server health
 def check_server_health(port, name):
     try:
