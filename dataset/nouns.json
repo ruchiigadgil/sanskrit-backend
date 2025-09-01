@@ -1,0 +1,206 @@
+{
+  "masc_अ": {
+    "बालक": {
+      "entity_classes": ["human"],
+      "usable_as_subject": true,
+      "usable_as_object": true
+    },
+    "शिष्य": {
+      "entity_classes": ["human"],
+      "usable_as_subject": true,
+      "usable_as_object": true
+    },
+    "मित्र": {
+      "entity_classes": ["human"],
+      "usable_as_subject": true,
+      "usable_as_object": true
+    },
+    "पुत्र": {
+      "entity_classes": ["human"],
+      "usable_as_subject": true,
+      "usable_as_object": true
+    },
+    "नृप": {
+      "entity_classes": ["human"],
+      "usable_as_subject": true,
+      "usable_as_object": true
+    },
+    "गज": {
+      "entity_classes": ["animal"],
+      "usable_as_subject": true,
+      "usable_as_object": true
+    },
+    "मृग": {
+      "entity_classes": ["animal"],
+      "usable_as_subject": true,
+      "usable_as_object": true
+    },
+    "श्वान": {
+      "entity_classes": ["animal"],
+      "usable_as_subject": true,
+      "usable_as_object": true
+    },
+    "वृषभ": {
+      "entity_classes": ["animal"],
+      "usable_as_subject": true,
+      "usable_as_object": true
+    },
+    "सिंह": {
+      "entity_classes": ["animal"],
+      "usable_as_subject": true,
+      "usable_as_object": true
+    },
+    "वानर": {
+      "entity_classes": ["animal"],
+      "usable_as_subject": true,
+      "usable_as_object": true
+    },
+    "अश्व": {
+      "entity_classes": ["animal"],
+      "usable_as_subject": true,
+      "usable_as_object": true
+    },
+    "मार्जार": {
+      "entity_classes": ["animal"],
+      "usable_as_subject": true,
+      "usable_as_object": true
+    },
+    "शृगाल": {
+      "entity_classes": ["animal"],
+      "usable_as_subject": true,
+      "usable_as_object": true
+    }
+  },
+
+
+  "fem_आ": {
+    "बालिका": {
+      "entity_classes": ["human"],
+      "usable_as_subject": true,
+      "usable_as_object": true
+    },
+    "कन्या": {
+      "entity_classes": ["human"],
+      "usable_as_subject": true,
+      "usable_as_object": true
+    },
+    "शिष्या": {
+      "entity_classes": ["human"],
+      "usable_as_subject": true,
+      "usable_as_object": true
+    },
+    "कथा": {
+      "entity_classes": ["object_read", "object_write"],
+      "usable_as_subject": false,
+      "usable_as_object": true
+    },
+    "माला": {
+      "entity_classes": ["object_see"],
+      "usable_as_subject": false,
+      "usable_as_object": true
+    },
+    "भाषा": {
+      "entity_classes": ["abstract"],
+      "usable_as_subject": false,
+      "usable_as_object": true
+    },
+    "छाया": {
+      "entity_classes": ["abstract"],
+      "usable_as_subject": false,
+      "usable_as_object": true
+    },
+    "शिक्षा": {
+      "entity_classes": ["abstract"],
+      "usable_as_subject": false,
+      "usable_as_object": true
+    }
+  },
+
+  "neut_अ": {
+    "फल": {
+      "entity_classes": ["food_solid"],
+      "usable_as_subject": false,
+      "usable_as_object": true
+    },
+    "अन्न": {
+      "entity_classes": ["food_solid"],
+      "usable_as_subject": false,
+      "usable_as_object": true
+    },
+    "शाक": {
+      "entity_classes": ["food_solid"],
+      "usable_as_subject": false,
+      "usable_as_object": true
+    },
+    "मांस": {
+      "entity_classes": ["food_solid"],
+      "usable_as_subject": false,
+      "usable_as_object": true
+    },
+    "पुस्तक": {
+      "entity_classes": ["object_read", "object_write", "object_see"],
+      "usable_as_subject": false,
+      "usable_as_object": true
+    },
+    "पत्र": {
+      "entity_classes": ["object_read", "object_write"],
+      "usable_as_subject": false,
+      "usable_as_object": true
+    },
+    "वस्त्र": {
+      "entity_classes": ["object_wear", "object_see"],
+      "usable_as_subject": false,
+      "usable_as_object": true
+    },
+    "गृह": {
+      "entity_classes": ["place"],
+      "usable_as_subject": false,
+      "usable_as_object": true
+    },
+    "वचन": {
+      "entity_classes": ["abstract"],
+      "usable_as_subject": false,
+      "usable_as_object": true
+    },
+    "जल": {
+      "entity_classes": ["food_liquid"],
+      "usable_as_subject": false,
+      "usable_as_object": true
+    },
+    "वन": {
+      "entity_classes": ["place"],
+      "usable_as_subject": false,
+      "usable_as_object": true
+    },
+    "शस्त्र": {
+      "entity_classes": ["weapon"],
+      "usable_as_subject": false,
+      "usable_as_object": true
+    },
+    "आसन": {
+      "entity_classes": ["object_sit"],
+      "usable_as_subject": false,
+      "usable_as_object": true
+    },
+    "धन": {
+      "entity_classes": ["object_possess"],
+      "usable_as_subject": false,
+      "usable_as_object": true
+    }
+  },
+
+ 
+
+  "none_none": {
+    "अस्मद्": {
+      "entity_classes": ["human"],
+      "usable_as_subject": true,
+      "usable_as_object": true
+    },
+    "युष्मद्": {
+      "entity_classes": ["human"],
+      "usable_as_subject": true,
+      "usable_as_object": true
+    }
+  }
+}

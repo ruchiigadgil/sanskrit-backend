@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sanskrit Verb Game</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 2em;
+      background-color: #f2f6fc;
+      color: #333;
+    }
+    .container {
+      max-width: 650px;
+      margin: auto;
+      background: white;
+      padding: 2.5em;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 1em;
+      color: #3f51b5;
+    }
+    .sentence {
+      font-size: 1.4em;
+      font-weight: bold;
+      text-align: center;
+      margin: 1em 0;
+    }
+    .options button {
+      display: block;
+      width: 100%;
+      margin: 0.5em 0;
+      padding: 1em;
+      font-size: 1.1em;
+      border: 2px solid #ccc;
+      background-color: #f0f0f0;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.2s, border-color 0.2s;
+    }
+    .options button:hover:not(.disabled) {
+      background-color: #e0e0e0;
+    }
+    .options button.correct {
+      background-color: #d4edda;
+      border-color: #28a745;
+      color: #155724;
+    }
+    .options button.wrong {
+      background-color: #f8d7da;
+      border-color: #dc3545;
+      color: #721c24;
+    }
+    .options button.disabled {
+      cursor: default;
+      pointer-events: none;
+      opacity: 0.7;
+    }
+    .feedback {
+      margin-top: 1em;
+      font-weight: bold;
+      text-align: center;
+      font-size: 1.1em;
+    }
+    .explanation {
+      margin-top: 1em;
+      background-color: #eef3ff;
+      padding: 1em;
+      border-radius: 6px;
+    }
+    #nextBtn, #retryBtn {
+      margin-top: 1.5em;
+      padding: 0.8em 2em;
+      font-size: 1em;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      display: none;
+    }
+    #nextBtn {
+      background-color: #4CAF50;
+      color: white;
+    }
+    #retryBtn {
+      background-color: #ff9800;
+      color: white;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Sanskrit Verb Form Game</h1>
+    <div class="sentence" id="sentence"></div>
+    <div class="options" id="options"></div>
+    <div class="feedback" id="feedback"></div>
+    <div class="explanation" id="explanation"></div>
+    <button id="nextBtn" onclick="loadGame()">Next</button>
+    <button id="retryBtn" onclick="retryGame()">Retry</button>
+  </div>
+
+  <script>
+    let currentCorrect = null;
+    let currentExplanation = "";
+    let currentHint = "";
+    let attempt = 0;
+
+    async function loadGame() {
+      document.getElementById('feedback').innerText = "";
+      document.getElementById('explanation').innerText = "";
+      document.getElementById('nextBtn').style.display = 'none';
+      document.getElementById('retryBtn').style.display = 'none';
+      attempt = 0;
+
+      const res = await fetch('http://localhost:5000/api/get-game');
+      const data = await res.json();
+
+      document.getElementById('sentence').innerText = data.sentence;
+      currentCorrect = data.correct;
+      currentExplanation = data.explanation;
+      currentHint = data.hint;
+
+      const optionsContainer = document.getElementById('options');
+      optionsContainer.innerHTML = "";
+
+      data.options.forEach((opt) => {
+        const btn = document.createElement('button');
+        btn.innerText = opt;
+        btn.onclick = () => handleChoice(btn, opt);
+        optionsContainer.appendChild(btn);
+      });
+    }
+
+    function handleChoice(button, choice) {
+      const feedback = document.getElementById('feedback');
+      const explanation = document.getElementById('explanation');
+      const allButtons = document.querySelectorAll('.options button');
+      attempt++;
+
+      if (choice === currentCorrect) {
+        feedback.innerText = "✅ Correct!";
+        explanation.innerText = currentExplanation;
+        button.classList.add("correct");
+        disableButtons();
+        document.getElementById('nextBtn').style.display = 'inline-block';
+      } else {
+        feedback.innerText = "❌ Wrong! Try again.";
+        button.classList.add("wrong");
+        if (attempt === 1 && currentHint) {
+          explanation.innerText = currentHint;
+        }
+        document.getElementById('retryBtn').style.display = 'inline-block';
+      }
+    }
+
+    function retryGame() {
+      document.getElementById('feedback').innerText = "";
+      document.getElementById('explanation').innerText = currentHint || "";
+      document.getElementById('retryBtn').style.display = 'none';
+
+      const allButtons = document.querySelectorAll('.options button');
+      allButtons.forEach(btn => {
+        btn.classList.remove("wrong", "correct");
+      });
+    }
+
+    function disableButtons() {
+      const allButtons = document.querySelectorAll('.options button');
+      allButtons.forEach(btn => {
+        btn.classList.add("disabled");
+      });
+    }
+
+    window.onload = loadGame;
+  </script>
+</body>
+</html>

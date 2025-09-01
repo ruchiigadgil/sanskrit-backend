@@ -1,0 +1,9698 @@
+[
+  {
+    "subject_root": "बालक",
+    "verb_root": "गच्छ्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "बालकः",
+      "du": "बालकौ",
+      "pl": "बालकाः"
+    },
+    "verb_forms": {
+      "sg": "गच्छति",
+      "du": "गच्छतः",
+      "pl": "गच्छन्ति"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "शिष्य",
+    "verb_root": "गच्छ्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "शिष्यः",
+      "du": "शिष्यौ",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "गच्छति",
+      "du": "गच्छतः",
+      "pl": "गच्छन्ति"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "मित्र",
+    "verb_root": "गच्छ्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "मित्रः",
+      "du": "मित्रौ",
+      "pl": "मित्राः"
+    },
+    "verb_forms": {
+      "sg": "गच्छति",
+      "du": "गच्छतः",
+      "pl": "गच्छन्ति"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "पुत्र",
+    "verb_root": "गच्छ्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "पुत्रः",
+      "du": "पुत्रौ",
+      "pl": "पुत्राः"
+    },
+    "verb_forms": {
+      "sg": "गच्छति",
+      "du": "गच्छतः",
+      "pl": "गच्छन्ति"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "नृप",
+    "verb_root": "गच्छ्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "नृपः",
+      "du": "नृपौ",
+      "pl": "नृपाः"
+    },
+    "verb_forms": {
+      "sg": "गच्छति",
+      "du": "गच्छतः",
+      "pl": "गच्छन्ति"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "बालिका",
+    "verb_root": "गच्छ्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "बालिका",
+      "du": "बालिके",
+      "pl": "बालिकाः"
+    },
+    "verb_forms": {
+      "sg": "गच्छति",
+      "du": "गच्छतः",
+      "pl": "गच्छन्ति"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "कन्या",
+    "verb_root": "गच्छ्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "कन्या",
+      "du": "कन्ये",
+      "pl": "कन्याः"
+    },
+    "verb_forms": {
+      "sg": "गच्छति",
+      "du": "गच्छतः",
+      "pl": "गच्छन्ति"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "शिष्या",
+    "verb_root": "गच्छ्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "शिष्या",
+      "du": "शिष्ये",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "गच्छति",
+      "du": "गच्छतः",
+      "pl": "गच्छन्ति"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "अस्मद्",
+    "verb_root": "गच्छ्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "अहम्",
+      "du": "आवाम्",
+      "pl": "वयम्"
+    },
+    "verb_forms": {
+      "sg": "गच्छामि",
+      "du": "गच्छावः",
+      "pl": "गच्छामः"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "युष्मद्",
+    "verb_root": "गच्छ्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "त्वम्",
+      "du": "युवाम्",
+      "pl": "यूयम्"
+    },
+    "verb_forms": {
+      "sg": "गच्छसि",
+      "du": "गच्छथः",
+      "pl": "गच्छथ"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "गज",
+    "verb_root": "गच्छ्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "गजः",
+      "du": "गजौ",
+      "pl": "गजाः"
+    },
+    "verb_forms": {
+      "sg": "गच्छति",
+      "du": "गच्छतः",
+      "pl": "गच्छन्ति"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "मृग",
+    "verb_root": "गच्छ्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "मृगः",
+      "du": "मृगौ",
+      "pl": "मृगाः"
+    },
+    "verb_forms": {
+      "sg": "गच्छति",
+      "du": "गच्छतः",
+      "pl": "गच्छन्ति"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "श्वान",
+    "verb_root": "गच्छ्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "श्वानः",
+      "du": "श्वानौ",
+      "pl": "श्वानाः"
+    },
+    "verb_forms": {
+      "sg": "गच्छति",
+      "du": "गच्छतः",
+      "pl": "गच्छन्ति"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "वृषभ",
+    "verb_root": "गच्छ्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "वृषभः",
+      "du": "वृषभौ",
+      "pl": "वृषभाः"
+    },
+    "verb_forms": {
+      "sg": "गच्छति",
+      "du": "गच्छतः",
+      "pl": "गच्छन्ति"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "सिंह",
+    "verb_root": "गच्छ्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "सिंहः",
+      "du": "सिंहौ",
+      "pl": "सिंहाः"
+    },
+    "verb_forms": {
+      "sg": "गच्छति",
+      "du": "गच्छतः",
+      "pl": "गच्छन्ति"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "वानर",
+    "verb_root": "गच्छ्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "वानरः",
+      "du": "वानरौ",
+      "pl": "वानराः"
+    },
+    "verb_forms": {
+      "sg": "गच्छति",
+      "du": "गच्छतः",
+      "pl": "गच्छन्ति"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "अश्व",
+    "verb_root": "गच्छ्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "अश्वः",
+      "du": "अश्वौ",
+      "pl": "अश्वाः"
+    },
+    "verb_forms": {
+      "sg": "गच्छति",
+      "du": "गच्छतः",
+      "pl": "गच्छन्ति"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "मार्जार",
+    "verb_root": "गच्छ्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "मार्जारः",
+      "du": "मार्जारौ",
+      "pl": "मार्जाराः"
+    },
+    "verb_forms": {
+      "sg": "गच्छति",
+      "du": "गच्छतः",
+      "pl": "गच्छन्ति"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "शृगाल",
+    "verb_root": "गच्छ्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "शृगालः",
+      "du": "शृगालौ",
+      "pl": "शृगालाः"
+    },
+    "verb_forms": {
+      "sg": "गच्छति",
+      "du": "गच्छतः",
+      "pl": "गच्छन्ति"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "बालक",
+    "verb_root": "धाव्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "बालकः",
+      "du": "बालकौ",
+      "pl": "बालकाः"
+    },
+    "verb_forms": {
+      "sg": "धावति",
+      "du": "धावतः",
+      "pl": "धावन्ति"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "शिष्य",
+    "verb_root": "धाव्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "शिष्यः",
+      "du": "शिष्यौ",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "धावति",
+      "du": "धावतः",
+      "pl": "धावन्ति"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "मित्र",
+    "verb_root": "धाव्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "मित्रः",
+      "du": "मित्रौ",
+      "pl": "मित्राः"
+    },
+    "verb_forms": {
+      "sg": "धावति",
+      "du": "धावतः",
+      "pl": "धावन्ति"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "पुत्र",
+    "verb_root": "धाव्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "पुत्रः",
+      "du": "पुत्रौ",
+      "pl": "पुत्राः"
+    },
+    "verb_forms": {
+      "sg": "धावति",
+      "du": "धावतः",
+      "pl": "धावन्ति"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "नृप",
+    "verb_root": "धाव्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "नृपः",
+      "du": "नृपौ",
+      "pl": "नृपाः"
+    },
+    "verb_forms": {
+      "sg": "धावति",
+      "du": "धावतः",
+      "pl": "धावन्ति"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "बालिका",
+    "verb_root": "धाव्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "बालिका",
+      "du": "बालिके",
+      "pl": "बालिकाः"
+    },
+    "verb_forms": {
+      "sg": "धावति",
+      "du": "धावतः",
+      "pl": "धावन्ति"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "कन्या",
+    "verb_root": "धाव्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "कन्या",
+      "du": "कन्ये",
+      "pl": "कन्याः"
+    },
+    "verb_forms": {
+      "sg": "धावति",
+      "du": "धावतः",
+      "pl": "धावन्ति"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "शिष्या",
+    "verb_root": "धाव्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "शिष्या",
+      "du": "शिष्ये",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "धावति",
+      "du": "धावतः",
+      "pl": "धावन्ति"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "अस्मद्",
+    "verb_root": "धाव्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "अहम्",
+      "du": "आवाम्",
+      "pl": "वयम्"
+    },
+    "verb_forms": {
+      "sg": "धावामि",
+      "du": "धावावः",
+      "pl": "धावामः"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "युष्मद्",
+    "verb_root": "धाव्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "त्वम्",
+      "du": "युवाम्",
+      "pl": "यूयम्"
+    },
+    "verb_forms": {
+      "sg": "धावसि",
+      "du": "धावथः",
+      "pl": "धावथ"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "गज",
+    "verb_root": "धाव्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "गजः",
+      "du": "गजौ",
+      "pl": "गजाः"
+    },
+    "verb_forms": {
+      "sg": "धावति",
+      "du": "धावतः",
+      "pl": "धावन्ति"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "मृग",
+    "verb_root": "धाव्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "मृगः",
+      "du": "मृगौ",
+      "pl": "मृगाः"
+    },
+    "verb_forms": {
+      "sg": "धावति",
+      "du": "धावतः",
+      "pl": "धावन्ति"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "श्वान",
+    "verb_root": "धाव्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "श्वानः",
+      "du": "श्वानौ",
+      "pl": "श्वानाः"
+    },
+    "verb_forms": {
+      "sg": "धावति",
+      "du": "धावतः",
+      "pl": "धावन्ति"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "वृषभ",
+    "verb_root": "धाव्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "वृषभः",
+      "du": "वृषभौ",
+      "pl": "वृषभाः"
+    },
+    "verb_forms": {
+      "sg": "धावति",
+      "du": "धावतः",
+      "pl": "धावन्ति"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "सिंह",
+    "verb_root": "धाव्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "सिंहः",
+      "du": "सिंहौ",
+      "pl": "सिंहाः"
+    },
+    "verb_forms": {
+      "sg": "धावति",
+      "du": "धावतः",
+      "pl": "धावन्ति"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "वानर",
+    "verb_root": "धाव्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "वानरः",
+      "du": "वानरौ",
+      "pl": "वानराः"
+    },
+    "verb_forms": {
+      "sg": "धावति",
+      "du": "धावतः",
+      "pl": "धावन्ति"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "अश्व",
+    "verb_root": "धाव्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "अश्वः",
+      "du": "अश्वौ",
+      "pl": "अश्वाः"
+    },
+    "verb_forms": {
+      "sg": "धावति",
+      "du": "धावतः",
+      "pl": "धावन्ति"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "मार्जार",
+    "verb_root": "धाव्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "मार्जारः",
+      "du": "मार्जारौ",
+      "pl": "मार्जाराः"
+    },
+    "verb_forms": {
+      "sg": "धावति",
+      "du": "धावतः",
+      "pl": "धावन्ति"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "शृगाल",
+    "verb_root": "धाव्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "शृगालः",
+      "du": "शृगालौ",
+      "pl": "शृगालाः"
+    },
+    "verb_forms": {
+      "sg": "धावति",
+      "du": "धावतः",
+      "pl": "धावन्ति"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "बालक",
+    "verb_root": "हस्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "बालकः",
+      "du": "बालकौ",
+      "pl": "बालकाः"
+    },
+    "verb_forms": {
+      "sg": "हसति",
+      "du": "हसतः",
+      "pl": "हसन्ति"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "शिष्य",
+    "verb_root": "हस्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "शिष्यः",
+      "du": "शिष्यौ",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "हसति",
+      "du": "हसतः",
+      "pl": "हसन्ति"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "मित्र",
+    "verb_root": "हस्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "मित्रः",
+      "du": "मित्रौ",
+      "pl": "मित्राः"
+    },
+    "verb_forms": {
+      "sg": "हसति",
+      "du": "हसतः",
+      "pl": "हसन्ति"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "पुत्र",
+    "verb_root": "हस्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "पुत्रः",
+      "du": "पुत्रौ",
+      "pl": "पुत्राः"
+    },
+    "verb_forms": {
+      "sg": "हसति",
+      "du": "हसतः",
+      "pl": "हसन्ति"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "नृप",
+    "verb_root": "हस्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "नृपः",
+      "du": "नृपौ",
+      "pl": "नृपाः"
+    },
+    "verb_forms": {
+      "sg": "हसति",
+      "du": "हसतः",
+      "pl": "हसन्ति"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "बालिका",
+    "verb_root": "हस्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "बालिका",
+      "du": "बालिके",
+      "pl": "बालिकाः"
+    },
+    "verb_forms": {
+      "sg": "हसति",
+      "du": "हसतः",
+      "pl": "हसन्ति"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "कन्या",
+    "verb_root": "हस्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "कन्या",
+      "du": "कन्ये",
+      "pl": "कन्याः"
+    },
+    "verb_forms": {
+      "sg": "हसति",
+      "du": "हसतः",
+      "pl": "हसन्ति"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "शिष्या",
+    "verb_root": "हस्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "शिष्या",
+      "du": "शिष्ये",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "हसति",
+      "du": "हसतः",
+      "pl": "हसन्ति"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "अस्मद्",
+    "verb_root": "हस्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "अहम्",
+      "du": "आवाम्",
+      "pl": "वयम्"
+    },
+    "verb_forms": {
+      "sg": "हसामि",
+      "du": "हसावः",
+      "pl": "हसामः"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "युष्मद्",
+    "verb_root": "हस्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "त्वम्",
+      "du": "युवाम्",
+      "pl": "यूयम्"
+    },
+    "verb_forms": {
+      "sg": "हससि",
+      "du": "हसथः",
+      "pl": "हसथ"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "गज",
+    "verb_root": "हस्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "गजः",
+      "du": "गजौ",
+      "pl": "गजाः"
+    },
+    "verb_forms": {
+      "sg": "हसति",
+      "du": "हसतः",
+      "pl": "हसन्ति"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "मृग",
+    "verb_root": "हस्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "मृगः",
+      "du": "मृगौ",
+      "pl": "मृगाः"
+    },
+    "verb_forms": {
+      "sg": "हसति",
+      "du": "हसतः",
+      "pl": "हसन्ति"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "श्वान",
+    "verb_root": "हस्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "श्वानः",
+      "du": "श्वानौ",
+      "pl": "श्वानाः"
+    },
+    "verb_forms": {
+      "sg": "हसति",
+      "du": "हसतः",
+      "pl": "हसन्ति"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "वृषभ",
+    "verb_root": "हस्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "वृषभः",
+      "du": "वृषभौ",
+      "pl": "वृषभाः"
+    },
+    "verb_forms": {
+      "sg": "हसति",
+      "du": "हसतः",
+      "pl": "हसन्ति"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "सिंह",
+    "verb_root": "हस्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "सिंहः",
+      "du": "सिंहौ",
+      "pl": "सिंहाः"
+    },
+    "verb_forms": {
+      "sg": "हसति",
+      "du": "हसतः",
+      "pl": "हसन्ति"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "वानर",
+    "verb_root": "हस्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "वानरः",
+      "du": "वानरौ",
+      "pl": "वानराः"
+    },
+    "verb_forms": {
+      "sg": "हसति",
+      "du": "हसतः",
+      "pl": "हसन्ति"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "अश्व",
+    "verb_root": "हस्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "अश्वः",
+      "du": "अश्वौ",
+      "pl": "अश्वाः"
+    },
+    "verb_forms": {
+      "sg": "हसति",
+      "du": "हसतः",
+      "pl": "हसन्ति"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "मार्जार",
+    "verb_root": "हस्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "मार्जारः",
+      "du": "मार्जारौ",
+      "pl": "मार्जाराः"
+    },
+    "verb_forms": {
+      "sg": "हसति",
+      "du": "हसतः",
+      "pl": "हसन्ति"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "शृगाल",
+    "verb_root": "हस्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "शृगालः",
+      "du": "शृगालौ",
+      "pl": "शृगालाः"
+    },
+    "verb_forms": {
+      "sg": "हसति",
+      "du": "हसतः",
+      "pl": "हसन्ति"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "बालक",
+    "verb_root": "क्रीड्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "बालकः",
+      "du": "बालकौ",
+      "pl": "बालकाः"
+    },
+    "verb_forms": {
+      "sg": "क्रीडति",
+      "du": "क्रीडतः",
+      "pl": "क्रीडन्ति"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "शिष्य",
+    "verb_root": "क्रीड्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "शिष्यः",
+      "du": "शिष्यौ",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "क्रीडति",
+      "du": "क्रीडतः",
+      "pl": "क्रीडन्ति"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "मित्र",
+    "verb_root": "क्रीड्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "मित्रः",
+      "du": "मित्रौ",
+      "pl": "मित्राः"
+    },
+    "verb_forms": {
+      "sg": "क्रीडति",
+      "du": "क्रीडतः",
+      "pl": "क्रीडन्ति"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "पुत्र",
+    "verb_root": "क्रीड्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "पुत्रः",
+      "du": "पुत्रौ",
+      "pl": "पुत्राः"
+    },
+    "verb_forms": {
+      "sg": "क्रीडति",
+      "du": "क्रीडतः",
+      "pl": "क्रीडन्ति"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "नृप",
+    "verb_root": "क्रीड्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "नृपः",
+      "du": "नृपौ",
+      "pl": "नृपाः"
+    },
+    "verb_forms": {
+      "sg": "क्रीडति",
+      "du": "क्रीडतः",
+      "pl": "क्रीडन्ति"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "बालिका",
+    "verb_root": "क्रीड्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "बालिका",
+      "du": "बालिके",
+      "pl": "बालिकाः"
+    },
+    "verb_forms": {
+      "sg": "क्रीडति",
+      "du": "क्रीडतः",
+      "pl": "क्रीडन्ति"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "कन्या",
+    "verb_root": "क्रीड्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "कन्या",
+      "du": "कन्ये",
+      "pl": "कन्याः"
+    },
+    "verb_forms": {
+      "sg": "क्रीडति",
+      "du": "क्रीडतः",
+      "pl": "क्रीडन्ति"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "शिष्या",
+    "verb_root": "क्रीड्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "शिष्या",
+      "du": "शिष्ये",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "क्रीडति",
+      "du": "क्रीडतः",
+      "pl": "क्रीडन्ति"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "अस्मद्",
+    "verb_root": "क्रीड्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "अहम्",
+      "du": "आवाम्",
+      "pl": "वयम्"
+    },
+    "verb_forms": {
+      "sg": "क्रीडामि",
+      "du": "क्रीडावः",
+      "pl": "क्रीडामः"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "युष्मद्",
+    "verb_root": "क्रीड्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "त्वम्",
+      "du": "युवाम्",
+      "pl": "यूयम्"
+    },
+    "verb_forms": {
+      "sg": "क्रीडसि",
+      "du": "क्रीडथः",
+      "pl": "क्रीडथ"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "गज",
+    "verb_root": "क्रीड्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "गजः",
+      "du": "गजौ",
+      "pl": "गजाः"
+    },
+    "verb_forms": {
+      "sg": "क्रीडति",
+      "du": "क्रीडतः",
+      "pl": "क्रीडन्ति"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "मृग",
+    "verb_root": "क्रीड्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "मृगः",
+      "du": "मृगौ",
+      "pl": "मृगाः"
+    },
+    "verb_forms": {
+      "sg": "क्रीडति",
+      "du": "क्रीडतः",
+      "pl": "क्रीडन्ति"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "श्वान",
+    "verb_root": "क्रीड्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "श्वानः",
+      "du": "श्वानौ",
+      "pl": "श्वानाः"
+    },
+    "verb_forms": {
+      "sg": "क्रीडति",
+      "du": "क्रीडतः",
+      "pl": "क्रीडन्ति"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "वृषभ",
+    "verb_root": "क्रीड्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "वृषभः",
+      "du": "वृषभौ",
+      "pl": "वृषभाः"
+    },
+    "verb_forms": {
+      "sg": "क्रीडति",
+      "du": "क्रीडतः",
+      "pl": "क्रीडन्ति"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "सिंह",
+    "verb_root": "क्रीड्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "सिंहः",
+      "du": "सिंहौ",
+      "pl": "सिंहाः"
+    },
+    "verb_forms": {
+      "sg": "क्रीडति",
+      "du": "क्रीडतः",
+      "pl": "क्रीडन्ति"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "वानर",
+    "verb_root": "क्रीड्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "वानरः",
+      "du": "वानरौ",
+      "pl": "वानराः"
+    },
+    "verb_forms": {
+      "sg": "क्रीडति",
+      "du": "क्रीडतः",
+      "pl": "क्रीडन्ति"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "अश्व",
+    "verb_root": "क्रीड्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "अश्वः",
+      "du": "अश्वौ",
+      "pl": "अश्वाः"
+    },
+    "verb_forms": {
+      "sg": "क्रीडति",
+      "du": "क्रीडतः",
+      "pl": "क्रीडन्ति"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "मार्जार",
+    "verb_root": "क्रीड्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "मार्जारः",
+      "du": "मार्जारौ",
+      "pl": "मार्जाराः"
+    },
+    "verb_forms": {
+      "sg": "क्रीडति",
+      "du": "क्रीडतः",
+      "pl": "क्रीडन्ति"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "शृगाल",
+    "verb_root": "क्रीड्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "शृगालः",
+      "du": "शृगालौ",
+      "pl": "शृगालाः"
+    },
+    "verb_forms": {
+      "sg": "क्रीडति",
+      "du": "क्रीडतः",
+      "pl": "क्रीडन्ति"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "बालक",
+    "verb_root": "चर्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "बालकः",
+      "du": "बालकौ",
+      "pl": "बालकाः"
+    },
+    "verb_forms": {
+      "sg": "चरति",
+      "du": "चरतः",
+      "pl": "चरन्ति"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "शिष्य",
+    "verb_root": "चर्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "शिष्यः",
+      "du": "शिष्यौ",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "चरति",
+      "du": "चरतः",
+      "pl": "चरन्ति"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "मित्र",
+    "verb_root": "चर्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "मित्रः",
+      "du": "मित्रौ",
+      "pl": "मित्राः"
+    },
+    "verb_forms": {
+      "sg": "चरति",
+      "du": "चरतः",
+      "pl": "चरन्ति"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "पुत्र",
+    "verb_root": "चर्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "पुत्रः",
+      "du": "पुत्रौ",
+      "pl": "पुत्राः"
+    },
+    "verb_forms": {
+      "sg": "चरति",
+      "du": "चरतः",
+      "pl": "चरन्ति"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "नृप",
+    "verb_root": "चर्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "नृपः",
+      "du": "नृपौ",
+      "pl": "नृपाः"
+    },
+    "verb_forms": {
+      "sg": "चरति",
+      "du": "चरतः",
+      "pl": "चरन्ति"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "बालिका",
+    "verb_root": "चर्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "बालिका",
+      "du": "बालिके",
+      "pl": "बालिकाः"
+    },
+    "verb_forms": {
+      "sg": "चरति",
+      "du": "चरतः",
+      "pl": "चरन्ति"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "कन्या",
+    "verb_root": "चर्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "कन्या",
+      "du": "कन्ये",
+      "pl": "कन्याः"
+    },
+    "verb_forms": {
+      "sg": "चरति",
+      "du": "चरतः",
+      "pl": "चरन्ति"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "शिष्या",
+    "verb_root": "चर्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "शिष्या",
+      "du": "शिष्ये",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "चरति",
+      "du": "चरतः",
+      "pl": "चरन्ति"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "अस्मद्",
+    "verb_root": "चर्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "अहम्",
+      "du": "आवाम्",
+      "pl": "वयम्"
+    },
+    "verb_forms": {
+      "sg": "चरामि",
+      "du": "चरावः",
+      "pl": "चरामः"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "युष्मद्",
+    "verb_root": "चर्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "त्वम्",
+      "du": "युवाम्",
+      "pl": "यूयम्"
+    },
+    "verb_forms": {
+      "sg": "चरसि",
+      "du": "चरथः",
+      "pl": "चरथ"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "गज",
+    "verb_root": "चर्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "गजः",
+      "du": "गजौ",
+      "pl": "गजाः"
+    },
+    "verb_forms": {
+      "sg": "चरति",
+      "du": "चरतः",
+      "pl": "चरन्ति"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "मृग",
+    "verb_root": "चर्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "मृगः",
+      "du": "मृगौ",
+      "pl": "मृगाः"
+    },
+    "verb_forms": {
+      "sg": "चरति",
+      "du": "चरतः",
+      "pl": "चरन्ति"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "श्वान",
+    "verb_root": "चर्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "श्वानः",
+      "du": "श्वानौ",
+      "pl": "श्वानाः"
+    },
+    "verb_forms": {
+      "sg": "चरति",
+      "du": "चरतः",
+      "pl": "चरन्ति"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "वृषभ",
+    "verb_root": "चर्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "वृषभः",
+      "du": "वृषभौ",
+      "pl": "वृषभाः"
+    },
+    "verb_forms": {
+      "sg": "चरति",
+      "du": "चरतः",
+      "pl": "चरन्ति"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "सिंह",
+    "verb_root": "चर्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "सिंहः",
+      "du": "सिंहौ",
+      "pl": "सिंहाः"
+    },
+    "verb_forms": {
+      "sg": "चरति",
+      "du": "चरतः",
+      "pl": "चरन्ति"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "वानर",
+    "verb_root": "चर्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "वानरः",
+      "du": "वानरौ",
+      "pl": "वानराः"
+    },
+    "verb_forms": {
+      "sg": "चरति",
+      "du": "चरतः",
+      "pl": "चरन्ति"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "अश्व",
+    "verb_root": "चर्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "अश्वः",
+      "du": "अश्वौ",
+      "pl": "अश्वाः"
+    },
+    "verb_forms": {
+      "sg": "चरति",
+      "du": "चरतः",
+      "pl": "चरन्ति"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "मार्जार",
+    "verb_root": "चर्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "मार्जारः",
+      "du": "मार्जारौ",
+      "pl": "मार्जाराः"
+    },
+    "verb_forms": {
+      "sg": "चरति",
+      "du": "चरतः",
+      "pl": "चरन्ति"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "शृगाल",
+    "verb_root": "चर्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "शृगालः",
+      "du": "शृगालौ",
+      "pl": "शृगालाः"
+    },
+    "verb_forms": {
+      "sg": "चरति",
+      "du": "चरतः",
+      "pl": "चरन्ति"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "बालक",
+    "verb_root": "जल्प्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "बालकः",
+      "du": "बालकौ",
+      "pl": "बालकाः"
+    },
+    "verb_forms": {
+      "sg": "जल्पति",
+      "du": "जल्पतः",
+      "pl": "जल्पन्ति"
+    },
+    "meaning": "to talk"
+  },
+  {
+    "subject_root": "शिष्य",
+    "verb_root": "जल्प्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "शिष्यः",
+      "du": "शिष्यौ",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "जल्पति",
+      "du": "जल्पतः",
+      "pl": "जल्पन्ति"
+    },
+    "meaning": "to talk"
+  },
+  {
+    "subject_root": "मित्र",
+    "verb_root": "जल्प्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "मित्रः",
+      "du": "मित्रौ",
+      "pl": "मित्राः"
+    },
+    "verb_forms": {
+      "sg": "जल्पति",
+      "du": "जल्पतः",
+      "pl": "जल्पन्ति"
+    },
+    "meaning": "to talk"
+  },
+  {
+    "subject_root": "पुत्र",
+    "verb_root": "जल्प्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "पुत्रः",
+      "du": "पुत्रौ",
+      "pl": "पुत्राः"
+    },
+    "verb_forms": {
+      "sg": "जल्पति",
+      "du": "जल्पतः",
+      "pl": "जल्पन्ति"
+    },
+    "meaning": "to talk"
+  },
+  {
+    "subject_root": "नृप",
+    "verb_root": "जल्प्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "नृपः",
+      "du": "नृपौ",
+      "pl": "नृपाः"
+    },
+    "verb_forms": {
+      "sg": "जल्पति",
+      "du": "जल्पतः",
+      "pl": "जल्पन्ति"
+    },
+    "meaning": "to talk"
+  },
+  {
+    "subject_root": "बालिका",
+    "verb_root": "जल्प्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "बालिका",
+      "du": "बालिके",
+      "pl": "बालिकाः"
+    },
+    "verb_forms": {
+      "sg": "जल्पति",
+      "du": "जल्पतः",
+      "pl": "जल्पन्ति"
+    },
+    "meaning": "to talk"
+  },
+  {
+    "subject_root": "कन्या",
+    "verb_root": "जल्प्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "कन्या",
+      "du": "कन्ये",
+      "pl": "कन्याः"
+    },
+    "verb_forms": {
+      "sg": "जल्पति",
+      "du": "जल्पतः",
+      "pl": "जल्पन्ति"
+    },
+    "meaning": "to talk"
+  },
+  {
+    "subject_root": "शिष्या",
+    "verb_root": "जल्प्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "शिष्या",
+      "du": "शिष्ये",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "जल्पति",
+      "du": "जल्पतः",
+      "pl": "जल्पन्ति"
+    },
+    "meaning": "to talk"
+  },
+  {
+    "subject_root": "अस्मद्",
+    "verb_root": "जल्प्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "अहम्",
+      "du": "आवाम्",
+      "pl": "वयम्"
+    },
+    "verb_forms": {
+      "sg": "जल्पामि",
+      "du": "जल्पावः",
+      "pl": "जल्पामः"
+    },
+    "meaning": "to talk"
+  },
+  {
+    "subject_root": "युष्मद्",
+    "verb_root": "जल्प्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "त्वम्",
+      "du": "युवाम्",
+      "pl": "यूयम्"
+    },
+    "verb_forms": {
+      "sg": "जल्पसि",
+      "du": "जल्पथः",
+      "pl": "जल्पथ"
+    },
+    "meaning": "to talk"
+  },
+  {
+    "subject_root": "बालक",
+    "verb_root": "जीव्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "बालकः",
+      "du": "बालकौ",
+      "pl": "बालकाः"
+    },
+    "verb_forms": {
+      "sg": "जीवति",
+      "du": "जीवतः",
+      "pl": "जीवन्ति"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "शिष्य",
+    "verb_root": "जीव्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "शिष्यः",
+      "du": "शिष्यौ",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "जीवति",
+      "du": "जीवतः",
+      "pl": "जीवन्ति"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "मित्र",
+    "verb_root": "जीव्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "मित्रः",
+      "du": "मित्रौ",
+      "pl": "मित्राः"
+    },
+    "verb_forms": {
+      "sg": "जीवति",
+      "du": "जीवतः",
+      "pl": "जीवन्ति"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "पुत्र",
+    "verb_root": "जीव्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "पुत्रः",
+      "du": "पुत्रौ",
+      "pl": "पुत्राः"
+    },
+    "verb_forms": {
+      "sg": "जीवति",
+      "du": "जीवतः",
+      "pl": "जीवन्ति"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "नृप",
+    "verb_root": "जीव्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "नृपः",
+      "du": "नृपौ",
+      "pl": "नृपाः"
+    },
+    "verb_forms": {
+      "sg": "जीवति",
+      "du": "जीवतः",
+      "pl": "जीवन्ति"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "बालिका",
+    "verb_root": "जीव्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "बालिका",
+      "du": "बालिके",
+      "pl": "बालिकाः"
+    },
+    "verb_forms": {
+      "sg": "जीवति",
+      "du": "जीवतः",
+      "pl": "जीवन्ति"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "कन्या",
+    "verb_root": "जीव्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "कन्या",
+      "du": "कन्ये",
+      "pl": "कन्याः"
+    },
+    "verb_forms": {
+      "sg": "जीवति",
+      "du": "जीवतः",
+      "pl": "जीवन्ति"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "शिष्या",
+    "verb_root": "जीव्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "शिष्या",
+      "du": "शिष्ये",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "जीवति",
+      "du": "जीवतः",
+      "pl": "जीवन्ति"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "अस्मद्",
+    "verb_root": "जीव्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "अहम्",
+      "du": "आवाम्",
+      "pl": "वयम्"
+    },
+    "verb_forms": {
+      "sg": "जीवामि",
+      "du": "जीवावः",
+      "pl": "जीवामः"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "युष्मद्",
+    "verb_root": "जीव्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "त्वम्",
+      "du": "युवाम्",
+      "pl": "यूयम्"
+    },
+    "verb_forms": {
+      "sg": "जीवसि",
+      "du": "जीवथः",
+      "pl": "जीवथ"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "गज",
+    "verb_root": "जीव्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "गजः",
+      "du": "गजौ",
+      "pl": "गजाः"
+    },
+    "verb_forms": {
+      "sg": "जीवति",
+      "du": "जीवतः",
+      "pl": "जीवन्ति"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "मृग",
+    "verb_root": "जीव्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "मृगः",
+      "du": "मृगौ",
+      "pl": "मृगाः"
+    },
+    "verb_forms": {
+      "sg": "जीवति",
+      "du": "जीवतः",
+      "pl": "जीवन्ति"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "श्वान",
+    "verb_root": "जीव्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "श्वानः",
+      "du": "श्वानौ",
+      "pl": "श्वानाः"
+    },
+    "verb_forms": {
+      "sg": "जीवति",
+      "du": "जीवतः",
+      "pl": "जीवन्ति"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "वृषभ",
+    "verb_root": "जीव्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "वृषभः",
+      "du": "वृषभौ",
+      "pl": "वृषभाः"
+    },
+    "verb_forms": {
+      "sg": "जीवति",
+      "du": "जीवतः",
+      "pl": "जीवन्ति"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "सिंह",
+    "verb_root": "जीव्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "सिंहः",
+      "du": "सिंहौ",
+      "pl": "सिंहाः"
+    },
+    "verb_forms": {
+      "sg": "जीवति",
+      "du": "जीवतः",
+      "pl": "जीवन्ति"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "वानर",
+    "verb_root": "जीव्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "वानरः",
+      "du": "वानरौ",
+      "pl": "वानराः"
+    },
+    "verb_forms": {
+      "sg": "जीवति",
+      "du": "जीवतः",
+      "pl": "जीवन्ति"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "अश्व",
+    "verb_root": "जीव्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "अश्वः",
+      "du": "अश्वौ",
+      "pl": "अश्वाः"
+    },
+    "verb_forms": {
+      "sg": "जीवति",
+      "du": "जीवतः",
+      "pl": "जीवन्ति"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "मार्जार",
+    "verb_root": "जीव्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "मार्जारः",
+      "du": "मार्जारौ",
+      "pl": "मार्जाराः"
+    },
+    "verb_forms": {
+      "sg": "जीवति",
+      "du": "जीवतः",
+      "pl": "जीवन्ति"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "शृगाल",
+    "verb_root": "जीव्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "शृगालः",
+      "du": "शृगालौ",
+      "pl": "शृगालाः"
+    },
+    "verb_forms": {
+      "sg": "जीवति",
+      "du": "जीवतः",
+      "pl": "जीवन्ति"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "गज",
+    "verb_root": "पत्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "गजः",
+      "du": "गजौ",
+      "pl": "गजाः"
+    },
+    "verb_forms": {
+      "sg": "पतति",
+      "du": "पततः",
+      "pl": "पतन्ति"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "मृग",
+    "verb_root": "पत्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "मृगः",
+      "du": "मृगौ",
+      "pl": "मृगाः"
+    },
+    "verb_forms": {
+      "sg": "पतति",
+      "du": "पततः",
+      "pl": "पतन्ति"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "श्वान",
+    "verb_root": "पत्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "श्वानः",
+      "du": "श्वानौ",
+      "pl": "श्वानाः"
+    },
+    "verb_forms": {
+      "sg": "पतति",
+      "du": "पततः",
+      "pl": "पतन्ति"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "वृषभ",
+    "verb_root": "पत्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "वृषभः",
+      "du": "वृषभौ",
+      "pl": "वृषभाः"
+    },
+    "verb_forms": {
+      "sg": "पतति",
+      "du": "पततः",
+      "pl": "पतन्ति"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "सिंह",
+    "verb_root": "पत्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "सिंहः",
+      "du": "सिंहौ",
+      "pl": "सिंहाः"
+    },
+    "verb_forms": {
+      "sg": "पतति",
+      "du": "पततः",
+      "pl": "पतन्ति"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "वानर",
+    "verb_root": "पत्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "वानरः",
+      "du": "वानरौ",
+      "pl": "वानराः"
+    },
+    "verb_forms": {
+      "sg": "पतति",
+      "du": "पततः",
+      "pl": "पतन्ति"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "अश्व",
+    "verb_root": "पत्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "अश्वः",
+      "du": "अश्वौ",
+      "pl": "अश्वाः"
+    },
+    "verb_forms": {
+      "sg": "पतति",
+      "du": "पततः",
+      "pl": "पतन्ति"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "मार्जार",
+    "verb_root": "पत्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "मार्जारः",
+      "du": "मार्जारौ",
+      "pl": "मार्जाराः"
+    },
+    "verb_forms": {
+      "sg": "पतति",
+      "du": "पततः",
+      "pl": "पतन्ति"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "शृगाल",
+    "verb_root": "पत्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "शृगालः",
+      "du": "शृगालौ",
+      "pl": "शृगालाः"
+    },
+    "verb_forms": {
+      "sg": "पतति",
+      "du": "पततः",
+      "pl": "पतन्ति"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "बालक",
+    "verb_root": "पत्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "बालकः",
+      "du": "बालकौ",
+      "pl": "बालकाः"
+    },
+    "verb_forms": {
+      "sg": "पतति",
+      "du": "पततः",
+      "pl": "पतन्ति"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "शिष्य",
+    "verb_root": "पत्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "शिष्यः",
+      "du": "शिष्यौ",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "पतति",
+      "du": "पततः",
+      "pl": "पतन्ति"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "मित्र",
+    "verb_root": "पत्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "मित्रः",
+      "du": "मित्रौ",
+      "pl": "मित्राः"
+    },
+    "verb_forms": {
+      "sg": "पतति",
+      "du": "पततः",
+      "pl": "पतन्ति"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "पुत्र",
+    "verb_root": "पत्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "पुत्रः",
+      "du": "पुत्रौ",
+      "pl": "पुत्राः"
+    },
+    "verb_forms": {
+      "sg": "पतति",
+      "du": "पततः",
+      "pl": "पतन्ति"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "नृप",
+    "verb_root": "पत्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "नृपः",
+      "du": "नृपौ",
+      "pl": "नृपाः"
+    },
+    "verb_forms": {
+      "sg": "पतति",
+      "du": "पततः",
+      "pl": "पतन्ति"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "बालिका",
+    "verb_root": "पत्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "बालिका",
+      "du": "बालिके",
+      "pl": "बालिकाः"
+    },
+    "verb_forms": {
+      "sg": "पतति",
+      "du": "पततः",
+      "pl": "पतन्ति"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "कन्या",
+    "verb_root": "पत्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "कन्या",
+      "du": "कन्ये",
+      "pl": "कन्याः"
+    },
+    "verb_forms": {
+      "sg": "पतति",
+      "du": "पततः",
+      "pl": "पतन्ति"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "शिष्या",
+    "verb_root": "पत्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "शिष्या",
+      "du": "शिष्ये",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "पतति",
+      "du": "पततः",
+      "pl": "पतन्ति"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "अस्मद्",
+    "verb_root": "पत्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "अहम्",
+      "du": "आवाम्",
+      "pl": "वयम्"
+    },
+    "verb_forms": {
+      "sg": "पतामि",
+      "du": "पतावः",
+      "pl": "पतामः"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "युष्मद्",
+    "verb_root": "पत्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "त्वम्",
+      "du": "युवाम्",
+      "pl": "यूयम्"
+    },
+    "verb_forms": {
+      "sg": "पतसि",
+      "du": "पतथः",
+      "pl": "पतथ"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "बालक",
+    "verb_root": "नश्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "बालकः",
+      "du": "बालकौ",
+      "pl": "बालकाः"
+    },
+    "verb_forms": {
+      "sg": "नश्यति",
+      "du": "नश्यतः",
+      "pl": "नश्यन्ति"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "शिष्य",
+    "verb_root": "नश्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "शिष्यः",
+      "du": "शिष्यौ",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "नश्यति",
+      "du": "नश्यतः",
+      "pl": "नश्यन्ति"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "मित्र",
+    "verb_root": "नश्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "मित्रः",
+      "du": "मित्रौ",
+      "pl": "मित्राः"
+    },
+    "verb_forms": {
+      "sg": "नश्यति",
+      "du": "नश्यतः",
+      "pl": "नश्यन्ति"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "पुत्र",
+    "verb_root": "नश्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "पुत्रः",
+      "du": "पुत्रौ",
+      "pl": "पुत्राः"
+    },
+    "verb_forms": {
+      "sg": "नश्यति",
+      "du": "नश्यतः",
+      "pl": "नश्यन्ति"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "नृप",
+    "verb_root": "नश्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "नृपः",
+      "du": "नृपौ",
+      "pl": "नृपाः"
+    },
+    "verb_forms": {
+      "sg": "नश्यति",
+      "du": "नश्यतः",
+      "pl": "नश्यन्ति"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "बालिका",
+    "verb_root": "नश्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "बालिका",
+      "du": "बालिके",
+      "pl": "बालिकाः"
+    },
+    "verb_forms": {
+      "sg": "नश्यति",
+      "du": "नश्यतः",
+      "pl": "नश्यन्ति"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "कन्या",
+    "verb_root": "नश्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "कन्या",
+      "du": "कन्ये",
+      "pl": "कन्याः"
+    },
+    "verb_forms": {
+      "sg": "नश्यति",
+      "du": "नश्यतः",
+      "pl": "नश्यन्ति"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "शिष्या",
+    "verb_root": "नश्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "शिष्या",
+      "du": "शिष्ये",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "नश्यति",
+      "du": "नश्यतः",
+      "pl": "नश्यन्ति"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "अस्मद्",
+    "verb_root": "नश्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "अहम्",
+      "du": "आवाम्",
+      "pl": "वयम्"
+    },
+    "verb_forms": {
+      "sg": "नश्यामि",
+      "du": "नश्यावः",
+      "pl": "नश्यामः"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "युष्मद्",
+    "verb_root": "नश्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "त्वम्",
+      "du": "युवाम्",
+      "pl": "यूयम्"
+    },
+    "verb_forms": {
+      "sg": "नश्यसि",
+      "du": "नश्यथः",
+      "pl": "नश्यथ"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "गज",
+    "verb_root": "नश्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "गजः",
+      "du": "गजौ",
+      "pl": "गजाः"
+    },
+    "verb_forms": {
+      "sg": "नश्यति",
+      "du": "नश्यतः",
+      "pl": "नश्यन्ति"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "मृग",
+    "verb_root": "नश्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "मृगः",
+      "du": "मृगौ",
+      "pl": "मृगाः"
+    },
+    "verb_forms": {
+      "sg": "नश्यति",
+      "du": "नश्यतः",
+      "pl": "नश्यन्ति"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "श्वान",
+    "verb_root": "नश्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "श्वानः",
+      "du": "श्वानौ",
+      "pl": "श्वानाः"
+    },
+    "verb_forms": {
+      "sg": "नश्यति",
+      "du": "नश्यतः",
+      "pl": "नश्यन्ति"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "वृषभ",
+    "verb_root": "नश्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "वृषभः",
+      "du": "वृषभौ",
+      "pl": "वृषभाः"
+    },
+    "verb_forms": {
+      "sg": "नश्यति",
+      "du": "नश्यतः",
+      "pl": "नश्यन्ति"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "सिंह",
+    "verb_root": "नश्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "सिंहः",
+      "du": "सिंहौ",
+      "pl": "सिंहाः"
+    },
+    "verb_forms": {
+      "sg": "नश्यति",
+      "du": "नश्यतः",
+      "pl": "नश्यन्ति"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "वानर",
+    "verb_root": "नश्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "वानरः",
+      "du": "वानरौ",
+      "pl": "वानराः"
+    },
+    "verb_forms": {
+      "sg": "नश्यति",
+      "du": "नश्यतः",
+      "pl": "नश्यन्ति"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "अश्व",
+    "verb_root": "नश्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "अश्वः",
+      "du": "अश्वौ",
+      "pl": "अश्वाः"
+    },
+    "verb_forms": {
+      "sg": "नश्यति",
+      "du": "नश्यतः",
+      "pl": "नश्यन्ति"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "मार्जार",
+    "verb_root": "नश्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "मार्जारः",
+      "du": "मार्जारौ",
+      "pl": "मार्जाराः"
+    },
+    "verb_forms": {
+      "sg": "नश्यति",
+      "du": "नश्यतः",
+      "pl": "नश्यन्ति"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "शृगाल",
+    "verb_root": "नश्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "शृगालः",
+      "du": "शृगालौ",
+      "pl": "शृगालाः"
+    },
+    "verb_forms": {
+      "sg": "नश्यति",
+      "du": "नश्यतः",
+      "pl": "नश्यन्ति"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "बालक",
+    "verb_root": "नृत्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "बालकः",
+      "du": "बालकौ",
+      "pl": "बालकाः"
+    },
+    "verb_forms": {
+      "sg": "नृत्यति",
+      "du": "नृत्यतः",
+      "pl": "नृत्यन्ति"
+    },
+    "meaning": "to dance"
+  },
+  {
+    "subject_root": "शिष्य",
+    "verb_root": "नृत्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "शिष्यः",
+      "du": "शिष्यौ",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "नृत्यति",
+      "du": "नृत्यतः",
+      "pl": "नृत्यन्ति"
+    },
+    "meaning": "to dance"
+  },
+  {
+    "subject_root": "मित्र",
+    "verb_root": "नृत्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "मित्रः",
+      "du": "मित्रौ",
+      "pl": "मित्राः"
+    },
+    "verb_forms": {
+      "sg": "नृत्यति",
+      "du": "नृत्यतः",
+      "pl": "नृत्यन्ति"
+    },
+    "meaning": "to dance"
+  },
+  {
+    "subject_root": "पुत्र",
+    "verb_root": "नृत्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "पुत्रः",
+      "du": "पुत्रौ",
+      "pl": "पुत्राः"
+    },
+    "verb_forms": {
+      "sg": "नृत्यति",
+      "du": "नृत्यतः",
+      "pl": "नृत्यन्ति"
+    },
+    "meaning": "to dance"
+  },
+  {
+    "subject_root": "नृप",
+    "verb_root": "नृत्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "नृपः",
+      "du": "नृपौ",
+      "pl": "नृपाः"
+    },
+    "verb_forms": {
+      "sg": "नृत्यति",
+      "du": "नृत्यतः",
+      "pl": "नृत्यन्ति"
+    },
+    "meaning": "to dance"
+  },
+  {
+    "subject_root": "बालिका",
+    "verb_root": "नृत्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "बालिका",
+      "du": "बालिके",
+      "pl": "बालिकाः"
+    },
+    "verb_forms": {
+      "sg": "नृत्यति",
+      "du": "नृत्यतः",
+      "pl": "नृत्यन्ति"
+    },
+    "meaning": "to dance"
+  },
+  {
+    "subject_root": "कन्या",
+    "verb_root": "नृत्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "कन्या",
+      "du": "कन्ये",
+      "pl": "कन्याः"
+    },
+    "verb_forms": {
+      "sg": "नृत्यति",
+      "du": "नृत्यतः",
+      "pl": "नृत्यन्ति"
+    },
+    "meaning": "to dance"
+  },
+  {
+    "subject_root": "शिष्या",
+    "verb_root": "नृत्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "शिष्या",
+      "du": "शिष्ये",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "नृत्यति",
+      "du": "नृत्यतः",
+      "pl": "नृत्यन्ति"
+    },
+    "meaning": "to dance"
+  },
+  {
+    "subject_root": "अस्मद्",
+    "verb_root": "नृत्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "अहम्",
+      "du": "आवाम्",
+      "pl": "वयम्"
+    },
+    "verb_forms": {
+      "sg": "नृत्यामि",
+      "du": "नृत्यावः",
+      "pl": "नृत्यामः"
+    },
+    "meaning": "to dance"
+  },
+  {
+    "subject_root": "युष्मद्",
+    "verb_root": "नृत्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "त्वम्",
+      "du": "युवाम्",
+      "pl": "यूयम्"
+    },
+    "verb_forms": {
+      "sg": "नृत्यसि",
+      "du": "नृत्यथः",
+      "pl": "नृत्यथ"
+    },
+    "meaning": "to dance"
+  },
+  {
+    "subject_root": "बालक",
+    "verb_root": "श्रम्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "बालकः",
+      "du": "बालकौ",
+      "pl": "बालकाः"
+    },
+    "verb_forms": {
+      "sg": "श्रम्यति",
+      "du": "श्रम्यतः",
+      "pl": "श्रम्यन्ति"
+    },
+    "meaning": "to labor"
+  },
+  {
+    "subject_root": "शिष्य",
+    "verb_root": "श्रम्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "शिष्यः",
+      "du": "शिष्यौ",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "श्रम्यति",
+      "du": "श्रम्यतः",
+      "pl": "श्रम्यन्ति"
+    },
+    "meaning": "to labor"
+  },
+  {
+    "subject_root": "मित्र",
+    "verb_root": "श्रम्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "मित्रः",
+      "du": "मित्रौ",
+      "pl": "मित्राः"
+    },
+    "verb_forms": {
+      "sg": "श्रम्यति",
+      "du": "श्रम्यतः",
+      "pl": "श्रम्यन्ति"
+    },
+    "meaning": "to labor"
+  },
+  {
+    "subject_root": "पुत्र",
+    "verb_root": "श्रम्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "पुत्रः",
+      "du": "पुत्रौ",
+      "pl": "पुत्राः"
+    },
+    "verb_forms": {
+      "sg": "श्रम्यति",
+      "du": "श्रम्यतः",
+      "pl": "श्रम्यन्ति"
+    },
+    "meaning": "to labor"
+  },
+  {
+    "subject_root": "नृप",
+    "verb_root": "श्रम्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "नृपः",
+      "du": "नृपौ",
+      "pl": "नृपाः"
+    },
+    "verb_forms": {
+      "sg": "श्रम्यति",
+      "du": "श्रम्यतः",
+      "pl": "श्रम्यन्ति"
+    },
+    "meaning": "to labor"
+  },
+  {
+    "subject_root": "बालिका",
+    "verb_root": "श्रम्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "बालिका",
+      "du": "बालिके",
+      "pl": "बालिकाः"
+    },
+    "verb_forms": {
+      "sg": "श्रम्यति",
+      "du": "श्रम्यतः",
+      "pl": "श्रम्यन्ति"
+    },
+    "meaning": "to labor"
+  },
+  {
+    "subject_root": "कन्या",
+    "verb_root": "श्रम्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "कन्या",
+      "du": "कन्ये",
+      "pl": "कन्याः"
+    },
+    "verb_forms": {
+      "sg": "श्रम्यति",
+      "du": "श्रम्यतः",
+      "pl": "श्रम्यन्ति"
+    },
+    "meaning": "to labor"
+  },
+  {
+    "subject_root": "शिष्या",
+    "verb_root": "श्रम्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "शिष्या",
+      "du": "शिष्ये",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "श्रम्यति",
+      "du": "श्रम्यतः",
+      "pl": "श्रम्यन्ति"
+    },
+    "meaning": "to labor"
+  },
+  {
+    "subject_root": "अस्मद्",
+    "verb_root": "श्रम्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "अहम्",
+      "du": "आवाम्",
+      "pl": "वयम्"
+    },
+    "verb_forms": {
+      "sg": "श्रम्यामि",
+      "du": "श्रम्यावः",
+      "pl": "श्रम्यामः"
+    },
+    "meaning": "to labor"
+  },
+  {
+    "subject_root": "युष्मद्",
+    "verb_root": "श्रम्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "त्वम्",
+      "du": "युवाम्",
+      "pl": "यूयम्"
+    },
+    "verb_forms": {
+      "sg": "श्रम्यसि",
+      "du": "श्रम्यथः",
+      "pl": "श्रम्यथ"
+    },
+    "meaning": "to labor"
+  },
+  {
+    "subject_root": "बालक",
+    "verb_root": "चिन्त्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "बालकः",
+      "du": "बालकौ",
+      "pl": "बालकाः"
+    },
+    "verb_forms": {
+      "sg": "चिन्तयति",
+      "du": "चिन्तयतः",
+      "pl": "चिन्तयन्ति"
+    },
+    "meaning": "to think / worry"
+  },
+  {
+    "subject_root": "शिष्य",
+    "verb_root": "चिन्त्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "शिष्यः",
+      "du": "शिष्यौ",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "चिन्तयति",
+      "du": "चिन्तयतः",
+      "pl": "चिन्तयन्ति"
+    },
+    "meaning": "to think / worry"
+  },
+  {
+    "subject_root": "मित्र",
+    "verb_root": "चिन्त्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "मित्रः",
+      "du": "मित्रौ",
+      "pl": "मित्राः"
+    },
+    "verb_forms": {
+      "sg": "चिन्तयति",
+      "du": "चिन्तयतः",
+      "pl": "चिन्तयन्ति"
+    },
+    "meaning": "to think / worry"
+  },
+  {
+    "subject_root": "पुत्र",
+    "verb_root": "चिन्त्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "पुत्रः",
+      "du": "पुत्रौ",
+      "pl": "पुत्राः"
+    },
+    "verb_forms": {
+      "sg": "चिन्तयति",
+      "du": "चिन्तयतः",
+      "pl": "चिन्तयन्ति"
+    },
+    "meaning": "to think / worry"
+  },
+  {
+    "subject_root": "नृप",
+    "verb_root": "चिन्त्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "नृपः",
+      "du": "नृपौ",
+      "pl": "नृपाः"
+    },
+    "verb_forms": {
+      "sg": "चिन्तयति",
+      "du": "चिन्तयतः",
+      "pl": "चिन्तयन्ति"
+    },
+    "meaning": "to think / worry"
+  },
+  {
+    "subject_root": "बालिका",
+    "verb_root": "चिन्त्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "बालिका",
+      "du": "बालिके",
+      "pl": "बालिकाः"
+    },
+    "verb_forms": {
+      "sg": "चिन्तयति",
+      "du": "चिन्तयतः",
+      "pl": "चिन्तयन्ति"
+    },
+    "meaning": "to think / worry"
+  },
+  {
+    "subject_root": "कन्या",
+    "verb_root": "चिन्त्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "कन्या",
+      "du": "कन्ये",
+      "pl": "कन्याः"
+    },
+    "verb_forms": {
+      "sg": "चिन्तयति",
+      "du": "चिन्तयतः",
+      "pl": "चिन्तयन्ति"
+    },
+    "meaning": "to think / worry"
+  },
+  {
+    "subject_root": "शिष्या",
+    "verb_root": "चिन्त्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "शिष्या",
+      "du": "शिष्ये",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "चिन्तयति",
+      "du": "चिन्तयतः",
+      "pl": "चिन्तयन्ति"
+    },
+    "meaning": "to think / worry"
+  },
+  {
+    "subject_root": "अस्मद्",
+    "verb_root": "चिन्त्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "अहम्",
+      "du": "आवाम्",
+      "pl": "वयम्"
+    },
+    "verb_forms": {
+      "sg": "चिन्तयामि",
+      "du": "चिन्तयावः",
+      "pl": "चिन्तयामः"
+    },
+    "meaning": "to think / worry"
+  },
+  {
+    "subject_root": "युष्मद्",
+    "verb_root": "चिन्त्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "त्वम्",
+      "du": "युवाम्",
+      "pl": "यूयम्"
+    },
+    "verb_forms": {
+      "sg": "चिन्तयसि",
+      "du": "चिन्तयथः",
+      "pl": "चिन्तयथ"
+    },
+    "meaning": "to think / worry"
+  },
+  {
+    "subject_root": "बालक",
+    "verb_root": "शिक्ष्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "बालकः",
+      "du": "बालकौ",
+      "pl": "बालकाः"
+    },
+    "verb_forms": {
+      "sg": "शिक्षयति",
+      "du": "शिक्षयतः",
+      "pl": "शिक्षयन्ति"
+    },
+    "meaning": "to teach / to learn"
+  },
+  {
+    "subject_root": "शिष्य",
+    "verb_root": "शिक्ष्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "शिष्यः",
+      "du": "शिष्यौ",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "शिक्षयति",
+      "du": "शिक्षयतः",
+      "pl": "शिक्षयन्ति"
+    },
+    "meaning": "to teach / to learn"
+  },
+  {
+    "subject_root": "मित्र",
+    "verb_root": "शिक्ष्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "मित्रः",
+      "du": "मित्रौ",
+      "pl": "मित्राः"
+    },
+    "verb_forms": {
+      "sg": "शिक्षयति",
+      "du": "शिक्षयतः",
+      "pl": "शिक्षयन्ति"
+    },
+    "meaning": "to teach / to learn"
+  },
+  {
+    "subject_root": "पुत्र",
+    "verb_root": "शिक्ष्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "पुत्रः",
+      "du": "पुत्रौ",
+      "pl": "पुत्राः"
+    },
+    "verb_forms": {
+      "sg": "शिक्षयति",
+      "du": "शिक्षयतः",
+      "pl": "शिक्षयन्ति"
+    },
+    "meaning": "to teach / to learn"
+  },
+  {
+    "subject_root": "नृप",
+    "verb_root": "शिक्ष्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "नृपः",
+      "du": "नृपौ",
+      "pl": "नृपाः"
+    },
+    "verb_forms": {
+      "sg": "शिक्षयति",
+      "du": "शिक्षयतः",
+      "pl": "शिक्षयन्ति"
+    },
+    "meaning": "to teach / to learn"
+  },
+  {
+    "subject_root": "बालिका",
+    "verb_root": "शिक्ष्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "बालिका",
+      "du": "बालिके",
+      "pl": "बालिकाः"
+    },
+    "verb_forms": {
+      "sg": "शिक्षयति",
+      "du": "शिक्षयतः",
+      "pl": "शिक्षयन्ति"
+    },
+    "meaning": "to teach / to learn"
+  },
+  {
+    "subject_root": "कन्या",
+    "verb_root": "शिक्ष्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "कन्या",
+      "du": "कन्ये",
+      "pl": "कन्याः"
+    },
+    "verb_forms": {
+      "sg": "शिक्षयति",
+      "du": "शिक्षयतः",
+      "pl": "शिक्षयन्ति"
+    },
+    "meaning": "to teach / to learn"
+  },
+  {
+    "subject_root": "शिष्या",
+    "verb_root": "शिक्ष्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "शिष्या",
+      "du": "शिष्ये",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "शिक्षयति",
+      "du": "शिक्षयतः",
+      "pl": "शिक्षयन्ति"
+    },
+    "meaning": "to teach / to learn"
+  },
+  {
+    "subject_root": "अस्मद्",
+    "verb_root": "शिक्ष्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "अहम्",
+      "du": "आवाम्",
+      "pl": "वयम्"
+    },
+    "verb_forms": {
+      "sg": "शिक्षयामि",
+      "du": "शिक्षयावः",
+      "pl": "शिक्षयामः"
+    },
+    "meaning": "to teach / to learn"
+  },
+  {
+    "subject_root": "युष्मद्",
+    "verb_root": "शिक्ष्",
+    "tense": "present",
+    "subject_forms": {
+      "sg": "त्वम्",
+      "du": "युवाम्",
+      "pl": "यूयम्"
+    },
+    "verb_forms": {
+      "sg": "शिक्षयसि",
+      "du": "शिक्षयथः",
+      "pl": "शिक्षयथ"
+    },
+    "meaning": "to teach / to learn"
+  },
+  {
+    "subject_root": "बालक",
+    "verb_root": "गच्छ्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "बालकः",
+      "du": "बालकौ",
+      "pl": "बालकाः"
+    },
+    "verb_forms": {
+      "sg": "अगच्छत्",
+      "du": "अगच्छताम्",
+      "pl": "अगच्छन्"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "शिष्य",
+    "verb_root": "गच्छ्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "शिष्यः",
+      "du": "शिष्यौ",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "अगच्छत्",
+      "du": "अगच्छताम्",
+      "pl": "अगच्छन्"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "मित्र",
+    "verb_root": "गच्छ्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "मित्रः",
+      "du": "मित्रौ",
+      "pl": "मित्राः"
+    },
+    "verb_forms": {
+      "sg": "अगच्छत्",
+      "du": "अगच्छताम्",
+      "pl": "अगच्छन्"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "पुत्र",
+    "verb_root": "गच्छ्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "पुत्रः",
+      "du": "पुत्रौ",
+      "pl": "पुत्राः"
+    },
+    "verb_forms": {
+      "sg": "अगच्छत्",
+      "du": "अगच्छताम्",
+      "pl": "अगच्छन्"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "नृप",
+    "verb_root": "गच्छ्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "नृपः",
+      "du": "नृपौ",
+      "pl": "नृपाः"
+    },
+    "verb_forms": {
+      "sg": "अगच्छत्",
+      "du": "अगच्छताम्",
+      "pl": "अगच्छन्"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "बालिका",
+    "verb_root": "गच्छ्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "बालिका",
+      "du": "बालिके",
+      "pl": "बालिकाः"
+    },
+    "verb_forms": {
+      "sg": "अगच्छत्",
+      "du": "अगच्छताम्",
+      "pl": "अगच्छन्"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "कन्या",
+    "verb_root": "गच्छ्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "कन्या",
+      "du": "कन्ये",
+      "pl": "कन्याः"
+    },
+    "verb_forms": {
+      "sg": "अगच्छत्",
+      "du": "अगच्छताम्",
+      "pl": "अगच्छन्"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "शिष्या",
+    "verb_root": "गच्छ्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "शिष्या",
+      "du": "शिष्ये",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "अगच्छत्",
+      "du": "अगच्छताम्",
+      "pl": "अगच्छन्"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "अस्मद्",
+    "verb_root": "गच्छ्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "अहम्",
+      "du": "आवाम्",
+      "pl": "वयम्"
+    },
+    "verb_forms": {
+      "sg": "अगच्छम्",
+      "du": "अगच्छाव",
+      "pl": "अगच्छाम"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "युष्मद्",
+    "verb_root": "गच्छ्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "त्वम्",
+      "du": "युवाम्",
+      "pl": "यूयम्"
+    },
+    "verb_forms": {
+      "sg": "अगच्छः",
+      "du": "अगच्छतम्",
+      "pl": "अगच्छत"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "गज",
+    "verb_root": "गच्छ्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "गजः",
+      "du": "गजौ",
+      "pl": "गजाः"
+    },
+    "verb_forms": {
+      "sg": "अगच्छत्",
+      "du": "अगच्छताम्",
+      "pl": "अगच्छन्"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "मृग",
+    "verb_root": "गच्छ्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "मृगः",
+      "du": "मृगौ",
+      "pl": "मृगाः"
+    },
+    "verb_forms": {
+      "sg": "अगच्छत्",
+      "du": "अगच्छताम्",
+      "pl": "अगच्छन्"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "श्वान",
+    "verb_root": "गच्छ्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "श्वानः",
+      "du": "श्वानौ",
+      "pl": "श्वानाः"
+    },
+    "verb_forms": {
+      "sg": "अगच्छत्",
+      "du": "अगच्छताम्",
+      "pl": "अगच्छन्"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "वृषभ",
+    "verb_root": "गच्छ्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "वृषभः",
+      "du": "वृषभौ",
+      "pl": "वृषभाः"
+    },
+    "verb_forms": {
+      "sg": "अगच्छत्",
+      "du": "अगच्छताम्",
+      "pl": "अगच्छन्"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "सिंह",
+    "verb_root": "गच्छ्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "सिंहः",
+      "du": "सिंहौ",
+      "pl": "सिंहाः"
+    },
+    "verb_forms": {
+      "sg": "अगच्छत्",
+      "du": "अगच्छताम्",
+      "pl": "अगच्छन्"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "वानर",
+    "verb_root": "गच्छ्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "वानरः",
+      "du": "वानरौ",
+      "pl": "वानराः"
+    },
+    "verb_forms": {
+      "sg": "अगच्छत्",
+      "du": "अगच्छताम्",
+      "pl": "अगच्छन्"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "अश्व",
+    "verb_root": "गच्छ्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "अश्वः",
+      "du": "अश्वौ",
+      "pl": "अश्वाः"
+    },
+    "verb_forms": {
+      "sg": "अगच्छत्",
+      "du": "अगच्छताम्",
+      "pl": "अगच्छन्"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "मार्जार",
+    "verb_root": "गच्छ्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "मार्जारः",
+      "du": "मार्जारौ",
+      "pl": "मार्जाराः"
+    },
+    "verb_forms": {
+      "sg": "अगच्छत्",
+      "du": "अगच्छताम्",
+      "pl": "अगच्छन्"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "शृगाल",
+    "verb_root": "गच्छ्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "शृगालः",
+      "du": "शृगालौ",
+      "pl": "शृगालाः"
+    },
+    "verb_forms": {
+      "sg": "अगच्छत्",
+      "du": "अगच्छताम्",
+      "pl": "अगच्छन्"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "बालक",
+    "verb_root": "धाव्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "बालकः",
+      "du": "बालकौ",
+      "pl": "बालकाः"
+    },
+    "verb_forms": {
+      "sg": "अधावत्",
+      "du": "अधावताम्",
+      "pl": "अधावन्"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "शिष्य",
+    "verb_root": "धाव्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "शिष्यः",
+      "du": "शिष्यौ",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "अधावत्",
+      "du": "अधावताम्",
+      "pl": "अधावन्"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "मित्र",
+    "verb_root": "धाव्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "मित्रः",
+      "du": "मित्रौ",
+      "pl": "मित्राः"
+    },
+    "verb_forms": {
+      "sg": "अधावत्",
+      "du": "अधावताम्",
+      "pl": "अधावन्"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "पुत्र",
+    "verb_root": "धाव्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "पुत्रः",
+      "du": "पुत्रौ",
+      "pl": "पुत्राः"
+    },
+    "verb_forms": {
+      "sg": "अधावत्",
+      "du": "अधावताम्",
+      "pl": "अधावन्"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "नृप",
+    "verb_root": "धाव्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "नृपः",
+      "du": "नृपौ",
+      "pl": "नृपाः"
+    },
+    "verb_forms": {
+      "sg": "अधावत्",
+      "du": "अधावताम्",
+      "pl": "अधावन्"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "बालिका",
+    "verb_root": "धाव्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "बालिका",
+      "du": "बालिके",
+      "pl": "बालिकाः"
+    },
+    "verb_forms": {
+      "sg": "अधावत्",
+      "du": "अधावताम्",
+      "pl": "अधावन्"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "कन्या",
+    "verb_root": "धाव्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "कन्या",
+      "du": "कन्ये",
+      "pl": "कन्याः"
+    },
+    "verb_forms": {
+      "sg": "अधावत्",
+      "du": "अधावताम्",
+      "pl": "अधावन्"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "शिष्या",
+    "verb_root": "धाव्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "शिष्या",
+      "du": "शिष्ये",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "अधावत्",
+      "du": "अधावताम्",
+      "pl": "अधावन्"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "अस्मद्",
+    "verb_root": "धाव्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "अहम्",
+      "du": "आवाम्",
+      "pl": "वयम्"
+    },
+    "verb_forms": {
+      "sg": "अधावम्",
+      "du": "अधावाव",
+      "pl": "अधावाम"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "युष्मद्",
+    "verb_root": "धाव्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "त्वम्",
+      "du": "युवाम्",
+      "pl": "यूयम्"
+    },
+    "verb_forms": {
+      "sg": "अधावः",
+      "du": "अधावतम्",
+      "pl": "अधावत"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "गज",
+    "verb_root": "धाव्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "गजः",
+      "du": "गजौ",
+      "pl": "गजाः"
+    },
+    "verb_forms": {
+      "sg": "अधावत्",
+      "du": "अधावताम्",
+      "pl": "अधावन्"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "मृग",
+    "verb_root": "धाव्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "मृगः",
+      "du": "मृगौ",
+      "pl": "मृगाः"
+    },
+    "verb_forms": {
+      "sg": "अधावत्",
+      "du": "अधावताम्",
+      "pl": "अधावन्"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "श्वान",
+    "verb_root": "धाव्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "श्वानः",
+      "du": "श्वानौ",
+      "pl": "श्वानाः"
+    },
+    "verb_forms": {
+      "sg": "अधावत्",
+      "du": "अधावताम्",
+      "pl": "अधावन्"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "वृषभ",
+    "verb_root": "धाव्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "वृषभः",
+      "du": "वृषभौ",
+      "pl": "वृषभाः"
+    },
+    "verb_forms": {
+      "sg": "अधावत्",
+      "du": "अधावताम्",
+      "pl": "अधावन्"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "सिंह",
+    "verb_root": "धाव्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "सिंहः",
+      "du": "सिंहौ",
+      "pl": "सिंहाः"
+    },
+    "verb_forms": {
+      "sg": "अधावत्",
+      "du": "अधावताम्",
+      "pl": "अधावन्"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "वानर",
+    "verb_root": "धाव्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "वानरः",
+      "du": "वानरौ",
+      "pl": "वानराः"
+    },
+    "verb_forms": {
+      "sg": "अधावत्",
+      "du": "अधावताम्",
+      "pl": "अधावन्"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "अश्व",
+    "verb_root": "धाव्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "अश्वः",
+      "du": "अश्वौ",
+      "pl": "अश्वाः"
+    },
+    "verb_forms": {
+      "sg": "अधावत्",
+      "du": "अधावताम्",
+      "pl": "अधावन्"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "मार्जार",
+    "verb_root": "धाव्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "मार्जारः",
+      "du": "मार्जारौ",
+      "pl": "मार्जाराः"
+    },
+    "verb_forms": {
+      "sg": "अधावत्",
+      "du": "अधावताम्",
+      "pl": "अधावन्"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "शृगाल",
+    "verb_root": "धाव्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "शृगालः",
+      "du": "शृगालौ",
+      "pl": "शृगालाः"
+    },
+    "verb_forms": {
+      "sg": "अधावत्",
+      "du": "अधावताम्",
+      "pl": "अधावन्"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "बालक",
+    "verb_root": "हस्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "बालकः",
+      "du": "बालकौ",
+      "pl": "बालकाः"
+    },
+    "verb_forms": {
+      "sg": "अहसत्",
+      "du": "अहसताम्",
+      "pl": "अहसन्"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "शिष्य",
+    "verb_root": "हस्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "शिष्यः",
+      "du": "शिष्यौ",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "अहसत्",
+      "du": "अहसताम्",
+      "pl": "अहसन्"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "मित्र",
+    "verb_root": "हस्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "मित्रः",
+      "du": "मित्रौ",
+      "pl": "मित्राः"
+    },
+    "verb_forms": {
+      "sg": "अहसत्",
+      "du": "अहसताम्",
+      "pl": "अहसन्"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "पुत्र",
+    "verb_root": "हस्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "पुत्रः",
+      "du": "पुत्रौ",
+      "pl": "पुत्राः"
+    },
+    "verb_forms": {
+      "sg": "अहसत्",
+      "du": "अहसताम्",
+      "pl": "अहसन्"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "नृप",
+    "verb_root": "हस्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "नृपः",
+      "du": "नृपौ",
+      "pl": "नृपाः"
+    },
+    "verb_forms": {
+      "sg": "अहसत्",
+      "du": "अहसताम्",
+      "pl": "अहसन्"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "बालिका",
+    "verb_root": "हस्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "बालिका",
+      "du": "बालिके",
+      "pl": "बालिकाः"
+    },
+    "verb_forms": {
+      "sg": "अहसत्",
+      "du": "अहसताम्",
+      "pl": "अहसन्"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "कन्या",
+    "verb_root": "हस्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "कन्या",
+      "du": "कन्ये",
+      "pl": "कन्याः"
+    },
+    "verb_forms": {
+      "sg": "अहसत्",
+      "du": "अहसताम्",
+      "pl": "अहसन्"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "शिष्या",
+    "verb_root": "हस्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "शिष्या",
+      "du": "शिष्ये",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "अहसत्",
+      "du": "अहसताम्",
+      "pl": "अहसन्"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "अस्मद्",
+    "verb_root": "हस्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "अहम्",
+      "du": "आवाम्",
+      "pl": "वयम्"
+    },
+    "verb_forms": {
+      "sg": "अहसम्",
+      "du": "अहसाव",
+      "pl": "अहसाम"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "युष्मद्",
+    "verb_root": "हस्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "त्वम्",
+      "du": "युवाम्",
+      "pl": "यूयम्"
+    },
+    "verb_forms": {
+      "sg": "अहसः",
+      "du": "अहसतम्",
+      "pl": "अहसत"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "गज",
+    "verb_root": "हस्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "गजः",
+      "du": "गजौ",
+      "pl": "गजाः"
+    },
+    "verb_forms": {
+      "sg": "अहसत्",
+      "du": "अहसताम्",
+      "pl": "अहसन्"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "मृग",
+    "verb_root": "हस्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "मृगः",
+      "du": "मृगौ",
+      "pl": "मृगाः"
+    },
+    "verb_forms": {
+      "sg": "अहसत्",
+      "du": "अहसताम्",
+      "pl": "अहसन्"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "श्वान",
+    "verb_root": "हस्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "श्वानः",
+      "du": "श्वानौ",
+      "pl": "श्वानाः"
+    },
+    "verb_forms": {
+      "sg": "अहसत्",
+      "du": "अहसताम्",
+      "pl": "अहसन्"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "वृषभ",
+    "verb_root": "हस्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "वृषभः",
+      "du": "वृषभौ",
+      "pl": "वृषभाः"
+    },
+    "verb_forms": {
+      "sg": "अहसत्",
+      "du": "अहसताम्",
+      "pl": "अहसन्"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "सिंह",
+    "verb_root": "हस्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "सिंहः",
+      "du": "सिंहौ",
+      "pl": "सिंहाः"
+    },
+    "verb_forms": {
+      "sg": "अहसत्",
+      "du": "अहसताम्",
+      "pl": "अहसन्"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "वानर",
+    "verb_root": "हस्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "वानरः",
+      "du": "वानरौ",
+      "pl": "वानराः"
+    },
+    "verb_forms": {
+      "sg": "अहसत्",
+      "du": "अहसताम्",
+      "pl": "अहसन्"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "अश्व",
+    "verb_root": "हस्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "अश्वः",
+      "du": "अश्वौ",
+      "pl": "अश्वाः"
+    },
+    "verb_forms": {
+      "sg": "अहसत्",
+      "du": "अहसताम्",
+      "pl": "अहसन्"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "मार्जार",
+    "verb_root": "हस्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "मार्जारः",
+      "du": "मार्जारौ",
+      "pl": "मार्जाराः"
+    },
+    "verb_forms": {
+      "sg": "अहसत्",
+      "du": "अहसताम्",
+      "pl": "अहसन्"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "शृगाल",
+    "verb_root": "हस्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "शृगालः",
+      "du": "शृगालौ",
+      "pl": "शृगालाः"
+    },
+    "verb_forms": {
+      "sg": "अहसत्",
+      "du": "अहसताम्",
+      "pl": "अहसन्"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "बालक",
+    "verb_root": "क्रीड्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "बालकः",
+      "du": "बालकौ",
+      "pl": "बालकाः"
+    },
+    "verb_forms": {
+      "sg": "अक्रीडत्",
+      "du": "अक्रीडताम्",
+      "pl": "अक्रीडन्"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "शिष्य",
+    "verb_root": "क्रीड्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "शिष्यः",
+      "du": "शिष्यौ",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "अक्रीडत्",
+      "du": "अक्रीडताम्",
+      "pl": "अक्रीडन्"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "मित्र",
+    "verb_root": "क्रीड्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "मित्रः",
+      "du": "मित्रौ",
+      "pl": "मित्राः"
+    },
+    "verb_forms": {
+      "sg": "अक्रीडत्",
+      "du": "अक्रीडताम्",
+      "pl": "अक्रीडन्"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "पुत्र",
+    "verb_root": "क्रीड्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "पुत्रः",
+      "du": "पुत्रौ",
+      "pl": "पुत्राः"
+    },
+    "verb_forms": {
+      "sg": "अक्रीडत्",
+      "du": "अक्रीडताम्",
+      "pl": "अक्रीडन्"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "नृप",
+    "verb_root": "क्रीड्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "नृपः",
+      "du": "नृपौ",
+      "pl": "नृपाः"
+    },
+    "verb_forms": {
+      "sg": "अक्रीडत्",
+      "du": "अक्रीडताम्",
+      "pl": "अक्रीडन्"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "बालिका",
+    "verb_root": "क्रीड्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "बालिका",
+      "du": "बालिके",
+      "pl": "बालिकाः"
+    },
+    "verb_forms": {
+      "sg": "अक्रीडत्",
+      "du": "अक्रीडताम्",
+      "pl": "अक्रीडन्"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "कन्या",
+    "verb_root": "क्रीड्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "कन्या",
+      "du": "कन्ये",
+      "pl": "कन्याः"
+    },
+    "verb_forms": {
+      "sg": "अक्रीडत्",
+      "du": "अक्रीडताम्",
+      "pl": "अक्रीडन्"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "शिष्या",
+    "verb_root": "क्रीड्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "शिष्या",
+      "du": "शिष्ये",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "अक्रीडत्",
+      "du": "अक्रीडताम्",
+      "pl": "अक्रीडन्"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "अस्मद्",
+    "verb_root": "क्रीड्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "अहम्",
+      "du": "आवाम्",
+      "pl": "वयम्"
+    },
+    "verb_forms": {
+      "sg": "अक्रीडम्",
+      "du": "अक्रीडाव",
+      "pl": "अक्रीडाम"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "युष्मद्",
+    "verb_root": "क्रीड्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "त्वम्",
+      "du": "युवाम्",
+      "pl": "यूयम्"
+    },
+    "verb_forms": {
+      "sg": "अक्रीडः",
+      "du": "अक्रीडतम्",
+      "pl": "अक्रीडत"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "गज",
+    "verb_root": "क्रीड्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "गजः",
+      "du": "गजौ",
+      "pl": "गजाः"
+    },
+    "verb_forms": {
+      "sg": "अक्रीडत्",
+      "du": "अक्रीडताम्",
+      "pl": "अक्रीडन्"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "मृग",
+    "verb_root": "क्रीड्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "मृगः",
+      "du": "मृगौ",
+      "pl": "मृगाः"
+    },
+    "verb_forms": {
+      "sg": "अक्रीडत्",
+      "du": "अक्रीडताम्",
+      "pl": "अक्रीडन्"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "श्वान",
+    "verb_root": "क्रीड्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "श्वानः",
+      "du": "श्वानौ",
+      "pl": "श्वानाः"
+    },
+    "verb_forms": {
+      "sg": "अक्रीडत्",
+      "du": "अक्रीडताम्",
+      "pl": "अक्रीडन्"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "वृषभ",
+    "verb_root": "क्रीड्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "वृषभः",
+      "du": "वृषभौ",
+      "pl": "वृषभाः"
+    },
+    "verb_forms": {
+      "sg": "अक्रीडत्",
+      "du": "अक्रीडताम्",
+      "pl": "अक्रीडन्"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "सिंह",
+    "verb_root": "क्रीड्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "सिंहः",
+      "du": "सिंहौ",
+      "pl": "सिंहाः"
+    },
+    "verb_forms": {
+      "sg": "अक्रीडत्",
+      "du": "अक्रीडताम्",
+      "pl": "अक्रीडन्"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "वानर",
+    "verb_root": "क्रीड्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "वानरः",
+      "du": "वानरौ",
+      "pl": "वानराः"
+    },
+    "verb_forms": {
+      "sg": "अक्रीडत्",
+      "du": "अक्रीडताम्",
+      "pl": "अक्रीडन्"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "अश्व",
+    "verb_root": "क्रीड्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "अश्वः",
+      "du": "अश्वौ",
+      "pl": "अश्वाः"
+    },
+    "verb_forms": {
+      "sg": "अक्रीडत्",
+      "du": "अक्रीडताम्",
+      "pl": "अक्रीडन्"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "मार्जार",
+    "verb_root": "क्रीड्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "मार्जारः",
+      "du": "मार्जारौ",
+      "pl": "मार्जाराः"
+    },
+    "verb_forms": {
+      "sg": "अक्रीडत्",
+      "du": "अक्रीडताम्",
+      "pl": "अक्रीडन्"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "शृगाल",
+    "verb_root": "क्रीड्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "शृगालः",
+      "du": "शृगालौ",
+      "pl": "शृगालाः"
+    },
+    "verb_forms": {
+      "sg": "अक्रीडत्",
+      "du": "अक्रीडताम्",
+      "pl": "अक्रीडन्"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "बालक",
+    "verb_root": "चर्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "बालकः",
+      "du": "बालकौ",
+      "pl": "बालकाः"
+    },
+    "verb_forms": {
+      "sg": "अचरत्",
+      "du": "अचरताम्",
+      "pl": "अचरन्"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "शिष्य",
+    "verb_root": "चर्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "शिष्यः",
+      "du": "शिष्यौ",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "अचरत्",
+      "du": "अचरताम्",
+      "pl": "अचरन्"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "मित्र",
+    "verb_root": "चर्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "मित्रः",
+      "du": "मित्रौ",
+      "pl": "मित्राः"
+    },
+    "verb_forms": {
+      "sg": "अचरत्",
+      "du": "अचरताम्",
+      "pl": "अचरन्"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "पुत्र",
+    "verb_root": "चर्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "पुत्रः",
+      "du": "पुत्रौ",
+      "pl": "पुत्राः"
+    },
+    "verb_forms": {
+      "sg": "अचरत्",
+      "du": "अचरताम्",
+      "pl": "अचरन्"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "नृप",
+    "verb_root": "चर्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "नृपः",
+      "du": "नृपौ",
+      "pl": "नृपाः"
+    },
+    "verb_forms": {
+      "sg": "अचरत्",
+      "du": "अचरताम्",
+      "pl": "अचरन्"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "बालिका",
+    "verb_root": "चर्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "बालिका",
+      "du": "बालिके",
+      "pl": "बालिकाः"
+    },
+    "verb_forms": {
+      "sg": "अचरत्",
+      "du": "अचरताम्",
+      "pl": "अचरन्"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "कन्या",
+    "verb_root": "चर्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "कन्या",
+      "du": "कन्ये",
+      "pl": "कन्याः"
+    },
+    "verb_forms": {
+      "sg": "अचरत्",
+      "du": "अचरताम्",
+      "pl": "अचरन्"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "शिष्या",
+    "verb_root": "चर्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "शिष्या",
+      "du": "शिष्ये",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "अचरत्",
+      "du": "अचरताम्",
+      "pl": "अचरन्"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "अस्मद्",
+    "verb_root": "चर्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "अहम्",
+      "du": "आवाम्",
+      "pl": "वयम्"
+    },
+    "verb_forms": {
+      "sg": "अचरम्",
+      "du": "अचराव",
+      "pl": "अचराम"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "युष्मद्",
+    "verb_root": "चर्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "त्वम्",
+      "du": "युवाम्",
+      "pl": "यूयम्"
+    },
+    "verb_forms": {
+      "sg": "अचरः",
+      "du": "अचरतम्",
+      "pl": "अचरत"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "गज",
+    "verb_root": "चर्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "गजः",
+      "du": "गजौ",
+      "pl": "गजाः"
+    },
+    "verb_forms": {
+      "sg": "अचरत्",
+      "du": "अचरताम्",
+      "pl": "अचरन्"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "मृग",
+    "verb_root": "चर्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "मृगः",
+      "du": "मृगौ",
+      "pl": "मृगाः"
+    },
+    "verb_forms": {
+      "sg": "अचरत्",
+      "du": "अचरताम्",
+      "pl": "अचरन्"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "श्वान",
+    "verb_root": "चर्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "श्वानः",
+      "du": "श्वानौ",
+      "pl": "श्वानाः"
+    },
+    "verb_forms": {
+      "sg": "अचरत्",
+      "du": "अचरताम्",
+      "pl": "अचरन्"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "वृषभ",
+    "verb_root": "चर्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "वृषभः",
+      "du": "वृषभौ",
+      "pl": "वृषभाः"
+    },
+    "verb_forms": {
+      "sg": "अचरत्",
+      "du": "अचरताम्",
+      "pl": "अचरन्"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "सिंह",
+    "verb_root": "चर्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "सिंहः",
+      "du": "सिंहौ",
+      "pl": "सिंहाः"
+    },
+    "verb_forms": {
+      "sg": "अचरत्",
+      "du": "अचरताम्",
+      "pl": "अचरन्"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "वानर",
+    "verb_root": "चर्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "वानरः",
+      "du": "वानरौ",
+      "pl": "वानराः"
+    },
+    "verb_forms": {
+      "sg": "अचरत्",
+      "du": "अचरताम्",
+      "pl": "अचरन्"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "अश्व",
+    "verb_root": "चर्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "अश्वः",
+      "du": "अश्वौ",
+      "pl": "अश्वाः"
+    },
+    "verb_forms": {
+      "sg": "अचरत्",
+      "du": "अचरताम्",
+      "pl": "अचरन्"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "मार्जार",
+    "verb_root": "चर्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "मार्जारः",
+      "du": "मार्जारौ",
+      "pl": "मार्जाराः"
+    },
+    "verb_forms": {
+      "sg": "अचरत्",
+      "du": "अचरताम्",
+      "pl": "अचरन्"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "शृगाल",
+    "verb_root": "चर्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "शृगालः",
+      "du": "शृगालौ",
+      "pl": "शृगालाः"
+    },
+    "verb_forms": {
+      "sg": "अचरत्",
+      "du": "अचरताम्",
+      "pl": "अचरन्"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "बालक",
+    "verb_root": "जल्प्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "बालकः",
+      "du": "बालकौ",
+      "pl": "बालकाः"
+    },
+    "verb_forms": {
+      "sg": "अजल्पत्",
+      "du": "अजल्पताम्",
+      "pl": "अजल्पन्"
+    },
+    "meaning": "to talk"
+  },
+  {
+    "subject_root": "शिष्य",
+    "verb_root": "जल्प्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "शिष्यः",
+      "du": "शिष्यौ",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "अजल्पत्",
+      "du": "अजल्पताम्",
+      "pl": "अजल्पन्"
+    },
+    "meaning": "to talk"
+  },
+  {
+    "subject_root": "मित्र",
+    "verb_root": "जल्प्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "मित्रः",
+      "du": "मित्रौ",
+      "pl": "मित्राः"
+    },
+    "verb_forms": {
+      "sg": "अजल्पत्",
+      "du": "अजल्पताम्",
+      "pl": "अजल्पन्"
+    },
+    "meaning": "to talk"
+  },
+  {
+    "subject_root": "पुत्र",
+    "verb_root": "जल्प्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "पुत्रः",
+      "du": "पुत्रौ",
+      "pl": "पुत्राः"
+    },
+    "verb_forms": {
+      "sg": "अजल्पत्",
+      "du": "अजल्पताम्",
+      "pl": "अजल्पन्"
+    },
+    "meaning": "to talk"
+  },
+  {
+    "subject_root": "नृप",
+    "verb_root": "जल्प्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "नृपः",
+      "du": "नृपौ",
+      "pl": "नृपाः"
+    },
+    "verb_forms": {
+      "sg": "अजल्पत्",
+      "du": "अजल्पताम्",
+      "pl": "अजल्पन्"
+    },
+    "meaning": "to talk"
+  },
+  {
+    "subject_root": "बालिका",
+    "verb_root": "जल्प्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "बालिका",
+      "du": "बालिके",
+      "pl": "बालिकाः"
+    },
+    "verb_forms": {
+      "sg": "अजल्पत्",
+      "du": "अजल्पताम्",
+      "pl": "अजल्पन्"
+    },
+    "meaning": "to talk"
+  },
+  {
+    "subject_root": "कन्या",
+    "verb_root": "जल्प्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "कन्या",
+      "du": "कन्ये",
+      "pl": "कन्याः"
+    },
+    "verb_forms": {
+      "sg": "अजल्पत्",
+      "du": "अजल्पताम्",
+      "pl": "अजल्पन्"
+    },
+    "meaning": "to talk"
+  },
+  {
+    "subject_root": "शिष्या",
+    "verb_root": "जल्प्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "शिष्या",
+      "du": "शिष्ये",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "अजल्पत्",
+      "du": "अजल्पताम्",
+      "pl": "अजल्पन्"
+    },
+    "meaning": "to talk"
+  },
+  {
+    "subject_root": "अस्मद्",
+    "verb_root": "जल्प्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "अहम्",
+      "du": "आवाम्",
+      "pl": "वयम्"
+    },
+    "verb_forms": {
+      "sg": "अजल्पम्",
+      "du": "अजल्पाव",
+      "pl": "अजल्पाम"
+    },
+    "meaning": "to talk"
+  },
+  {
+    "subject_root": "युष्मद्",
+    "verb_root": "जल्प्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "त्वम्",
+      "du": "युवाम्",
+      "pl": "यूयम्"
+    },
+    "verb_forms": {
+      "sg": "अजल्पः",
+      "du": "अजल्पतम्",
+      "pl": "अजल्पत"
+    },
+    "meaning": "to talk"
+  },
+  {
+    "subject_root": "बालक",
+    "verb_root": "जीव्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "बालकः",
+      "du": "बालकौ",
+      "pl": "बालकाः"
+    },
+    "verb_forms": {
+      "sg": "अजीवत्",
+      "du": "अजीवताम्",
+      "pl": "अजीवन्"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "शिष्य",
+    "verb_root": "जीव्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "शिष्यः",
+      "du": "शिष्यौ",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "अजीवत्",
+      "du": "अजीवताम्",
+      "pl": "अजीवन्"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "मित्र",
+    "verb_root": "जीव्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "मित्रः",
+      "du": "मित्रौ",
+      "pl": "मित्राः"
+    },
+    "verb_forms": {
+      "sg": "अजीवत्",
+      "du": "अजीवताम्",
+      "pl": "अजीवन्"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "पुत्र",
+    "verb_root": "जीव्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "पुत्रः",
+      "du": "पुत्रौ",
+      "pl": "पुत्राः"
+    },
+    "verb_forms": {
+      "sg": "अजीवत्",
+      "du": "अजीवताम्",
+      "pl": "अजीवन्"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "नृप",
+    "verb_root": "जीव्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "नृपः",
+      "du": "नृपौ",
+      "pl": "नृपाः"
+    },
+    "verb_forms": {
+      "sg": "अजीवत्",
+      "du": "अजीवताम्",
+      "pl": "अजीवन्"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "बालिका",
+    "verb_root": "जीव्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "बालिका",
+      "du": "बालिके",
+      "pl": "बालिकाः"
+    },
+    "verb_forms": {
+      "sg": "अजीवत्",
+      "du": "अजीवताम्",
+      "pl": "अजीवन्"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "कन्या",
+    "verb_root": "जीव्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "कन्या",
+      "du": "कन्ये",
+      "pl": "कन्याः"
+    },
+    "verb_forms": {
+      "sg": "अजीवत्",
+      "du": "अजीवताम्",
+      "pl": "अजीवन्"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "शिष्या",
+    "verb_root": "जीव्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "शिष्या",
+      "du": "शिष्ये",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "अजीवत्",
+      "du": "अजीवताम्",
+      "pl": "अजीवन्"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "अस्मद्",
+    "verb_root": "जीव्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "अहम्",
+      "du": "आवाम्",
+      "pl": "वयम्"
+    },
+    "verb_forms": {
+      "sg": "अजीवम्",
+      "du": "अजीवाव",
+      "pl": "अजीवाम"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "युष्मद्",
+    "verb_root": "जीव्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "त्वम्",
+      "du": "युवाम्",
+      "pl": "यूयम्"
+    },
+    "verb_forms": {
+      "sg": "अजीवः",
+      "du": "अजीवतम्",
+      "pl": "अजीवत"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "गज",
+    "verb_root": "जीव्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "गजः",
+      "du": "गजौ",
+      "pl": "गजाः"
+    },
+    "verb_forms": {
+      "sg": "अजीवत्",
+      "du": "अजीवताम्",
+      "pl": "अजीवन्"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "मृग",
+    "verb_root": "जीव्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "मृगः",
+      "du": "मृगौ",
+      "pl": "मृगाः"
+    },
+    "verb_forms": {
+      "sg": "अजीवत्",
+      "du": "अजीवताम्",
+      "pl": "अजीवन्"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "श्वान",
+    "verb_root": "जीव्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "श्वानः",
+      "du": "श्वानौ",
+      "pl": "श्वानाः"
+    },
+    "verb_forms": {
+      "sg": "अजीवत्",
+      "du": "अजीवताम्",
+      "pl": "अजीवन्"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "वृषभ",
+    "verb_root": "जीव्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "वृषभः",
+      "du": "वृषभौ",
+      "pl": "वृषभाः"
+    },
+    "verb_forms": {
+      "sg": "अजीवत्",
+      "du": "अजीवताम्",
+      "pl": "अजीवन्"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "सिंह",
+    "verb_root": "जीव्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "सिंहः",
+      "du": "सिंहौ",
+      "pl": "सिंहाः"
+    },
+    "verb_forms": {
+      "sg": "अजीवत्",
+      "du": "अजीवताम्",
+      "pl": "अजीवन्"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "वानर",
+    "verb_root": "जीव्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "वानरः",
+      "du": "वानरौ",
+      "pl": "वानराः"
+    },
+    "verb_forms": {
+      "sg": "अजीवत्",
+      "du": "अजीवताम्",
+      "pl": "अजीवन्"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "अश्व",
+    "verb_root": "जीव्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "अश्वः",
+      "du": "अश्वौ",
+      "pl": "अश्वाः"
+    },
+    "verb_forms": {
+      "sg": "अजीवत्",
+      "du": "अजीवताम्",
+      "pl": "अजीवन्"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "मार्जार",
+    "verb_root": "जीव्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "मार्जारः",
+      "du": "मार्जारौ",
+      "pl": "मार्जाराः"
+    },
+    "verb_forms": {
+      "sg": "अजीवत्",
+      "du": "अजीवताम्",
+      "pl": "अजीवन्"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "शृगाल",
+    "verb_root": "जीव्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "शृगालः",
+      "du": "शृगालौ",
+      "pl": "शृगालाः"
+    },
+    "verb_forms": {
+      "sg": "अजीवत्",
+      "du": "अजीवताम्",
+      "pl": "अजीवन्"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "गज",
+    "verb_root": "पत्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "गजः",
+      "du": "गजौ",
+      "pl": "गजाः"
+    },
+    "verb_forms": {
+      "sg": "अपतत्",
+      "du": "अपतताम्",
+      "pl": "अपतन्"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "मृग",
+    "verb_root": "पत्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "मृगः",
+      "du": "मृगौ",
+      "pl": "मृगाः"
+    },
+    "verb_forms": {
+      "sg": "अपतत्",
+      "du": "अपतताम्",
+      "pl": "अपतन्"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "श्वान",
+    "verb_root": "पत्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "श्वानः",
+      "du": "श्वानौ",
+      "pl": "श्वानाः"
+    },
+    "verb_forms": {
+      "sg": "अपतत्",
+      "du": "अपतताम्",
+      "pl": "अपतन्"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "वृषभ",
+    "verb_root": "पत्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "वृषभः",
+      "du": "वृषभौ",
+      "pl": "वृषभाः"
+    },
+    "verb_forms": {
+      "sg": "अपतत्",
+      "du": "अपतताम्",
+      "pl": "अपतन्"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "सिंह",
+    "verb_root": "पत्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "सिंहः",
+      "du": "सिंहौ",
+      "pl": "सिंहाः"
+    },
+    "verb_forms": {
+      "sg": "अपतत्",
+      "du": "अपतताम्",
+      "pl": "अपतन्"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "वानर",
+    "verb_root": "पत्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "वानरः",
+      "du": "वानरौ",
+      "pl": "वानराः"
+    },
+    "verb_forms": {
+      "sg": "अपतत्",
+      "du": "अपतताम्",
+      "pl": "अपतन्"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "अश्व",
+    "verb_root": "पत्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "अश्वः",
+      "du": "अश्वौ",
+      "pl": "अश्वाः"
+    },
+    "verb_forms": {
+      "sg": "अपतत्",
+      "du": "अपतताम्",
+      "pl": "अपतन्"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "मार्जार",
+    "verb_root": "पत्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "मार्जारः",
+      "du": "मार्जारौ",
+      "pl": "मार्जाराः"
+    },
+    "verb_forms": {
+      "sg": "अपतत्",
+      "du": "अपतताम्",
+      "pl": "अपतन्"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "शृगाल",
+    "verb_root": "पत्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "शृगालः",
+      "du": "शृगालौ",
+      "pl": "शृगालाः"
+    },
+    "verb_forms": {
+      "sg": "अपतत्",
+      "du": "अपतताम्",
+      "pl": "अपतन्"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "बालक",
+    "verb_root": "पत्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "बालकः",
+      "du": "बालकौ",
+      "pl": "बालकाः"
+    },
+    "verb_forms": {
+      "sg": "अपतत्",
+      "du": "अपतताम्",
+      "pl": "अपतन्"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "शिष्य",
+    "verb_root": "पत्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "शिष्यः",
+      "du": "शिष्यौ",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "अपतत्",
+      "du": "अपतताम्",
+      "pl": "अपतन्"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "मित्र",
+    "verb_root": "पत्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "मित्रः",
+      "du": "मित्रौ",
+      "pl": "मित्राः"
+    },
+    "verb_forms": {
+      "sg": "अपतत्",
+      "du": "अपतताम्",
+      "pl": "अपतन्"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "पुत्र",
+    "verb_root": "पत्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "पुत्रः",
+      "du": "पुत्रौ",
+      "pl": "पुत्राः"
+    },
+    "verb_forms": {
+      "sg": "अपतत्",
+      "du": "अपतताम्",
+      "pl": "अपतन्"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "नृप",
+    "verb_root": "पत्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "नृपः",
+      "du": "नृपौ",
+      "pl": "नृपाः"
+    },
+    "verb_forms": {
+      "sg": "अपतत्",
+      "du": "अपतताम्",
+      "pl": "अपतन्"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "बालिका",
+    "verb_root": "पत्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "बालिका",
+      "du": "बालिके",
+      "pl": "बालिकाः"
+    },
+    "verb_forms": {
+      "sg": "अपतत्",
+      "du": "अपतताम्",
+      "pl": "अपतन्"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "कन्या",
+    "verb_root": "पत्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "कन्या",
+      "du": "कन्ये",
+      "pl": "कन्याः"
+    },
+    "verb_forms": {
+      "sg": "अपतत्",
+      "du": "अपतताम्",
+      "pl": "अपतन्"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "शिष्या",
+    "verb_root": "पत्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "शिष्या",
+      "du": "शिष्ये",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "अपतत्",
+      "du": "अपतताम्",
+      "pl": "अपतन्"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "अस्मद्",
+    "verb_root": "पत्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "अहम्",
+      "du": "आवाम्",
+      "pl": "वयम्"
+    },
+    "verb_forms": {
+      "sg": "अपतम्",
+      "du": "अपताव",
+      "pl": "अपताम"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "युष्मद्",
+    "verb_root": "पत्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "त्वम्",
+      "du": "युवाम्",
+      "pl": "यूयम्"
+    },
+    "verb_forms": {
+      "sg": "अपतः",
+      "du": "अपततम्",
+      "pl": "अपतत"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "बालक",
+    "verb_root": "नश्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "बालकः",
+      "du": "बालकौ",
+      "pl": "बालकाः"
+    },
+    "verb_forms": {
+      "sg": "अनश्यत्",
+      "du": "अनश्यताम्",
+      "pl": "अनश्यन्"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "शिष्य",
+    "verb_root": "नश्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "शिष्यः",
+      "du": "शिष्यौ",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "अनश्यत्",
+      "du": "अनश्यताम्",
+      "pl": "अनश्यन्"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "मित्र",
+    "verb_root": "नश्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "मित्रः",
+      "du": "मित्रौ",
+      "pl": "मित्राः"
+    },
+    "verb_forms": {
+      "sg": "अनश्यत्",
+      "du": "अनश्यताम्",
+      "pl": "अनश्यन्"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "पुत्र",
+    "verb_root": "नश्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "पुत्रः",
+      "du": "पुत्रौ",
+      "pl": "पुत्राः"
+    },
+    "verb_forms": {
+      "sg": "अनश्यत्",
+      "du": "अनश्यताम्",
+      "pl": "अनश्यन्"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "नृप",
+    "verb_root": "नश्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "नृपः",
+      "du": "नृपौ",
+      "pl": "नृपाः"
+    },
+    "verb_forms": {
+      "sg": "अनश्यत्",
+      "du": "अनश्यताम्",
+      "pl": "अनश्यन्"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "बालिका",
+    "verb_root": "नश्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "बालिका",
+      "du": "बालिके",
+      "pl": "बालिकाः"
+    },
+    "verb_forms": {
+      "sg": "अनश्यत्",
+      "du": "अनश्यताम्",
+      "pl": "अनश्यन्"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "कन्या",
+    "verb_root": "नश्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "कन्या",
+      "du": "कन्ये",
+      "pl": "कन्याः"
+    },
+    "verb_forms": {
+      "sg": "अनश्यत्",
+      "du": "अनश्यताम्",
+      "pl": "अनश्यन्"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "शिष्या",
+    "verb_root": "नश्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "शिष्या",
+      "du": "शिष्ये",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "अनश्यत्",
+      "du": "अनश्यताम्",
+      "pl": "अनश्यन्"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "अस्मद्",
+    "verb_root": "नश्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "अहम्",
+      "du": "आवाम्",
+      "pl": "वयम्"
+    },
+    "verb_forms": {
+      "sg": "अनश्यम्",
+      "du": "अनश्याव",
+      "pl": "अनश्याम"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "युष्मद्",
+    "verb_root": "नश्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "त्वम्",
+      "du": "युवाम्",
+      "pl": "यूयम्"
+    },
+    "verb_forms": {
+      "sg": "अनश्यः",
+      "du": "अनश्यतम्",
+      "pl": "अनश्यत"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "गज",
+    "verb_root": "नश्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "गजः",
+      "du": "गजौ",
+      "pl": "गजाः"
+    },
+    "verb_forms": {
+      "sg": "अनश्यत्",
+      "du": "अनश्यताम्",
+      "pl": "अनश्यन्"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "मृग",
+    "verb_root": "नश्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "मृगः",
+      "du": "मृगौ",
+      "pl": "मृगाः"
+    },
+    "verb_forms": {
+      "sg": "अनश्यत्",
+      "du": "अनश्यताम्",
+      "pl": "अनश्यन्"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "श्वान",
+    "verb_root": "नश्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "श्वानः",
+      "du": "श्वानौ",
+      "pl": "श्वानाः"
+    },
+    "verb_forms": {
+      "sg": "अनश्यत्",
+      "du": "अनश्यताम्",
+      "pl": "अनश्यन्"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "वृषभ",
+    "verb_root": "नश्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "वृषभः",
+      "du": "वृषभौ",
+      "pl": "वृषभाः"
+    },
+    "verb_forms": {
+      "sg": "अनश्यत्",
+      "du": "अनश्यताम्",
+      "pl": "अनश्यन्"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "सिंह",
+    "verb_root": "नश्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "सिंहः",
+      "du": "सिंहौ",
+      "pl": "सिंहाः"
+    },
+    "verb_forms": {
+      "sg": "अनश्यत्",
+      "du": "अनश्यताम्",
+      "pl": "अनश्यन्"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "वानर",
+    "verb_root": "नश्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "वानरः",
+      "du": "वानरौ",
+      "pl": "वानराः"
+    },
+    "verb_forms": {
+      "sg": "अनश्यत्",
+      "du": "अनश्यताम्",
+      "pl": "अनश्यन्"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "अश्व",
+    "verb_root": "नश्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "अश्वः",
+      "du": "अश्वौ",
+      "pl": "अश्वाः"
+    },
+    "verb_forms": {
+      "sg": "अनश्यत्",
+      "du": "अनश्यताम्",
+      "pl": "अनश्यन्"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "मार्जार",
+    "verb_root": "नश्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "मार्जारः",
+      "du": "मार्जारौ",
+      "pl": "मार्जाराः"
+    },
+    "verb_forms": {
+      "sg": "अनश्यत्",
+      "du": "अनश्यताम्",
+      "pl": "अनश्यन्"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "शृगाल",
+    "verb_root": "नश्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "शृगालः",
+      "du": "शृगालौ",
+      "pl": "शृगालाः"
+    },
+    "verb_forms": {
+      "sg": "अनश्यत्",
+      "du": "अनश्यताम्",
+      "pl": "अनश्यन्"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "बालक",
+    "verb_root": "नृत्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "बालकः",
+      "du": "बालकौ",
+      "pl": "बालकाः"
+    },
+    "verb_forms": {
+      "sg": "अनृत्यत्",
+      "du": "अनृत्यताम्",
+      "pl": "अनृत्यन्"
+    },
+    "meaning": "to dance"
+  },
+  {
+    "subject_root": "शिष्य",
+    "verb_root": "नृत्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "शिष्यः",
+      "du": "शिष्यौ",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "अनृत्यत्",
+      "du": "अनृत्यताम्",
+      "pl": "अनृत्यन्"
+    },
+    "meaning": "to dance"
+  },
+  {
+    "subject_root": "मित्र",
+    "verb_root": "नृत्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "मित्रः",
+      "du": "मित्रौ",
+      "pl": "मित्राः"
+    },
+    "verb_forms": {
+      "sg": "अनृत्यत्",
+      "du": "अनृत्यताम्",
+      "pl": "अनृत्यन्"
+    },
+    "meaning": "to dance"
+  },
+  {
+    "subject_root": "पुत्र",
+    "verb_root": "नृत्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "पुत्रः",
+      "du": "पुत्रौ",
+      "pl": "पुत्राः"
+    },
+    "verb_forms": {
+      "sg": "अनृत्यत्",
+      "du": "अनृत्यताम्",
+      "pl": "अनृत्यन्"
+    },
+    "meaning": "to dance"
+  },
+  {
+    "subject_root": "नृप",
+    "verb_root": "नृत्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "नृपः",
+      "du": "नृपौ",
+      "pl": "नृपाः"
+    },
+    "verb_forms": {
+      "sg": "अनृत्यत्",
+      "du": "अनृत्यताम्",
+      "pl": "अनृत्यन्"
+    },
+    "meaning": "to dance"
+  },
+  {
+    "subject_root": "बालिका",
+    "verb_root": "नृत्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "बालिका",
+      "du": "बालिके",
+      "pl": "बालिकाः"
+    },
+    "verb_forms": {
+      "sg": "अनृत्यत्",
+      "du": "अनृत्यताम्",
+      "pl": "अनृत्यन्"
+    },
+    "meaning": "to dance"
+  },
+  {
+    "subject_root": "कन्या",
+    "verb_root": "नृत्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "कन्या",
+      "du": "कन्ये",
+      "pl": "कन्याः"
+    },
+    "verb_forms": {
+      "sg": "अनृत्यत्",
+      "du": "अनृत्यताम्",
+      "pl": "अनृत्यन्"
+    },
+    "meaning": "to dance"
+  },
+  {
+    "subject_root": "शिष्या",
+    "verb_root": "नृत्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "शिष्या",
+      "du": "शिष्ये",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "अनृत्यत्",
+      "du": "अनृत्यताम्",
+      "pl": "अनृत्यन्"
+    },
+    "meaning": "to dance"
+  },
+  {
+    "subject_root": "अस्मद्",
+    "verb_root": "नृत्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "अहम्",
+      "du": "आवाम्",
+      "pl": "वयम्"
+    },
+    "verb_forms": {
+      "sg": "अनृत्यम्",
+      "du": "अनृत्याव",
+      "pl": "अनृत्याम"
+    },
+    "meaning": "to dance"
+  },
+  {
+    "subject_root": "युष्मद्",
+    "verb_root": "नृत्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "त्वम्",
+      "du": "युवाम्",
+      "pl": "यूयम्"
+    },
+    "verb_forms": {
+      "sg": "अनृत्यः",
+      "du": "अनृत्यतम्",
+      "pl": "अनृत्यत"
+    },
+    "meaning": "to dance"
+  },
+  {
+    "subject_root": "बालक",
+    "verb_root": "श्रम्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "बालकः",
+      "du": "बालकौ",
+      "pl": "बालकाः"
+    },
+    "verb_forms": {
+      "sg": "अश्रम्यत्",
+      "du": "अश्रम्यताम्",
+      "pl": "अश्रम्यन्"
+    },
+    "meaning": "to labor"
+  },
+  {
+    "subject_root": "शिष्य",
+    "verb_root": "श्रम्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "शिष्यः",
+      "du": "शिष्यौ",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "अश्रम्यत्",
+      "du": "अश्रम्यताम्",
+      "pl": "अश्रम्यन्"
+    },
+    "meaning": "to labor"
+  },
+  {
+    "subject_root": "मित्र",
+    "verb_root": "श्रम्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "मित्रः",
+      "du": "मित्रौ",
+      "pl": "मित्राः"
+    },
+    "verb_forms": {
+      "sg": "अश्रम्यत्",
+      "du": "अश्रम्यताम्",
+      "pl": "अश्रम्यन्"
+    },
+    "meaning": "to labor"
+  },
+  {
+    "subject_root": "पुत्र",
+    "verb_root": "श्रम्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "पुत्रः",
+      "du": "पुत्रौ",
+      "pl": "पुत्राः"
+    },
+    "verb_forms": {
+      "sg": "अश्रम्यत्",
+      "du": "अश्रम्यताम्",
+      "pl": "अश्रम्यन्"
+    },
+    "meaning": "to labor"
+  },
+  {
+    "subject_root": "नृप",
+    "verb_root": "श्रम्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "नृपः",
+      "du": "नृपौ",
+      "pl": "नृपाः"
+    },
+    "verb_forms": {
+      "sg": "अश्रम्यत्",
+      "du": "अश्रम्यताम्",
+      "pl": "अश्रम्यन्"
+    },
+    "meaning": "to labor"
+  },
+  {
+    "subject_root": "बालिका",
+    "verb_root": "श्रम्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "बालिका",
+      "du": "बालिके",
+      "pl": "बालिकाः"
+    },
+    "verb_forms": {
+      "sg": "अश्रम्यत्",
+      "du": "अश्रम्यताम्",
+      "pl": "अश्रम्यन्"
+    },
+    "meaning": "to labor"
+  },
+  {
+    "subject_root": "कन्या",
+    "verb_root": "श्रम्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "कन्या",
+      "du": "कन्ये",
+      "pl": "कन्याः"
+    },
+    "verb_forms": {
+      "sg": "अश्रम्यत्",
+      "du": "अश्रम्यताम्",
+      "pl": "अश्रम्यन्"
+    },
+    "meaning": "to labor"
+  },
+  {
+    "subject_root": "शिष्या",
+    "verb_root": "श्रम्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "शिष्या",
+      "du": "शिष्ये",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "अश्रम्यत्",
+      "du": "अश्रम्यताम्",
+      "pl": "अश्रम्यन्"
+    },
+    "meaning": "to labor"
+  },
+  {
+    "subject_root": "अस्मद्",
+    "verb_root": "श्रम्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "अहम्",
+      "du": "आवाम्",
+      "pl": "वयम्"
+    },
+    "verb_forms": {
+      "sg": "अश्रम्यम्",
+      "du": "अश्रम्याव",
+      "pl": "अश्रम्याम"
+    },
+    "meaning": "to labor"
+  },
+  {
+    "subject_root": "युष्मद्",
+    "verb_root": "श्रम्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "त्वम्",
+      "du": "युवाम्",
+      "pl": "यूयम्"
+    },
+    "verb_forms": {
+      "sg": "अश्रम्यः",
+      "du": "अश्रम्यतम्",
+      "pl": "अश्रम्यत"
+    },
+    "meaning": "to labor"
+  },
+  {
+    "subject_root": "बालक",
+    "verb_root": "चिन्त्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "बालकः",
+      "du": "बालकौ",
+      "pl": "बालकाः"
+    },
+    "verb_forms": {
+      "sg": "अचिन्तयत्",
+      "du": "अचिन्तयताम्",
+      "pl": "अचिन्तयन्"
+    },
+    "meaning": "to think / worry"
+  },
+  {
+    "subject_root": "शिष्य",
+    "verb_root": "चिन्त्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "शिष्यः",
+      "du": "शिष्यौ",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "अचिन्तयत्",
+      "du": "अचिन्तयताम्",
+      "pl": "अचिन्तयन्"
+    },
+    "meaning": "to think / worry"
+  },
+  {
+    "subject_root": "मित्र",
+    "verb_root": "चिन्त्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "मित्रः",
+      "du": "मित्रौ",
+      "pl": "मित्राः"
+    },
+    "verb_forms": {
+      "sg": "अचिन्तयत्",
+      "du": "अचिन्तयताम्",
+      "pl": "अचिन्तयन्"
+    },
+    "meaning": "to think / worry"
+  },
+  {
+    "subject_root": "पुत्र",
+    "verb_root": "चिन्त्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "पुत्रः",
+      "du": "पुत्रौ",
+      "pl": "पुत्राः"
+    },
+    "verb_forms": {
+      "sg": "अचिन्तयत्",
+      "du": "अचिन्तयताम्",
+      "pl": "अचिन्तयन्"
+    },
+    "meaning": "to think / worry"
+  },
+  {
+    "subject_root": "नृप",
+    "verb_root": "चिन्त्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "नृपः",
+      "du": "नृपौ",
+      "pl": "नृपाः"
+    },
+    "verb_forms": {
+      "sg": "अचिन्तयत्",
+      "du": "अचिन्तयताम्",
+      "pl": "अचिन्तयन्"
+    },
+    "meaning": "to think / worry"
+  },
+  {
+    "subject_root": "बालिका",
+    "verb_root": "चिन्त्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "बालिका",
+      "du": "बालिके",
+      "pl": "बालिकाः"
+    },
+    "verb_forms": {
+      "sg": "अचिन्तयत्",
+      "du": "अचिन्तयताम्",
+      "pl": "अचिन्तयन्"
+    },
+    "meaning": "to think / worry"
+  },
+  {
+    "subject_root": "कन्या",
+    "verb_root": "चिन्त्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "कन्या",
+      "du": "कन्ये",
+      "pl": "कन्याः"
+    },
+    "verb_forms": {
+      "sg": "अचिन्तयत्",
+      "du": "अचिन्तयताम्",
+      "pl": "अचिन्तयन्"
+    },
+    "meaning": "to think / worry"
+  },
+  {
+    "subject_root": "शिष्या",
+    "verb_root": "चिन्त्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "शिष्या",
+      "du": "शिष्ये",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "अचिन्तयत्",
+      "du": "अचिन्तयताम्",
+      "pl": "अचिन्तयन्"
+    },
+    "meaning": "to think / worry"
+  },
+  {
+    "subject_root": "अस्मद्",
+    "verb_root": "चिन्त्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "अहम्",
+      "du": "आवाम्",
+      "pl": "वयम्"
+    },
+    "verb_forms": {
+      "sg": "अचिन्तयम्",
+      "du": "अचिन्तयाव",
+      "pl": "अचिन्तयाम"
+    },
+    "meaning": "to think / worry"
+  },
+  {
+    "subject_root": "युष्मद्",
+    "verb_root": "चिन्त्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "त्वम्",
+      "du": "युवाम्",
+      "pl": "यूयम्"
+    },
+    "verb_forms": {
+      "sg": "अचिन्तयः",
+      "du": "अचिन्तयतम्",
+      "pl": "अचिन्तयत"
+    },
+    "meaning": "to think / worry"
+  },
+  {
+    "subject_root": "बालक",
+    "verb_root": "शिक्ष्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "बालकः",
+      "du": "बालकौ",
+      "pl": "बालकाः"
+    },
+    "verb_forms": {
+      "sg": "अशिक्षयत्",
+      "du": "अशिक्षयताम्",
+      "pl": "अशिक्षयन्"
+    },
+    "meaning": "to teach / to learn"
+  },
+  {
+    "subject_root": "शिष्य",
+    "verb_root": "शिक्ष्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "शिष्यः",
+      "du": "शिष्यौ",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "अशिक्षयत्",
+      "du": "अशिक्षयताम्",
+      "pl": "अशिक्षयन्"
+    },
+    "meaning": "to teach / to learn"
+  },
+  {
+    "subject_root": "मित्र",
+    "verb_root": "शिक्ष्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "मित्रः",
+      "du": "मित्रौ",
+      "pl": "मित्राः"
+    },
+    "verb_forms": {
+      "sg": "अशिक्षयत्",
+      "du": "अशिक्षयताम्",
+      "pl": "अशिक्षयन्"
+    },
+    "meaning": "to teach / to learn"
+  },
+  {
+    "subject_root": "पुत्र",
+    "verb_root": "शिक्ष्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "पुत्रः",
+      "du": "पुत्रौ",
+      "pl": "पुत्राः"
+    },
+    "verb_forms": {
+      "sg": "अशिक्षयत्",
+      "du": "अशिक्षयताम्",
+      "pl": "अशिक्षयन्"
+    },
+    "meaning": "to teach / to learn"
+  },
+  {
+    "subject_root": "नृप",
+    "verb_root": "शिक्ष्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "नृपः",
+      "du": "नृपौ",
+      "pl": "नृपाः"
+    },
+    "verb_forms": {
+      "sg": "अशिक्षयत्",
+      "du": "अशिक्षयताम्",
+      "pl": "अशिक्षयन्"
+    },
+    "meaning": "to teach / to learn"
+  },
+  {
+    "subject_root": "बालिका",
+    "verb_root": "शिक्ष्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "बालिका",
+      "du": "बालिके",
+      "pl": "बालिकाः"
+    },
+    "verb_forms": {
+      "sg": "अशिक्षयत्",
+      "du": "अशिक्षयताम्",
+      "pl": "अशिक्षयन्"
+    },
+    "meaning": "to teach / to learn"
+  },
+  {
+    "subject_root": "कन्या",
+    "verb_root": "शिक्ष्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "कन्या",
+      "du": "कन्ये",
+      "pl": "कन्याः"
+    },
+    "verb_forms": {
+      "sg": "अशिक्षयत्",
+      "du": "अशिक्षयताम्",
+      "pl": "अशिक्षयन्"
+    },
+    "meaning": "to teach / to learn"
+  },
+  {
+    "subject_root": "शिष्या",
+    "verb_root": "शिक्ष्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "शिष्या",
+      "du": "शिष्ये",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "अशिक्षयत्",
+      "du": "अशिक्षयताम्",
+      "pl": "अशिक्षयन्"
+    },
+    "meaning": "to teach / to learn"
+  },
+  {
+    "subject_root": "अस्मद्",
+    "verb_root": "शिक्ष्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "अहम्",
+      "du": "आवाम्",
+      "pl": "वयम्"
+    },
+    "verb_forms": {
+      "sg": "अशिक्षयम्",
+      "du": "अशिक्षयाव",
+      "pl": "अशिक्षयाम"
+    },
+    "meaning": "to teach / to learn"
+  },
+  {
+    "subject_root": "युष्मद्",
+    "verb_root": "शिक्ष्",
+    "tense": "past",
+    "subject_forms": {
+      "sg": "त्वम्",
+      "du": "युवाम्",
+      "pl": "यूयम्"
+    },
+    "verb_forms": {
+      "sg": "अशिक्षयः",
+      "du": "अशिक्षयतम्",
+      "pl": "अशिक्षयत"
+    },
+    "meaning": "to teach / to learn"
+  },
+  {
+    "subject_root": "बालक",
+    "verb_root": "गच्छ्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "बालकः",
+      "du": "बालकौ",
+      "pl": "बालकाः"
+    },
+    "verb_forms": {
+      "sg": "गमिष्यति",
+      "du": "गमिष्यतः",
+      "pl": "गमिष्यन्ति"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "शिष्य",
+    "verb_root": "गच्छ्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "शिष्यः",
+      "du": "शिष्यौ",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "गमिष्यति",
+      "du": "गमिष्यतः",
+      "pl": "गमिष्यन्ति"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "मित्र",
+    "verb_root": "गच्छ्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "मित्रः",
+      "du": "मित्रौ",
+      "pl": "मित्राः"
+    },
+    "verb_forms": {
+      "sg": "गमिष्यति",
+      "du": "गमिष्यतः",
+      "pl": "गमिष्यन्ति"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "पुत्र",
+    "verb_root": "गच्छ्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "पुत्रः",
+      "du": "पुत्रौ",
+      "pl": "पुत्राः"
+    },
+    "verb_forms": {
+      "sg": "गमिष्यति",
+      "du": "गमिष्यतः",
+      "pl": "गमिष्यन्ति"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "नृप",
+    "verb_root": "गच्छ्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "नृपः",
+      "du": "नृपौ",
+      "pl": "नृपाः"
+    },
+    "verb_forms": {
+      "sg": "गमिष्यति",
+      "du": "गमिष्यतः",
+      "pl": "गमिष्यन्ति"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "बालिका",
+    "verb_root": "गच्छ्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "बालिका",
+      "du": "बालिके",
+      "pl": "बालिकाः"
+    },
+    "verb_forms": {
+      "sg": "गमिष्यति",
+      "du": "गमिष्यतः",
+      "pl": "गमिष्यन्ति"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "कन्या",
+    "verb_root": "गच्छ्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "कन्या",
+      "du": "कन्ये",
+      "pl": "कन्याः"
+    },
+    "verb_forms": {
+      "sg": "गमिष्यति",
+      "du": "गमिष्यतः",
+      "pl": "गमिष्यन्ति"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "शिष्या",
+    "verb_root": "गच्छ्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "शिष्या",
+      "du": "शिष्ये",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "गमिष्यति",
+      "du": "गमिष्यतः",
+      "pl": "गमिष्यन्ति"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "अस्मद्",
+    "verb_root": "गच्छ्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "अहम्",
+      "du": "आवाम्",
+      "pl": "वयम्"
+    },
+    "verb_forms": {
+      "sg": "गमिष्यामि",
+      "du": "गमिष्यावः",
+      "pl": "गमिष्यामः"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "युष्मद्",
+    "verb_root": "गच्छ्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "त्वम्",
+      "du": "युवाम्",
+      "pl": "यूयम्"
+    },
+    "verb_forms": {
+      "sg": "गमिष्यसि",
+      "du": "गमिष्यथः",
+      "pl": "गमिष्यथ"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "गज",
+    "verb_root": "गच्छ्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "गजः",
+      "du": "गजौ",
+      "pl": "गजाः"
+    },
+    "verb_forms": {
+      "sg": "गमिष्यति",
+      "du": "गमिष्यतः",
+      "pl": "गमिष्यन्ति"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "मृग",
+    "verb_root": "गच्छ्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "मृगः",
+      "du": "मृगौ",
+      "pl": "मृगाः"
+    },
+    "verb_forms": {
+      "sg": "गमिष्यति",
+      "du": "गमिष्यतः",
+      "pl": "गमिष्यन्ति"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "श्वान",
+    "verb_root": "गच्छ्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "श्वानः",
+      "du": "श्वानौ",
+      "pl": "श्वानाः"
+    },
+    "verb_forms": {
+      "sg": "गमिष्यति",
+      "du": "गमिष्यतः",
+      "pl": "गमिष्यन्ति"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "वृषभ",
+    "verb_root": "गच्छ्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "वृषभः",
+      "du": "वृषभौ",
+      "pl": "वृषभाः"
+    },
+    "verb_forms": {
+      "sg": "गमिष्यति",
+      "du": "गमिष्यतः",
+      "pl": "गमिष्यन्ति"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "सिंह",
+    "verb_root": "गच्छ्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "सिंहः",
+      "du": "सिंहौ",
+      "pl": "सिंहाः"
+    },
+    "verb_forms": {
+      "sg": "गमिष्यति",
+      "du": "गमिष्यतः",
+      "pl": "गमिष्यन्ति"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "वानर",
+    "verb_root": "गच्छ्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "वानरः",
+      "du": "वानरौ",
+      "pl": "वानराः"
+    },
+    "verb_forms": {
+      "sg": "गमिष्यति",
+      "du": "गमिष्यतः",
+      "pl": "गमिष्यन्ति"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "अश्व",
+    "verb_root": "गच्छ्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "अश्वः",
+      "du": "अश्वौ",
+      "pl": "अश्वाः"
+    },
+    "verb_forms": {
+      "sg": "गमिष्यति",
+      "du": "गमिष्यतः",
+      "pl": "गमिष्यन्ति"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "मार्जार",
+    "verb_root": "गच्छ्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "मार्जारः",
+      "du": "मार्जारौ",
+      "pl": "मार्जाराः"
+    },
+    "verb_forms": {
+      "sg": "गमिष्यति",
+      "du": "गमिष्यतः",
+      "pl": "गमिष्यन्ति"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "शृगाल",
+    "verb_root": "गच्छ्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "शृगालः",
+      "du": "शृगालौ",
+      "pl": "शृगालाः"
+    },
+    "verb_forms": {
+      "sg": "गमिष्यति",
+      "du": "गमिष्यतः",
+      "pl": "गमिष्यन्ति"
+    },
+    "meaning": "to go"
+  },
+  {
+    "subject_root": "बालक",
+    "verb_root": "धाव्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "बालकः",
+      "du": "बालकौ",
+      "pl": "बालकाः"
+    },
+    "verb_forms": {
+      "sg": "धाविष्यति",
+      "du": "धाविष्यतः",
+      "pl": "धाविष्यन्ति"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "शिष्य",
+    "verb_root": "धाव्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "शिष्यः",
+      "du": "शिष्यौ",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "धाविष्यति",
+      "du": "धाविष्यतः",
+      "pl": "धाविष्यन्ति"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "मित्र",
+    "verb_root": "धाव्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "मित्रः",
+      "du": "मित्रौ",
+      "pl": "मित्राः"
+    },
+    "verb_forms": {
+      "sg": "धाविष्यति",
+      "du": "धाविष्यतः",
+      "pl": "धाविष्यन्ति"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "पुत्र",
+    "verb_root": "धाव्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "पुत्रः",
+      "du": "पुत्रौ",
+      "pl": "पुत्राः"
+    },
+    "verb_forms": {
+      "sg": "धाविष्यति",
+      "du": "धाविष्यतः",
+      "pl": "धाविष्यन्ति"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "नृप",
+    "verb_root": "धाव्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "नृपः",
+      "du": "नृपौ",
+      "pl": "नृपाः"
+    },
+    "verb_forms": {
+      "sg": "धाविष्यति",
+      "du": "धाविष्यतः",
+      "pl": "धाविष्यन्ति"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "बालिका",
+    "verb_root": "धाव्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "बालिका",
+      "du": "बालिके",
+      "pl": "बालिकाः"
+    },
+    "verb_forms": {
+      "sg": "धाविष्यति",
+      "du": "धाविष्यतः",
+      "pl": "धाविष्यन्ति"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "कन्या",
+    "verb_root": "धाव्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "कन्या",
+      "du": "कन्ये",
+      "pl": "कन्याः"
+    },
+    "verb_forms": {
+      "sg": "धाविष्यति",
+      "du": "धाविष्यतः",
+      "pl": "धाविष्यन्ति"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "शिष्या",
+    "verb_root": "धाव्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "शिष्या",
+      "du": "शिष्ये",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "धाविष्यति",
+      "du": "धाविष्यतः",
+      "pl": "धाविष्यन्ति"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "अस्मद्",
+    "verb_root": "धाव्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "अहम्",
+      "du": "आवाम्",
+      "pl": "वयम्"
+    },
+    "verb_forms": {
+      "sg": "धाविष्यामि",
+      "du": "धाविष्यावः",
+      "pl": "धाविष्यामः"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "युष्मद्",
+    "verb_root": "धाव्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "त्वम्",
+      "du": "युवाम्",
+      "pl": "यूयम्"
+    },
+    "verb_forms": {
+      "sg": "धाविष्यसि",
+      "du": "धाविष्यथः",
+      "pl": "धाविष्यथ"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "गज",
+    "verb_root": "धाव्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "गजः",
+      "du": "गजौ",
+      "pl": "गजाः"
+    },
+    "verb_forms": {
+      "sg": "धाविष्यति",
+      "du": "धाविष्यतः",
+      "pl": "धाविष्यन्ति"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "मृग",
+    "verb_root": "धाव्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "मृगः",
+      "du": "मृगौ",
+      "pl": "मृगाः"
+    },
+    "verb_forms": {
+      "sg": "धाविष्यति",
+      "du": "धाविष्यतः",
+      "pl": "धाविष्यन्ति"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "श्वान",
+    "verb_root": "धाव्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "श्वानः",
+      "du": "श्वानौ",
+      "pl": "श्वानाः"
+    },
+    "verb_forms": {
+      "sg": "धाविष्यति",
+      "du": "धाविष्यतः",
+      "pl": "धाविष्यन्ति"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "वृषभ",
+    "verb_root": "धाव्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "वृषभः",
+      "du": "वृषभौ",
+      "pl": "वृषभाः"
+    },
+    "verb_forms": {
+      "sg": "धाविष्यति",
+      "du": "धाविष्यतः",
+      "pl": "धाविष्यन्ति"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "सिंह",
+    "verb_root": "धाव्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "सिंहः",
+      "du": "सिंहौ",
+      "pl": "सिंहाः"
+    },
+    "verb_forms": {
+      "sg": "धाविष्यति",
+      "du": "धाविष्यतः",
+      "pl": "धाविष्यन्ति"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "वानर",
+    "verb_root": "धाव्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "वानरः",
+      "du": "वानरौ",
+      "pl": "वानराः"
+    },
+    "verb_forms": {
+      "sg": "धाविष्यति",
+      "du": "धाविष्यतः",
+      "pl": "धाविष्यन्ति"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "अश्व",
+    "verb_root": "धाव्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "अश्वः",
+      "du": "अश्वौ",
+      "pl": "अश्वाः"
+    },
+    "verb_forms": {
+      "sg": "धाविष्यति",
+      "du": "धाविष्यतः",
+      "pl": "धाविष्यन्ति"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "मार्जार",
+    "verb_root": "धाव्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "मार्जारः",
+      "du": "मार्जारौ",
+      "pl": "मार्जाराः"
+    },
+    "verb_forms": {
+      "sg": "धाविष्यति",
+      "du": "धाविष्यतः",
+      "pl": "धाविष्यन्ति"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "शृगाल",
+    "verb_root": "धाव्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "शृगालः",
+      "du": "शृगालौ",
+      "pl": "शृगालाः"
+    },
+    "verb_forms": {
+      "sg": "धाविष्यति",
+      "du": "धाविष्यतः",
+      "pl": "धाविष्यन्ति"
+    },
+    "meaning": "to run"
+  },
+  {
+    "subject_root": "बालक",
+    "verb_root": "हस्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "बालकः",
+      "du": "बालकौ",
+      "pl": "बालकाः"
+    },
+    "verb_forms": {
+      "sg": "हसिष्यति",
+      "du": "हसिष्यतः",
+      "pl": "हसिष्यन्ति"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "शिष्य",
+    "verb_root": "हस्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "शिष्यः",
+      "du": "शिष्यौ",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "हसिष्यति",
+      "du": "हसिष्यतः",
+      "pl": "हसिष्यन्ति"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "मित्र",
+    "verb_root": "हस्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "मित्रः",
+      "du": "मित्रौ",
+      "pl": "मित्राः"
+    },
+    "verb_forms": {
+      "sg": "हसिष्यति",
+      "du": "हसिष्यतः",
+      "pl": "हसिष्यन्ति"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "पुत्र",
+    "verb_root": "हस्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "पुत्रः",
+      "du": "पुत्रौ",
+      "pl": "पुत्राः"
+    },
+    "verb_forms": {
+      "sg": "हसिष्यति",
+      "du": "हसिष्यतः",
+      "pl": "हसिष्यन्ति"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "नृप",
+    "verb_root": "हस्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "नृपः",
+      "du": "नृपौ",
+      "pl": "नृपाः"
+    },
+    "verb_forms": {
+      "sg": "हसिष्यति",
+      "du": "हसिष्यतः",
+      "pl": "हसिष्यन्ति"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "बालिका",
+    "verb_root": "हस्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "बालिका",
+      "du": "बालिके",
+      "pl": "बालिकाः"
+    },
+    "verb_forms": {
+      "sg": "हसिष्यति",
+      "du": "हसिष्यतः",
+      "pl": "हसिष्यन्ति"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "कन्या",
+    "verb_root": "हस्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "कन्या",
+      "du": "कन्ये",
+      "pl": "कन्याः"
+    },
+    "verb_forms": {
+      "sg": "हसिष्यति",
+      "du": "हसिष्यतः",
+      "pl": "हसिष्यन्ति"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "शिष्या",
+    "verb_root": "हस्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "शिष्या",
+      "du": "शिष्ये",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "हसिष्यति",
+      "du": "हसिष्यतः",
+      "pl": "हसिष्यन्ति"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "अस्मद्",
+    "verb_root": "हस्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "अहम्",
+      "du": "आवाम्",
+      "pl": "वयम्"
+    },
+    "verb_forms": {
+      "sg": "हसिष्यामि",
+      "du": "हसिष्यावः",
+      "pl": "हसिष्यामः"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "युष्मद्",
+    "verb_root": "हस्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "त्वम्",
+      "du": "युवाम्",
+      "pl": "यूयम्"
+    },
+    "verb_forms": {
+      "sg": "हसिष्यसि",
+      "du": "हसिष्यथः",
+      "pl": "हसिष्यथ"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "गज",
+    "verb_root": "हस्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "गजः",
+      "du": "गजौ",
+      "pl": "गजाः"
+    },
+    "verb_forms": {
+      "sg": "हसिष्यति",
+      "du": "हसिष्यतः",
+      "pl": "हसिष्यन्ति"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "मृग",
+    "verb_root": "हस्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "मृगः",
+      "du": "मृगौ",
+      "pl": "मृगाः"
+    },
+    "verb_forms": {
+      "sg": "हसिष्यति",
+      "du": "हसिष्यतः",
+      "pl": "हसिष्यन्ति"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "श्वान",
+    "verb_root": "हस्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "श्वानः",
+      "du": "श्वानौ",
+      "pl": "श्वानाः"
+    },
+    "verb_forms": {
+      "sg": "हसिष्यति",
+      "du": "हसिष्यतः",
+      "pl": "हसिष्यन्ति"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "वृषभ",
+    "verb_root": "हस्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "वृषभः",
+      "du": "वृषभौ",
+      "pl": "वृषभाः"
+    },
+    "verb_forms": {
+      "sg": "हसिष्यति",
+      "du": "हसिष्यतः",
+      "pl": "हसिष्यन्ति"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "सिंह",
+    "verb_root": "हस्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "सिंहः",
+      "du": "सिंहौ",
+      "pl": "सिंहाः"
+    },
+    "verb_forms": {
+      "sg": "हसिष्यति",
+      "du": "हसिष्यतः",
+      "pl": "हसिष्यन्ति"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "वानर",
+    "verb_root": "हस्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "वानरः",
+      "du": "वानरौ",
+      "pl": "वानराः"
+    },
+    "verb_forms": {
+      "sg": "हसिष्यति",
+      "du": "हसिष्यतः",
+      "pl": "हसिष्यन्ति"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "अश्व",
+    "verb_root": "हस्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "अश्वः",
+      "du": "अश्वौ",
+      "pl": "अश्वाः"
+    },
+    "verb_forms": {
+      "sg": "हसिष्यति",
+      "du": "हसिष्यतः",
+      "pl": "हसिष्यन्ति"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "मार्जार",
+    "verb_root": "हस्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "मार्जारः",
+      "du": "मार्जारौ",
+      "pl": "मार्जाराः"
+    },
+    "verb_forms": {
+      "sg": "हसिष्यति",
+      "du": "हसिष्यतः",
+      "pl": "हसिष्यन्ति"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "शृगाल",
+    "verb_root": "हस्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "शृगालः",
+      "du": "शृगालौ",
+      "pl": "शृगालाः"
+    },
+    "verb_forms": {
+      "sg": "हसिष्यति",
+      "du": "हसिष्यतः",
+      "pl": "हसिष्यन्ति"
+    },
+    "meaning": "to laugh"
+  },
+  {
+    "subject_root": "बालक",
+    "verb_root": "क्रीड्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "बालकः",
+      "du": "बालकौ",
+      "pl": "बालकाः"
+    },
+    "verb_forms": {
+      "sg": "क्रीडिष्यति",
+      "du": "क्रीडिष्यतः",
+      "pl": "क्रीडिष्यन्ति"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "शिष्य",
+    "verb_root": "क्रीड्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "शिष्यः",
+      "du": "शिष्यौ",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "क्रीडिष्यति",
+      "du": "क्रीडिष्यतः",
+      "pl": "क्रीडिष्यन्ति"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "मित्र",
+    "verb_root": "क्रीड्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "मित्रः",
+      "du": "मित्रौ",
+      "pl": "मित्राः"
+    },
+    "verb_forms": {
+      "sg": "क्रीडिष्यति",
+      "du": "क्रीडिष्यतः",
+      "pl": "क्रीडिष्यन्ति"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "पुत्र",
+    "verb_root": "क्रीड्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "पुत्रः",
+      "du": "पुत्रौ",
+      "pl": "पुत्राः"
+    },
+    "verb_forms": {
+      "sg": "क्रीडिष्यति",
+      "du": "क्रीडिष्यतः",
+      "pl": "क्रीडिष्यन्ति"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "नृप",
+    "verb_root": "क्रीड्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "नृपः",
+      "du": "नृपौ",
+      "pl": "नृपाः"
+    },
+    "verb_forms": {
+      "sg": "क्रीडिष्यति",
+      "du": "क्रीडिष्यतः",
+      "pl": "क्रीडिष्यन्ति"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "बालिका",
+    "verb_root": "क्रीड्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "बालिका",
+      "du": "बालिके",
+      "pl": "बालिकाः"
+    },
+    "verb_forms": {
+      "sg": "क्रीडिष्यति",
+      "du": "क्रीडिष्यतः",
+      "pl": "क्रीडिष्यन्ति"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "कन्या",
+    "verb_root": "क्रीड्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "कन्या",
+      "du": "कन्ये",
+      "pl": "कन्याः"
+    },
+    "verb_forms": {
+      "sg": "क्रीडिष्यति",
+      "du": "क्रीडिष्यतः",
+      "pl": "क्रीडिष्यन्ति"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "शिष्या",
+    "verb_root": "क्रीड्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "शिष्या",
+      "du": "शिष्ये",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "क्रीडिष्यति",
+      "du": "क्रीडिष्यतः",
+      "pl": "क्रीडिष्यन्ति"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "अस्मद्",
+    "verb_root": "क्रीड्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "अहम्",
+      "du": "आवाम्",
+      "pl": "वयम्"
+    },
+    "verb_forms": {
+      "sg": "क्रीडिष्यामि",
+      "du": "क्रीडिष्यावः",
+      "pl": "क्रीडिष्यामः"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "युष्मद्",
+    "verb_root": "क्रीड्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "त्वम्",
+      "du": "युवाम्",
+      "pl": "यूयम्"
+    },
+    "verb_forms": {
+      "sg": "क्रीडिष्यसि",
+      "du": "क्रीडिष्यथः",
+      "pl": "क्रीडिष्यथ"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "गज",
+    "verb_root": "क्रीड्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "गजः",
+      "du": "गजौ",
+      "pl": "गजाः"
+    },
+    "verb_forms": {
+      "sg": "क्रीडिष्यति",
+      "du": "क्रीडिष्यतः",
+      "pl": "क्रीडिष्यन्ति"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "मृग",
+    "verb_root": "क्रीड्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "मृगः",
+      "du": "मृगौ",
+      "pl": "मृगाः"
+    },
+    "verb_forms": {
+      "sg": "क्रीडिष्यति",
+      "du": "क्रीडिष्यतः",
+      "pl": "क्रीडिष्यन्ति"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "श्वान",
+    "verb_root": "क्रीड्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "श्वानः",
+      "du": "श्वानौ",
+      "pl": "श्वानाः"
+    },
+    "verb_forms": {
+      "sg": "क्रीडिष्यति",
+      "du": "क्रीडिष्यतः",
+      "pl": "क्रीडिष्यन्ति"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "वृषभ",
+    "verb_root": "क्रीड्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "वृषभः",
+      "du": "वृषभौ",
+      "pl": "वृषभाः"
+    },
+    "verb_forms": {
+      "sg": "क्रीडिष्यति",
+      "du": "क्रीडिष्यतः",
+      "pl": "क्रीडिष्यन्ति"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "सिंह",
+    "verb_root": "क्रीड्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "सिंहः",
+      "du": "सिंहौ",
+      "pl": "सिंहाः"
+    },
+    "verb_forms": {
+      "sg": "क्रीडिष्यति",
+      "du": "क्रीडिष्यतः",
+      "pl": "क्रीडिष्यन्ति"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "वानर",
+    "verb_root": "क्रीड्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "वानरः",
+      "du": "वानरौ",
+      "pl": "वानराः"
+    },
+    "verb_forms": {
+      "sg": "क्रीडिष्यति",
+      "du": "क्रीडिष्यतः",
+      "pl": "क्रीडिष्यन्ति"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "अश्व",
+    "verb_root": "क्रीड्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "अश्वः",
+      "du": "अश्वौ",
+      "pl": "अश्वाः"
+    },
+    "verb_forms": {
+      "sg": "क्रीडिष्यति",
+      "du": "क्रीडिष्यतः",
+      "pl": "क्रीडिष्यन्ति"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "मार्जार",
+    "verb_root": "क्रीड्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "मार्जारः",
+      "du": "मार्जारौ",
+      "pl": "मार्जाराः"
+    },
+    "verb_forms": {
+      "sg": "क्रीडिष्यति",
+      "du": "क्रीडिष्यतः",
+      "pl": "क्रीडिष्यन्ति"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "शृगाल",
+    "verb_root": "क्रीड्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "शृगालः",
+      "du": "शृगालौ",
+      "pl": "शृगालाः"
+    },
+    "verb_forms": {
+      "sg": "क्रीडिष्यति",
+      "du": "क्रीडिष्यतः",
+      "pl": "क्रीडिष्यन्ति"
+    },
+    "meaning": "to play"
+  },
+  {
+    "subject_root": "बालक",
+    "verb_root": "चर्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "बालकः",
+      "du": "बालकौ",
+      "pl": "बालकाः"
+    },
+    "verb_forms": {
+      "sg": "चरिष्यति",
+      "du": "चरिष्यतः",
+      "pl": "चरिष्यन्ति"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "शिष्य",
+    "verb_root": "चर्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "शिष्यः",
+      "du": "शिष्यौ",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "चरिष्यति",
+      "du": "चरिष्यतः",
+      "pl": "चरिष्यन्ति"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "मित्र",
+    "verb_root": "चर्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "मित्रः",
+      "du": "मित्रौ",
+      "pl": "मित्राः"
+    },
+    "verb_forms": {
+      "sg": "चरिष्यति",
+      "du": "चरिष्यतः",
+      "pl": "चरिष्यन्ति"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "पुत्र",
+    "verb_root": "चर्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "पुत्रः",
+      "du": "पुत्रौ",
+      "pl": "पुत्राः"
+    },
+    "verb_forms": {
+      "sg": "चरिष्यति",
+      "du": "चरिष्यतः",
+      "pl": "चरिष्यन्ति"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "नृप",
+    "verb_root": "चर्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "नृपः",
+      "du": "नृपौ",
+      "pl": "नृपाः"
+    },
+    "verb_forms": {
+      "sg": "चरिष्यति",
+      "du": "चरिष्यतः",
+      "pl": "चरिष्यन्ति"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "बालिका",
+    "verb_root": "चर्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "बालिका",
+      "du": "बालिके",
+      "pl": "बालिकाः"
+    },
+    "verb_forms": {
+      "sg": "चरिष्यति",
+      "du": "चरिष्यतः",
+      "pl": "चरिष्यन्ति"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "कन्या",
+    "verb_root": "चर्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "कन्या",
+      "du": "कन्ये",
+      "pl": "कन्याः"
+    },
+    "verb_forms": {
+      "sg": "चरिष्यति",
+      "du": "चरिष्यतः",
+      "pl": "चरिष्यन्ति"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "शिष्या",
+    "verb_root": "चर्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "शिष्या",
+      "du": "शिष्ये",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "चरिष्यति",
+      "du": "चरिष्यतः",
+      "pl": "चरिष्यन्ति"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "अस्मद्",
+    "verb_root": "चर्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "अहम्",
+      "du": "आवाम्",
+      "pl": "वयम्"
+    },
+    "verb_forms": {
+      "sg": "चरिष्यामि",
+      "du": "चरिष्यावः",
+      "pl": "चरिष्यामः"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "युष्मद्",
+    "verb_root": "चर्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "त्वम्",
+      "du": "युवाम्",
+      "pl": "यूयम्"
+    },
+    "verb_forms": {
+      "sg": "चरिष्यसि",
+      "du": "चरिष्यथः",
+      "pl": "चरिष्यथ"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "गज",
+    "verb_root": "चर्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "गजः",
+      "du": "गजौ",
+      "pl": "गजाः"
+    },
+    "verb_forms": {
+      "sg": "चरिष्यति",
+      "du": "चरिष्यतः",
+      "pl": "चरिष्यन्ति"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "मृग",
+    "verb_root": "चर्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "मृगः",
+      "du": "मृगौ",
+      "pl": "मृगाः"
+    },
+    "verb_forms": {
+      "sg": "चरिष्यति",
+      "du": "चरिष्यतः",
+      "pl": "चरिष्यन्ति"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "श्वान",
+    "verb_root": "चर्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "श्वानः",
+      "du": "श्वानौ",
+      "pl": "श्वानाः"
+    },
+    "verb_forms": {
+      "sg": "चरिष्यति",
+      "du": "चरिष्यतः",
+      "pl": "चरिष्यन्ति"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "वृषभ",
+    "verb_root": "चर्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "वृषभः",
+      "du": "वृषभौ",
+      "pl": "वृषभाः"
+    },
+    "verb_forms": {
+      "sg": "चरिष्यति",
+      "du": "चरिष्यतः",
+      "pl": "चरिष्यन्ति"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "सिंह",
+    "verb_root": "चर्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "सिंहः",
+      "du": "सिंहौ",
+      "pl": "सिंहाः"
+    },
+    "verb_forms": {
+      "sg": "चरिष्यति",
+      "du": "चरिष्यतः",
+      "pl": "चरिष्यन्ति"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "वानर",
+    "verb_root": "चर्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "वानरः",
+      "du": "वानरौ",
+      "pl": "वानराः"
+    },
+    "verb_forms": {
+      "sg": "चरिष्यति",
+      "du": "चरिष्यतः",
+      "pl": "चरिष्यन्ति"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "अश्व",
+    "verb_root": "चर्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "अश्वः",
+      "du": "अश्वौ",
+      "pl": "अश्वाः"
+    },
+    "verb_forms": {
+      "sg": "चरिष्यति",
+      "du": "चरिष्यतः",
+      "pl": "चरिष्यन्ति"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "मार्जार",
+    "verb_root": "चर्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "मार्जारः",
+      "du": "मार्जारौ",
+      "pl": "मार्जाराः"
+    },
+    "verb_forms": {
+      "sg": "चरिष्यति",
+      "du": "चरिष्यतः",
+      "pl": "चरिष्यन्ति"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "शृगाल",
+    "verb_root": "चर्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "शृगालः",
+      "du": "शृगालौ",
+      "pl": "शृगालाः"
+    },
+    "verb_forms": {
+      "sg": "चरिष्यति",
+      "du": "चरिष्यतः",
+      "pl": "चरिष्यन्ति"
+    },
+    "meaning": "to move/wander"
+  },
+  {
+    "subject_root": "बालक",
+    "verb_root": "जल्प्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "बालकः",
+      "du": "बालकौ",
+      "pl": "बालकाः"
+    },
+    "verb_forms": {
+      "sg": "जल्पिष्यति",
+      "du": "जल्पिष्यतः",
+      "pl": "जल्पिष्यन्ति"
+    },
+    "meaning": "to talk"
+  },
+  {
+    "subject_root": "शिष्य",
+    "verb_root": "जल्प्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "शिष्यः",
+      "du": "शिष्यौ",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "जल्पिष्यति",
+      "du": "जल्पिष्यतः",
+      "pl": "जल्पिष्यन्ति"
+    },
+    "meaning": "to talk"
+  },
+  {
+    "subject_root": "मित्र",
+    "verb_root": "जल्प्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "मित्रः",
+      "du": "मित्रौ",
+      "pl": "मित्राः"
+    },
+    "verb_forms": {
+      "sg": "जल्पिष्यति",
+      "du": "जल्पिष्यतः",
+      "pl": "जल्पिष्यन्ति"
+    },
+    "meaning": "to talk"
+  },
+  {
+    "subject_root": "पुत्र",
+    "verb_root": "जल्प्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "पुत्रः",
+      "du": "पुत्रौ",
+      "pl": "पुत्राः"
+    },
+    "verb_forms": {
+      "sg": "जल्पिष्यति",
+      "du": "जल्पिष्यतः",
+      "pl": "जल्पिष्यन्ति"
+    },
+    "meaning": "to talk"
+  },
+  {
+    "subject_root": "नृप",
+    "verb_root": "जल्प्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "नृपः",
+      "du": "नृपौ",
+      "pl": "नृपाः"
+    },
+    "verb_forms": {
+      "sg": "जल्पिष्यति",
+      "du": "जल्पिष्यतः",
+      "pl": "जल्पिष्यन्ति"
+    },
+    "meaning": "to talk"
+  },
+  {
+    "subject_root": "बालिका",
+    "verb_root": "जल्प्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "बालिका",
+      "du": "बालिके",
+      "pl": "बालिकाः"
+    },
+    "verb_forms": {
+      "sg": "जल्पिष्यति",
+      "du": "जल्पिष्यतः",
+      "pl": "जल्पिष्यन्ति"
+    },
+    "meaning": "to talk"
+  },
+  {
+    "subject_root": "कन्या",
+    "verb_root": "जल्प्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "कन्या",
+      "du": "कन्ये",
+      "pl": "कन्याः"
+    },
+    "verb_forms": {
+      "sg": "जल्पिष्यति",
+      "du": "जल्पिष्यतः",
+      "pl": "जल्पिष्यन्ति"
+    },
+    "meaning": "to talk"
+  },
+  {
+    "subject_root": "शिष्या",
+    "verb_root": "जल्प्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "शिष्या",
+      "du": "शिष्ये",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "जल्पिष्यति",
+      "du": "जल्पिष्यतः",
+      "pl": "जल्पिष्यन्ति"
+    },
+    "meaning": "to talk"
+  },
+  {
+    "subject_root": "अस्मद्",
+    "verb_root": "जल्प्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "अहम्",
+      "du": "आवाम्",
+      "pl": "वयम्"
+    },
+    "verb_forms": {
+      "sg": "जल्पिष्यामि",
+      "du": "जल्पिष्यावः",
+      "pl": "जल्पिष्यामः"
+    },
+    "meaning": "to talk"
+  },
+  {
+    "subject_root": "युष्मद्",
+    "verb_root": "जल्प्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "त्वम्",
+      "du": "युवाम्",
+      "pl": "यूयम्"
+    },
+    "verb_forms": {
+      "sg": "जल्पिष्यसि",
+      "du": "जल्पिष्यथः",
+      "pl": "जल्पिष्यथ"
+    },
+    "meaning": "to talk"
+  },
+  {
+    "subject_root": "बालक",
+    "verb_root": "जीव्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "बालकः",
+      "du": "बालकौ",
+      "pl": "बालकाः"
+    },
+    "verb_forms": {
+      "sg": "जीविष्यति",
+      "du": "जीविष्यतः",
+      "pl": "जीविष्यन्ति"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "शिष्य",
+    "verb_root": "जीव्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "शिष्यः",
+      "du": "शिष्यौ",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "जीविष्यति",
+      "du": "जीविष्यतः",
+      "pl": "जीविष्यन्ति"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "मित्र",
+    "verb_root": "जीव्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "मित्रः",
+      "du": "मित्रौ",
+      "pl": "मित्राः"
+    },
+    "verb_forms": {
+      "sg": "जीविष्यति",
+      "du": "जीविष्यतः",
+      "pl": "जीविष्यन्ति"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "पुत्र",
+    "verb_root": "जीव्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "पुत्रः",
+      "du": "पुत्रौ",
+      "pl": "पुत्राः"
+    },
+    "verb_forms": {
+      "sg": "जीविष्यति",
+      "du": "जीविष्यतः",
+      "pl": "जीविष्यन्ति"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "नृप",
+    "verb_root": "जीव्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "नृपः",
+      "du": "नृपौ",
+      "pl": "नृपाः"
+    },
+    "verb_forms": {
+      "sg": "जीविष्यति",
+      "du": "जीविष्यतः",
+      "pl": "जीविष्यन्ति"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "बालिका",
+    "verb_root": "जीव्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "बालिका",
+      "du": "बालिके",
+      "pl": "बालिकाः"
+    },
+    "verb_forms": {
+      "sg": "जीविष्यति",
+      "du": "जीविष्यतः",
+      "pl": "जीविष्यन्ति"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "कन्या",
+    "verb_root": "जीव्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "कन्या",
+      "du": "कन्ये",
+      "pl": "कन्याः"
+    },
+    "verb_forms": {
+      "sg": "जीविष्यति",
+      "du": "जीविष्यतः",
+      "pl": "जीविष्यन्ति"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "शिष्या",
+    "verb_root": "जीव्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "शिष्या",
+      "du": "शिष्ये",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "जीविष्यति",
+      "du": "जीविष्यतः",
+      "pl": "जीविष्यन्ति"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "अस्मद्",
+    "verb_root": "जीव्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "अहम्",
+      "du": "आवाम्",
+      "pl": "वयम्"
+    },
+    "verb_forms": {
+      "sg": "जीविष्यामि",
+      "du": "जीविष्यावः",
+      "pl": "जीविष्यामः"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "युष्मद्",
+    "verb_root": "जीव्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "त्वम्",
+      "du": "युवाम्",
+      "pl": "यूयम्"
+    },
+    "verb_forms": {
+      "sg": "जीविष्यसि",
+      "du": "जीविष्यथः",
+      "pl": "जीविष्यथ"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "गज",
+    "verb_root": "जीव्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "गजः",
+      "du": "गजौ",
+      "pl": "गजाः"
+    },
+    "verb_forms": {
+      "sg": "जीविष्यति",
+      "du": "जीविष्यतः",
+      "pl": "जीविष्यन्ति"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "मृग",
+    "verb_root": "जीव्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "मृगः",
+      "du": "मृगौ",
+      "pl": "मृगाः"
+    },
+    "verb_forms": {
+      "sg": "जीविष्यति",
+      "du": "जीविष्यतः",
+      "pl": "जीविष्यन्ति"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "श्वान",
+    "verb_root": "जीव्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "श्वानः",
+      "du": "श्वानौ",
+      "pl": "श्वानाः"
+    },
+    "verb_forms": {
+      "sg": "जीविष्यति",
+      "du": "जीविष्यतः",
+      "pl": "जीविष्यन्ति"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "वृषभ",
+    "verb_root": "जीव्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "वृषभः",
+      "du": "वृषभौ",
+      "pl": "वृषभाः"
+    },
+    "verb_forms": {
+      "sg": "जीविष्यति",
+      "du": "जीविष्यतः",
+      "pl": "जीविष्यन्ति"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "सिंह",
+    "verb_root": "जीव्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "सिंहः",
+      "du": "सिंहौ",
+      "pl": "सिंहाः"
+    },
+    "verb_forms": {
+      "sg": "जीविष्यति",
+      "du": "जीविष्यतः",
+      "pl": "जीविष्यन्ति"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "वानर",
+    "verb_root": "जीव्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "वानरः",
+      "du": "वानरौ",
+      "pl": "वानराः"
+    },
+    "verb_forms": {
+      "sg": "जीविष्यति",
+      "du": "जीविष्यतः",
+      "pl": "जीविष्यन्ति"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "अश्व",
+    "verb_root": "जीव्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "अश्वः",
+      "du": "अश्वौ",
+      "pl": "अश्वाः"
+    },
+    "verb_forms": {
+      "sg": "जीविष्यति",
+      "du": "जीविष्यतः",
+      "pl": "जीविष्यन्ति"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "मार्जार",
+    "verb_root": "जीव्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "मार्जारः",
+      "du": "मार्जारौ",
+      "pl": "मार्जाराः"
+    },
+    "verb_forms": {
+      "sg": "जीविष्यति",
+      "du": "जीविष्यतः",
+      "pl": "जीविष्यन्ति"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "शृगाल",
+    "verb_root": "जीव्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "शृगालः",
+      "du": "शृगालौ",
+      "pl": "शृगालाः"
+    },
+    "verb_forms": {
+      "sg": "जीविष्यति",
+      "du": "जीविष्यतः",
+      "pl": "जीविष्यन्ति"
+    },
+    "meaning": "to live"
+  },
+  {
+    "subject_root": "गज",
+    "verb_root": "पत्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "गजः",
+      "du": "गजौ",
+      "pl": "गजाः"
+    },
+    "verb_forms": {
+      "sg": "पतिष्यति",
+      "du": "पतिष्यतः",
+      "pl": "पतिष्यन्ति"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "मृग",
+    "verb_root": "पत्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "मृगः",
+      "du": "मृगौ",
+      "pl": "मृगाः"
+    },
+    "verb_forms": {
+      "sg": "पतिष्यति",
+      "du": "पतिष्यतः",
+      "pl": "पतिष्यन्ति"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "श्वान",
+    "verb_root": "पत्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "श्वानः",
+      "du": "श्वानौ",
+      "pl": "श्वानाः"
+    },
+    "verb_forms": {
+      "sg": "पतिष्यति",
+      "du": "पतिष्यतः",
+      "pl": "पतिष्यन्ति"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "वृषभ",
+    "verb_root": "पत्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "वृषभः",
+      "du": "वृषभौ",
+      "pl": "वृषभाः"
+    },
+    "verb_forms": {
+      "sg": "पतिष्यति",
+      "du": "पतिष्यतः",
+      "pl": "पतिष्यन्ति"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "सिंह",
+    "verb_root": "पत्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "सिंहः",
+      "du": "सिंहौ",
+      "pl": "सिंहाः"
+    },
+    "verb_forms": {
+      "sg": "पतिष्यति",
+      "du": "पतिष्यतः",
+      "pl": "पतिष्यन्ति"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "वानर",
+    "verb_root": "पत्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "वानरः",
+      "du": "वानरौ",
+      "pl": "वानराः"
+    },
+    "verb_forms": {
+      "sg": "पतिष्यति",
+      "du": "पतिष्यतः",
+      "pl": "पतिष्यन्ति"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "अश्व",
+    "verb_root": "पत्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "अश्वः",
+      "du": "अश्वौ",
+      "pl": "अश्वाः"
+    },
+    "verb_forms": {
+      "sg": "पतिष्यति",
+      "du": "पतिष्यतः",
+      "pl": "पतिष्यन्ति"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "मार्जार",
+    "verb_root": "पत्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "मार्जारः",
+      "du": "मार्जारौ",
+      "pl": "मार्जाराः"
+    },
+    "verb_forms": {
+      "sg": "पतिष्यति",
+      "du": "पतिष्यतः",
+      "pl": "पतिष्यन्ति"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "शृगाल",
+    "verb_root": "पत्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "शृगालः",
+      "du": "शृगालौ",
+      "pl": "शृगालाः"
+    },
+    "verb_forms": {
+      "sg": "पतिष्यति",
+      "du": "पतिष्यतः",
+      "pl": "पतिष्यन्ति"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "बालक",
+    "verb_root": "पत्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "बालकः",
+      "du": "बालकौ",
+      "pl": "बालकाः"
+    },
+    "verb_forms": {
+      "sg": "पतिष्यति",
+      "du": "पतिष्यतः",
+      "pl": "पतिष्यन्ति"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "शिष्य",
+    "verb_root": "पत्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "शिष्यः",
+      "du": "शिष्यौ",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "पतिष्यति",
+      "du": "पतिष्यतः",
+      "pl": "पतिष्यन्ति"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "मित्र",
+    "verb_root": "पत्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "मित्रः",
+      "du": "मित्रौ",
+      "pl": "मित्राः"
+    },
+    "verb_forms": {
+      "sg": "पतिष्यति",
+      "du": "पतिष्यतः",
+      "pl": "पतिष्यन्ति"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "पुत्र",
+    "verb_root": "पत्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "पुत्रः",
+      "du": "पुत्रौ",
+      "pl": "पुत्राः"
+    },
+    "verb_forms": {
+      "sg": "पतिष्यति",
+      "du": "पतिष्यतः",
+      "pl": "पतिष्यन्ति"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "नृप",
+    "verb_root": "पत्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "नृपः",
+      "du": "नृपौ",
+      "pl": "नृपाः"
+    },
+    "verb_forms": {
+      "sg": "पतिष्यति",
+      "du": "पतिष्यतः",
+      "pl": "पतिष्यन्ति"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "बालिका",
+    "verb_root": "पत्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "बालिका",
+      "du": "बालिके",
+      "pl": "बालिकाः"
+    },
+    "verb_forms": {
+      "sg": "पतिष्यति",
+      "du": "पतिष्यतः",
+      "pl": "पतिष्यन्ति"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "कन्या",
+    "verb_root": "पत्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "कन्या",
+      "du": "कन्ये",
+      "pl": "कन्याः"
+    },
+    "verb_forms": {
+      "sg": "पतिष्यति",
+      "du": "पतिष्यतः",
+      "pl": "पतिष्यन्ति"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "शिष्या",
+    "verb_root": "पत्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "शिष्या",
+      "du": "शिष्ये",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "पतिष्यति",
+      "du": "पतिष्यतः",
+      "pl": "पतिष्यन्ति"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "अस्मद्",
+    "verb_root": "पत्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "अहम्",
+      "du": "आवाम्",
+      "pl": "वयम्"
+    },
+    "verb_forms": {
+      "sg": "पतिष्यामि",
+      "du": "पतिष्यावः",
+      "pl": "पतिष्यामः"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "युष्मद्",
+    "verb_root": "पत्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "त्वम्",
+      "du": "युवाम्",
+      "pl": "यूयम्"
+    },
+    "verb_forms": {
+      "sg": "पतिष्यसि",
+      "du": "पतिष्यथः",
+      "pl": "पतिष्यथ"
+    },
+    "meaning": "to fall"
+  },
+  {
+    "subject_root": "बालक",
+    "verb_root": "नश्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "बालकः",
+      "du": "बालकौ",
+      "pl": "बालकाः"
+    },
+    "verb_forms": {
+      "sg": "नशिष्यति",
+      "du": "नशिष्यतः",
+      "pl": "नशिष्यन्ति"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "शिष्य",
+    "verb_root": "नश्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "शिष्यः",
+      "du": "शिष्यौ",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "नशिष्यति",
+      "du": "नशिष्यतः",
+      "pl": "नशिष्यन्ति"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "मित्र",
+    "verb_root": "नश्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "मित्रः",
+      "du": "मित्रौ",
+      "pl": "मित्राः"
+    },
+    "verb_forms": {
+      "sg": "नशिष्यति",
+      "du": "नशिष्यतः",
+      "pl": "नशिष्यन्ति"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "पुत्र",
+    "verb_root": "नश्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "पुत्रः",
+      "du": "पुत्रौ",
+      "pl": "पुत्राः"
+    },
+    "verb_forms": {
+      "sg": "नशिष्यति",
+      "du": "नशिष्यतः",
+      "pl": "नशिष्यन्ति"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "नृप",
+    "verb_root": "नश्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "नृपः",
+      "du": "नृपौ",
+      "pl": "नृपाः"
+    },
+    "verb_forms": {
+      "sg": "नशिष्यति",
+      "du": "नशिष्यतः",
+      "pl": "नशिष्यन्ति"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "बालिका",
+    "verb_root": "नश्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "बालिका",
+      "du": "बालिके",
+      "pl": "बालिकाः"
+    },
+    "verb_forms": {
+      "sg": "नशिष्यति",
+      "du": "नशिष्यतः",
+      "pl": "नशिष्यन्ति"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "कन्या",
+    "verb_root": "नश्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "कन्या",
+      "du": "कन्ये",
+      "pl": "कन्याः"
+    },
+    "verb_forms": {
+      "sg": "नशिष्यति",
+      "du": "नशिष्यतः",
+      "pl": "नशिष्यन्ति"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "शिष्या",
+    "verb_root": "नश्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "शिष्या",
+      "du": "शिष्ये",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "नशिष्यति",
+      "du": "नशिष्यतः",
+      "pl": "नशिष्यन्ति"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "अस्मद्",
+    "verb_root": "नश्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "अहम्",
+      "du": "आवाम्",
+      "pl": "वयम्"
+    },
+    "verb_forms": {
+      "sg": "नशिष्यामि",
+      "du": "नशिष्यावः",
+      "pl": "नशिष्यामः"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "युष्मद्",
+    "verb_root": "नश्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "त्वम्",
+      "du": "युवाम्",
+      "pl": "यूयम्"
+    },
+    "verb_forms": {
+      "sg": "नशिष्यसि",
+      "du": "नशिष्यथः",
+      "pl": "नशिष्यथ"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "गज",
+    "verb_root": "नश्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "गजः",
+      "du": "गजौ",
+      "pl": "गजाः"
+    },
+    "verb_forms": {
+      "sg": "नशिष्यति",
+      "du": "नशिष्यतः",
+      "pl": "नशिष्यन्ति"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "मृग",
+    "verb_root": "नश्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "मृगः",
+      "du": "मृगौ",
+      "pl": "मृगाः"
+    },
+    "verb_forms": {
+      "sg": "नशिष्यति",
+      "du": "नशिष्यतः",
+      "pl": "नशिष्यन्ति"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "श्वान",
+    "verb_root": "नश्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "श्वानः",
+      "du": "श्वानौ",
+      "pl": "श्वानाः"
+    },
+    "verb_forms": {
+      "sg": "नशिष्यति",
+      "du": "नशिष्यतः",
+      "pl": "नशिष्यन्ति"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "वृषभ",
+    "verb_root": "नश्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "वृषभः",
+      "du": "वृषभौ",
+      "pl": "वृषभाः"
+    },
+    "verb_forms": {
+      "sg": "नशिष्यति",
+      "du": "नशिष्यतः",
+      "pl": "नशिष्यन्ति"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "सिंह",
+    "verb_root": "नश्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "सिंहः",
+      "du": "सिंहौ",
+      "pl": "सिंहाः"
+    },
+    "verb_forms": {
+      "sg": "नशिष्यति",
+      "du": "नशिष्यतः",
+      "pl": "नशिष्यन्ति"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "वानर",
+    "verb_root": "नश्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "वानरः",
+      "du": "वानरौ",
+      "pl": "वानराः"
+    },
+    "verb_forms": {
+      "sg": "नशिष्यति",
+      "du": "नशिष्यतः",
+      "pl": "नशिष्यन्ति"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "अश्व",
+    "verb_root": "नश्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "अश्वः",
+      "du": "अश्वौ",
+      "pl": "अश्वाः"
+    },
+    "verb_forms": {
+      "sg": "नशिष्यति",
+      "du": "नशिष्यतः",
+      "pl": "नशिष्यन्ति"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "मार्जार",
+    "verb_root": "नश्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "मार्जारः",
+      "du": "मार्जारौ",
+      "pl": "मार्जाराः"
+    },
+    "verb_forms": {
+      "sg": "नशिष्यति",
+      "du": "नशिष्यतः",
+      "pl": "नशिष्यन्ति"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "शृगाल",
+    "verb_root": "नश्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "शृगालः",
+      "du": "शृगालौ",
+      "pl": "शृगालाः"
+    },
+    "verb_forms": {
+      "sg": "नशिष्यति",
+      "du": "नशिष्यतः",
+      "pl": "नशिष्यन्ति"
+    },
+    "meaning": "to perish"
+  },
+  {
+    "subject_root": "बालक",
+    "verb_root": "नृत्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "बालकः",
+      "du": "बालकौ",
+      "pl": "बालकाः"
+    },
+    "verb_forms": {
+      "sg": "नर्तिष्यति",
+      "du": "नर्तिष्यतः",
+      "pl": "नर्तिष्यन्ति"
+    },
+    "meaning": "to dance"
+  },
+  {
+    "subject_root": "शिष्य",
+    "verb_root": "नृत्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "शिष्यः",
+      "du": "शिष्यौ",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "नर्तिष्यति",
+      "du": "नर्तिष्यतः",
+      "pl": "नर्तिष्यन्ति"
+    },
+    "meaning": "to dance"
+  },
+  {
+    "subject_root": "मित्र",
+    "verb_root": "नृत्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "मित्रः",
+      "du": "मित्रौ",
+      "pl": "मित्राः"
+    },
+    "verb_forms": {
+      "sg": "नर्तिष्यति",
+      "du": "नर्तिष्यतः",
+      "pl": "नर्तिष्यन्ति"
+    },
+    "meaning": "to dance"
+  },
+  {
+    "subject_root": "पुत्र",
+    "verb_root": "नृत्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "पुत्रः",
+      "du": "पुत्रौ",
+      "pl": "पुत्राः"
+    },
+    "verb_forms": {
+      "sg": "नर्तिष्यति",
+      "du": "नर्तिष्यतः",
+      "pl": "नर्तिष्यन्ति"
+    },
+    "meaning": "to dance"
+  },
+  {
+    "subject_root": "नृप",
+    "verb_root": "नृत्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "नृपः",
+      "du": "नृपौ",
+      "pl": "नृपाः"
+    },
+    "verb_forms": {
+      "sg": "नर्तिष्यति",
+      "du": "नर्तिष्यतः",
+      "pl": "नर्तिष्यन्ति"
+    },
+    "meaning": "to dance"
+  },
+  {
+    "subject_root": "बालिका",
+    "verb_root": "नृत्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "बालिका",
+      "du": "बालिके",
+      "pl": "बालिकाः"
+    },
+    "verb_forms": {
+      "sg": "नर्तिष्यति",
+      "du": "नर्तिष्यतः",
+      "pl": "नर्तिष्यन्ति"
+    },
+    "meaning": "to dance"
+  },
+  {
+    "subject_root": "कन्या",
+    "verb_root": "नृत्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "कन्या",
+      "du": "कन्ये",
+      "pl": "कन्याः"
+    },
+    "verb_forms": {
+      "sg": "नर्तिष्यति",
+      "du": "नर्तिष्यतः",
+      "pl": "नर्तिष्यन्ति"
+    },
+    "meaning": "to dance"
+  },
+  {
+    "subject_root": "शिष्या",
+    "verb_root": "नृत्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "शिष्या",
+      "du": "शिष्ये",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "नर्तिष्यति",
+      "du": "नर्तिष्यतः",
+      "pl": "नर्तिष्यन्ति"
+    },
+    "meaning": "to dance"
+  },
+  {
+    "subject_root": "अस्मद्",
+    "verb_root": "नृत्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "अहम्",
+      "du": "आवाम्",
+      "pl": "वयम्"
+    },
+    "verb_forms": {
+      "sg": "नर्तिष्यामि",
+      "du": "नर्तिष्यावः",
+      "pl": "नर्तिष्यामः"
+    },
+    "meaning": "to dance"
+  },
+  {
+    "subject_root": "युष्मद्",
+    "verb_root": "नृत्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "त्वम्",
+      "du": "युवाम्",
+      "pl": "यूयम्"
+    },
+    "verb_forms": {
+      "sg": "नर्तिष्यसि",
+      "du": "नर्तिष्यथः",
+      "pl": "नर्तिष्यथ"
+    },
+    "meaning": "to dance"
+  },
+  {
+    "subject_root": "बालक",
+    "verb_root": "श्रम्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "बालकः",
+      "du": "बालकौ",
+      "pl": "बालकाः"
+    },
+    "verb_forms": {
+      "sg": "श्रमिष्यति",
+      "du": "श्रमिष्यतः",
+      "pl": "श्रमिष्यन्ति"
+    },
+    "meaning": "to labor"
+  },
+  {
+    "subject_root": "शिष्य",
+    "verb_root": "श्रम्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "शिष्यः",
+      "du": "शिष्यौ",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "श्रमिष्यति",
+      "du": "श्रमिष्यतः",
+      "pl": "श्रमिष्यन्ति"
+    },
+    "meaning": "to labor"
+  },
+  {
+    "subject_root": "मित्र",
+    "verb_root": "श्रम्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "मित्रः",
+      "du": "मित्रौ",
+      "pl": "मित्राः"
+    },
+    "verb_forms": {
+      "sg": "श्रमिष्यति",
+      "du": "श्रमिष्यतः",
+      "pl": "श्रमिष्यन्ति"
+    },
+    "meaning": "to labor"
+  },
+  {
+    "subject_root": "पुत्र",
+    "verb_root": "श्रम्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "पुत्रः",
+      "du": "पुत्रौ",
+      "pl": "पुत्राः"
+    },
+    "verb_forms": {
+      "sg": "श्रमिष्यति",
+      "du": "श्रमिष्यतः",
+      "pl": "श्रमिष्यन्ति"
+    },
+    "meaning": "to labor"
+  },
+  {
+    "subject_root": "नृप",
+    "verb_root": "श्रम्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "नृपः",
+      "du": "नृपौ",
+      "pl": "नृपाः"
+    },
+    "verb_forms": {
+      "sg": "श्रमिष्यति",
+      "du": "श्रमिष्यतः",
+      "pl": "श्रमिष्यन्ति"
+    },
+    "meaning": "to labor"
+  },
+  {
+    "subject_root": "बालिका",
+    "verb_root": "श्रम्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "बालिका",
+      "du": "बालिके",
+      "pl": "बालिकाः"
+    },
+    "verb_forms": {
+      "sg": "श्रमिष्यति",
+      "du": "श्रमिष्यतः",
+      "pl": "श्रमिष्यन्ति"
+    },
+    "meaning": "to labor"
+  },
+  {
+    "subject_root": "कन्या",
+    "verb_root": "श्रम्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "कन्या",
+      "du": "कन्ये",
+      "pl": "कन्याः"
+    },
+    "verb_forms": {
+      "sg": "श्रमिष्यति",
+      "du": "श्रमिष्यतः",
+      "pl": "श्रमिष्यन्ति"
+    },
+    "meaning": "to labor"
+  },
+  {
+    "subject_root": "शिष्या",
+    "verb_root": "श्रम्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "शिष्या",
+      "du": "शिष्ये",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "श्रमिष्यति",
+      "du": "श्रमिष्यतः",
+      "pl": "श्रमिष्यन्ति"
+    },
+    "meaning": "to labor"
+  },
+  {
+    "subject_root": "अस्मद्",
+    "verb_root": "श्रम्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "अहम्",
+      "du": "आवाम्",
+      "pl": "वयम्"
+    },
+    "verb_forms": {
+      "sg": "श्रमिष्यामि",
+      "du": "श्रमिष्यावः",
+      "pl": "श्रमिष्यामः"
+    },
+    "meaning": "to labor"
+  },
+  {
+    "subject_root": "युष्मद्",
+    "verb_root": "श्रम्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "त्वम्",
+      "du": "युवाम्",
+      "pl": "यूयम्"
+    },
+    "verb_forms": {
+      "sg": "श्रमिष्यसि",
+      "du": "श्रमिष्यथः",
+      "pl": "श्रमिष्यथ"
+    },
+    "meaning": "to labor"
+  },
+  {
+    "subject_root": "बालक",
+    "verb_root": "चिन्त्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "बालकः",
+      "du": "बालकौ",
+      "pl": "बालकाः"
+    },
+    "verb_forms": {
+      "sg": "चिन्तयिष्यति",
+      "du": "चिन्तयिष्यतः",
+      "pl": "चिन्तयिष्यन्ति"
+    },
+    "meaning": "to think / worry"
+  },
+  {
+    "subject_root": "शिष्य",
+    "verb_root": "चिन्त्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "शिष्यः",
+      "du": "शिष्यौ",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "चिन्तयिष्यति",
+      "du": "चिन्तयिष्यतः",
+      "pl": "चिन्तयिष्यन्ति"
+    },
+    "meaning": "to think / worry"
+  },
+  {
+    "subject_root": "मित्र",
+    "verb_root": "चिन्त्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "मित्रः",
+      "du": "मित्रौ",
+      "pl": "मित्राः"
+    },
+    "verb_forms": {
+      "sg": "चिन्तयिष्यति",
+      "du": "चिन्तयिष्यतः",
+      "pl": "चिन्तयिष्यन्ति"
+    },
+    "meaning": "to think / worry"
+  },
+  {
+    "subject_root": "पुत्र",
+    "verb_root": "चिन्त्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "पुत्रः",
+      "du": "पुत्रौ",
+      "pl": "पुत्राः"
+    },
+    "verb_forms": {
+      "sg": "चिन्तयिष्यति",
+      "du": "चिन्तयिष्यतः",
+      "pl": "चिन्तयिष्यन्ति"
+    },
+    "meaning": "to think / worry"
+  },
+  {
+    "subject_root": "नृप",
+    "verb_root": "चिन्त्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "नृपः",
+      "du": "नृपौ",
+      "pl": "नृपाः"
+    },
+    "verb_forms": {
+      "sg": "चिन्तयिष्यति",
+      "du": "चिन्तयिष्यतः",
+      "pl": "चिन्तयिष्यन्ति"
+    },
+    "meaning": "to think / worry"
+  },
+  {
+    "subject_root": "बालिका",
+    "verb_root": "चिन्त्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "बालिका",
+      "du": "बालिके",
+      "pl": "बालिकाः"
+    },
+    "verb_forms": {
+      "sg": "चिन्तयिष्यति",
+      "du": "चिन्तयिष्यतः",
+      "pl": "चिन्तयिष्यन्ति"
+    },
+    "meaning": "to think / worry"
+  },
+  {
+    "subject_root": "कन्या",
+    "verb_root": "चिन्त्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "कन्या",
+      "du": "कन्ये",
+      "pl": "कन्याः"
+    },
+    "verb_forms": {
+      "sg": "चिन्तयिष्यति",
+      "du": "चिन्तयिष्यतः",
+      "pl": "चिन्तयिष्यन्ति"
+    },
+    "meaning": "to think / worry"
+  },
+  {
+    "subject_root": "शिष्या",
+    "verb_root": "चिन्त्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "शिष्या",
+      "du": "शिष्ये",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "चिन्तयिष्यति",
+      "du": "चिन्तयिष्यतः",
+      "pl": "चिन्तयिष्यन्ति"
+    },
+    "meaning": "to think / worry"
+  },
+  {
+    "subject_root": "अस्मद्",
+    "verb_root": "चिन्त्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "अहम्",
+      "du": "आवाम्",
+      "pl": "वयम्"
+    },
+    "verb_forms": {
+      "sg": "चिन्तयिष्यामि",
+      "du": "चिन्तयिष्यावः",
+      "pl": "चिन्तयिष्यामः"
+    },
+    "meaning": "to think / worry"
+  },
+  {
+    "subject_root": "युष्मद्",
+    "verb_root": "चिन्त्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "त्वम्",
+      "du": "युवाम्",
+      "pl": "यूयम्"
+    },
+    "verb_forms": {
+      "sg": "चिन्तयिष्यसि",
+      "du": "चिन्तयिष्यथः",
+      "pl": "चिन्तयिष्यथ"
+    },
+    "meaning": "to think / worry"
+  },
+  {
+    "subject_root": "बालक",
+    "verb_root": "शिक्ष्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "बालकः",
+      "du": "बालकौ",
+      "pl": "बालकाः"
+    },
+    "verb_forms": {
+      "sg": "शिक्षयिष्यति",
+      "du": "शिक्षयिष्यतः",
+      "pl": "शिक्षयिष्यन्ति"
+    },
+    "meaning": "to teach / to learn"
+  },
+  {
+    "subject_root": "शिष्य",
+    "verb_root": "शिक्ष्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "शिष्यः",
+      "du": "शिष्यौ",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "शिक्षयिष्यति",
+      "du": "शिक्षयिष्यतः",
+      "pl": "शिक्षयिष्यन्ति"
+    },
+    "meaning": "to teach / to learn"
+  },
+  {
+    "subject_root": "मित्र",
+    "verb_root": "शिक्ष्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "मित्रः",
+      "du": "मित्रौ",
+      "pl": "मित्राः"
+    },
+    "verb_forms": {
+      "sg": "शिक्षयिष्यति",
+      "du": "शिक्षयिष्यतः",
+      "pl": "शिक्षयिष्यन्ति"
+    },
+    "meaning": "to teach / to learn"
+  },
+  {
+    "subject_root": "पुत्र",
+    "verb_root": "शिक्ष्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "पुत्रः",
+      "du": "पुत्रौ",
+      "pl": "पुत्राः"
+    },
+    "verb_forms": {
+      "sg": "शिक्षयिष्यति",
+      "du": "शिक्षयिष्यतः",
+      "pl": "शिक्षयिष्यन्ति"
+    },
+    "meaning": "to teach / to learn"
+  },
+  {
+    "subject_root": "नृप",
+    "verb_root": "शिक्ष्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "नृपः",
+      "du": "नृपौ",
+      "pl": "नृपाः"
+    },
+    "verb_forms": {
+      "sg": "शिक्षयिष्यति",
+      "du": "शिक्षयिष्यतः",
+      "pl": "शिक्षयिष्यन्ति"
+    },
+    "meaning": "to teach / to learn"
+  },
+  {
+    "subject_root": "बालिका",
+    "verb_root": "शिक्ष्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "बालिका",
+      "du": "बालिके",
+      "pl": "बालिकाः"
+    },
+    "verb_forms": {
+      "sg": "शिक्षयिष्यति",
+      "du": "शिक्षयिष्यतः",
+      "pl": "शिक्षयिष्यन्ति"
+    },
+    "meaning": "to teach / to learn"
+  },
+  {
+    "subject_root": "कन्या",
+    "verb_root": "शिक्ष्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "कन्या",
+      "du": "कन्ये",
+      "pl": "कन्याः"
+    },
+    "verb_forms": {
+      "sg": "शिक्षयिष्यति",
+      "du": "शिक्षयिष्यतः",
+      "pl": "शिक्षयिष्यन्ति"
+    },
+    "meaning": "to teach / to learn"
+  },
+  {
+    "subject_root": "शिष्या",
+    "verb_root": "शिक्ष्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "शिष्या",
+      "du": "शिष्ये",
+      "pl": "शिष्याः"
+    },
+    "verb_forms": {
+      "sg": "शिक्षयिष्यति",
+      "du": "शिक्षयिष्यतः",
+      "pl": "शिक्षयिष्यन्ति"
+    },
+    "meaning": "to teach / to learn"
+  },
+  {
+    "subject_root": "अस्मद्",
+    "verb_root": "शिक्ष्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "अहम्",
+      "du": "आवाम्",
+      "pl": "वयम्"
+    },
+    "verb_forms": {
+      "sg": "शिक्षयिष्यामि",
+      "du": "शिक्षयिष्यावः",
+      "pl": "शिक्षयिष्यामः"
+    },
+    "meaning": "to teach / to learn"
+  },
+  {
+    "subject_root": "युष्मद्",
+    "verb_root": "शिक्ष्",
+    "tense": "future",
+    "subject_forms": {
+      "sg": "त्वम्",
+      "du": "युवाम्",
+      "pl": "यूयम्"
+    },
+    "verb_forms": {
+      "sg": "शिक्षयिष्यसि",
+      "du": "शिक्षयिष्यथः",
+      "pl": "शिक्षयिष्यथ"
+    },
+    "meaning": "to teach / to learn"
+  }
+]

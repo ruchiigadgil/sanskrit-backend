@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanskrit Sentence Game</title>
+    <style>
+        html, body {
+            height: 100%;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+            overflow-y: auto;   /* Allow vertical scroll */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            min-height: 100vh; /* Ensure full viewport height */
+        }
+
+        #sentence-display {
+            font-size: 24px;
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #f5f5f5;
+            border-radius: 5px;
+        }
+        .drop-area {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .drop-zone {
+            width: 30%;
+            min-height: 100px;
+            border: 2px dashed #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 0 5px;
+            position: relative;
+        }
+        .drop-zone.highlight {
+            border-color: #4CAF50;
+            background-color: #e8f5e9;
+        }
+        .word-option {
+            display: inline-block;
+            padding: 8px 12px;
+            margin: 5px;
+            background-color: #2196F3;
+            color: white;
+            border-radius: 4px;
+            cursor: grab;
+        }
+        .word-option.dragging {
+            opacity: 0.5;
+        }
+        #options-container {
+            margin: 20px 0;
+            min-height: 60px;
+            max-height: 200px; /* Limit height */
+            overflow-y: auto;  /* Make scrollable */
+            padding: 10px;
+            border: 1px solid #eee;
+            border-radius: 5px;
+        }
+        #feedback {
+            margin: 20px 0;
+            font-size: 18px;
+            min-height: 24px;
+        }
+        #hint-button, #next-button, .learn-more-btn {
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        #hint-button:hover, #next-button:hover, .learn-more-btn:hover {
+            background-color: #45a049;
+        }
+        .hint {
+            font-size: 14px;
+            color: #666;
+            margin-top: 5px;
+        }
+        .learn-more-btn {
+            margin-top: 10px;
+            display: block;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.4);
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto; /* Reduced top margin */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 600px;
+            border-radius: 5px;
+            max-height: 90vh; /* Limit modal height to 90% of viewport */
+            overflow-y: auto; /* Make modal scrollable */
+            position: relative;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .close:hover {
+            color: black;
+        }
+        .word-analysis-container {
+            margin: 20px 0;
+        }
+        .word-analysis-options {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .word-analysis-dropzone {
+            min-height: 60px;
+            border: 2px dashed #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+        }
+        .word-analysis-dropzone.highlight {
+            border-color: #4CAF50;
+            background-color: #e8f5e9;
+        }
+        .word-analysis-feedback {
+            margin: 20px 0;
+            font-size: 18px;
+            min-height: 24px;
+        }
+        .analysis-dropzone-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 10px;
+            margin: 20px 0;
+            max-height: 60vh; /* Limit height */
+            overflow-y: auto; /* Make scrollable if needed */
+        }
+
+        .word-analysis-dropzone {
+            min-height: 60px;
+            border: 2px dashed #ccc;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .word-analysis-dropzone.highlight {
+            border-color: #4CAF50;
+            background-color: #e8f5e9;
+        }
+        .show-answer {
+    font-size: 12px;
+    color: #666;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.show-answer:hover {
+    text-decoration: underline;
+}
+
+.answer {
+    color: #4CAF50;
+    font-weight: bold;
+    margin-top: 5px;
+}
+    </style>
+</head>
+<body>
+    <h1>Sanskrit Sentence Analyzer</h1>
+    <p>Drag and drop the words into the correct categories:</p>
+    
+    <div id="sentence-display"></div>
+    
+    <div id="options-container"></div>
+    
+    <div class="drop-area">
+        <div class="drop-zone" id="subject-drop">
+            <h3>Subject</h3>
+            <div id="subject-hint" class="hint"></div>
+            <button class="learn-more-btn" id="subject-learn-more">Learn More</button>
+        </div>
+        <div class="drop-zone" id="object-drop">
+            <h3>Object</h3>
+            <div id="object-hint" class="hint"></div>
+            <button class="learn-more-btn" id="object-learn-more">Learn More</button>
+        </div>
+        <div class="drop-zone" id="verb-drop">
+            <h3>Verb</h3>
+            <div id="verb-hint" class="hint"></div>
+            <button class="learn-more-btn" id="verb-learn-more">Learn More</button>
+        </div>
+    </div>
+    
+    <div id="feedback"></div>
+    
+    <button id="hint-button">Show Hint</button>
+    <button id="next-button">Next Sentence</button>
+    
+    <!-- Modal for word analysis -->
+    <div id="word-analysis-modal" class="modal">
+        <!-- Inside the modal content -->
+<div class="modal-content">
+    <span class="close">&times;</span>
+    <h2 id="word-analysis-title">Word Analysis</h2>
+    <div class="word-analysis-container">
+        <div id="word-analysis-display">Analyzing: <span id="word-to-analyze"></span></div>
+        <div class="word-analysis-options" id="word-analysis-options"></div>
+        <div class="analysis-dropzone-container">
+            <!-- Subject Analysis moved to top -->
+            <div class="word-analysis-dropzone" id="root-drop">
+                <h3>Root <span class="show-answer">(Show Answer)</span></h3>
+                <div class="answer" style="display: none;"></div>
+            </div>
+            <div class="word-analysis-dropzone" id="form-drop">
+                <h3>Form <span class="show-answer">(Show Answer)</span></h3>
+                <div class="answer" style="display: none;"></div>
+            </div>
+            <div class="word-analysis-dropzone" id="gender-drop">
+                <h3>Gender <span class="show-answer">(Show Answer)</span></h3>
+                <div class="answer" style="display: none;"></div>
+            </div>
+            <div class="word-analysis-dropzone" id="number-drop">
+                <h3>Number <span class="show-answer">(Show Answer)</span></h3>
+                <div class="answer" style="display: none;"></div>
+            </div>
+            <div class="word-analysis-dropzone" id="person-drop">
+                <h3>Person <span class="show-answer">(Show Answer)</span></h3>
+                <div class="answer" style="display: none;"></div>
+            </div>
+            <div class="word-analysis-dropzone" id="stem-drop">
+                <h3>Stem <span class="show-answer">(Show Answer)</span></h3>
+                <div class="answer" style="display: none;"></div>
+            </div>
+            <div class="word-analysis-dropzone" id="class-drop" style="display: none;">
+                <h3>Class <span class="show-answer">(Show Answer)</span></h3>
+                <div class="answer" style="display: none;"></div>
+            </div>
+            <div class="word-analysis-dropzone" id="meaning-drop" style="display: none;">
+                <h3>Meaning <span class="show-answer">(Show Answer)</span></h3>
+                <div class="answer" style="display: none;"></div>
+            </div>
+        </div>
+        <div id="word-analysis-feedback" class="word-analysis-feedback"></div>
+        <button id="word-analysis-check">Check Answers</button>
+    </div>
+</div>
+    </div>
+    
+<script>
+    let currentSentence = {};
+    let words = [];
+    let correctAnswers = {};
+    let hintsShown = false;
+    let currentWordAnalysis = null;
+    
+    // DOM elements
+    const sentenceDisplay = document.getElementById('sentence-display');
+    const optionsContainer = document.getElementById('options-container');
+    const subjectDrop = document.getElementById('subject-drop');
+    const objectDrop = document.getElementById('object-drop');
+    const verbDrop = document.getElementById('verb-drop');
+    const feedbackDiv = document.getElementById('feedback');
+    const hintButton = document.getElementById('hint-button');
+    const nextButton = document.getElementById('next-button');
+    const subjectHint = document.getElementById('subject-hint');
+    const objectHint = document.getElementById('object-hint');
+    const verbHint = document.getElementById('verb-hint');
+    const subjectLearnMore = document.getElementById('subject-learn-more');
+    const objectLearnMore = document.getElementById('object-learn-more');
+    const verbLearnMore = document.getElementById('verb-learn-more');
+    
+    // Modal elements
+    const modal = document.getElementById('word-analysis-modal');
+    const modalClose = document.querySelector('.close');
+    const wordAnalysisTitle = document.getElementById('word-analysis-title');
+    const wordAnalysisDisplay = document.getElementById('word-analysis-display');
+    const wordAnalysisOptions = document.getElementById('word-analysis-options');
+    const wordAnalysisFeedback = document.getElementById('word-analysis-feedback');
+    const wordAnalysisCheck = document.getElementById('word-analysis-check');
+    
+    // Initialize the game
+    function initGame() {
+        // Clear previous words from drop zones
+        clearDropZones();
+        
+        fetch('http://127.0.0.1:5000/get_random_sentence')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                currentSentence = data;
+                displaySentence(data.sentence);
+                setupWordOptions(data.sentence.split(' '));
+                correctAnswers = {
+                    subject: data.subject,
+                    object: data.object,
+                    verb: data.verb
+                };
+                hintsShown = false;
+                clearHints();
+                clearFeedback();
+                
+                // Enable/disable learn more buttons based on presence of components
+                subjectLearnMore.disabled = !data.subject;
+                objectLearnMore.disabled = !data.object;
+                verbLearnMore.disabled = !data.verb;
+            })
+            .catch(error => {
+                console.error('Error fetching sentence:', error);
+                feedbackDiv.textContent = 'Error loading sentence. Make sure the server is running.';
+                feedbackDiv.style.color = 'red';
+            });
+    }
+
+    // Clear words from drop zones while keeping headers
+    function clearDropZones() {
+        [subjectDrop, objectDrop, verbDrop].forEach(zone => {
+            const wordElements = zone.querySelectorAll('.word-option');
+            wordElements.forEach(word => word.remove());
+        });
+    }
+
+    // Display the sentence
+    function displaySentence(sentence) {
+        sentenceDisplay.textContent = sentence;
+    }
+    
+    // Setup word options for dragging
+    function setupWordOptions(wordList) {
+        // Clear previous options
+        optionsContainer.innerHTML = '';
+        words = [...wordList];
+        
+        // Shuffle the words
+        shuffleArray(words);
+        
+        // Create draggable elements for each word
+        words.forEach(word => {
+            const wordElement = document.createElement('div');
+            wordElement.textContent = word;
+            wordElement.classList.add('word-option');
+            wordElement.draggable = true;
+            wordElement.dataset.word = word;
+            
+            // Drag start event
+            wordElement.addEventListener('dragstart', dragStart);
+            
+            optionsContainer.appendChild(wordElement);
+        });
+    }
+    
+    // Drag start handler
+    function dragStart(e) {
+        e.dataTransfer.setData('text/plain', e.target.dataset.word);
+        e.target.classList.add('dragging');
+        setTimeout(() => {
+            e.target.classList.add('invisible');
+        }, 0);
+    }
+    
+    // Setup drop zones
+    function setupDropZones() {
+        [subjectDrop, objectDrop, verbDrop].forEach(zone => {
+            // Drag over event
+            zone.addEventListener('dragover', e => {
+                e.preventDefault();
+                zone.classList.add('highlight');
+            });
+            
+            // Drag leave event
+            zone.addEventListener('dragleave', () => {
+                zone.classList.remove('highlight');
+            });
+            
+            // Drop event
+            zone.addEventListener('drop', e => {
+                e.preventDefault();
+                zone.classList.remove('highlight');
+                
+                const word = e.dataTransfer.getData('text/plain');
+                const draggedElement = document.querySelector(`.word-option[data-word="${word}"]`);
+                
+                if (draggedElement) {
+                    draggedElement.classList.remove('dragging', 'invisible');
+                    
+                    // Check if the word is already in a drop zone
+                    const existingInZone = document.querySelector(`.drop-zone .word-option[data-word="${word}"]`);
+                    if (existingInZone) {
+                        existingInZone.remove();
+                    }
+                    
+                    // Create a new element in the drop zone
+                    const newWordElement = document.createElement('div');
+                    newWordElement.textContent = word;
+                    newWordElement.classList.add('word-option');
+                    newWordElement.dataset.word = word;
+                    zone.appendChild(newWordElement);
+                    
+                    // Check if all words are placed
+                    checkCompletion();
+                }
+            });
+        });
+    }
+    
+    // Check if all words are placed in drop zones
+    function checkCompletion() {
+        const subjectWord = subjectDrop.querySelector('.word-option')?.textContent;
+        const objectWord = objectDrop.querySelector('.word-option')?.textContent;
+        const verbWord = verbDrop.querySelector('.word-option')?.textContent;
+        
+        if (subjectWord && verbWord) {
+            // Check answers - compare with the 'form' property of each object
+            const isSubjectCorrect = subjectWord === (correctAnswers.subject ? correctAnswers.subject.form : null);
+            const isObjectCorrect = objectWord ? 
+                objectWord === (correctAnswers.object ? correctAnswers.object.form : null) : 
+                correctAnswers.object === null;
+            const isVerbCorrect = verbWord === (correctAnswers.verb ? correctAnswers.verb.form : null);
+            
+            if (isSubjectCorrect && isObjectCorrect && isVerbCorrect) {
+                showFeedback('Correct! Well done!', 'green');
+            } else {
+                showFeedback('Not quite right. Try again or check hints.', 'red');
+            }
+        }
+    }
+    
+    // Show feedback message
+    function showFeedback(message, color) {
+        feedbackDiv.textContent = message;
+        feedbackDiv.style.color = color;
+    }
+    
+    // Clear feedback
+    function clearFeedback() {
+        feedbackDiv.textContent = '';
+    }
+    
+    // Show hints
+    function showHints() {
+        hintsShown = true;
+        
+        if (currentSentence.hint.subject) {
+            subjectHint.textContent = `Gender: ${currentSentence.hint.subject.gender}, Number: ${currentSentence.hint.subject.number}`;
+        } else {
+            subjectHint.textContent = 'No subject in this sentence';
+        }
+        
+        if (currentSentence.hint.object) {
+            objectHint.textContent = `Gender: ${currentSentence.hint.object.gender}, Number: ${currentSentence.hint.object.number}`;
+        } else {
+            objectHint.textContent = 'No object in this sentence';
+        }
+        
+        verbHint.textContent = `Class: ${currentSentence.hint.verb.class}, Meaning: "${currentSentence.hint.verb.meaning}", Person: ${currentSentence.hint.verb.person}, Number: ${currentSentence.hint.verb.number}`;
+    }
+    
+    // Clear hints
+    function clearHints() {
+        subjectHint.textContent = '';
+        objectHint.textContent = '';
+        verbHint.textContent = '';
+    }
+    
+    // Initialize word analysis game
+    // Initialize word analysis game
+// Initialize word analysis game
+function initWordAnalysis(wordData, type) {
+    currentWordAnalysis = wordData;
+    wordAnalysisTitle.textContent = `${type} Analysis`;
+    document.getElementById('word-to-analyze').textContent = wordData.form || wordData;
+    wordAnalysisFeedback.textContent = '';
+    
+    // Clear previous options and drop zones
+    wordAnalysisOptions.innerHTML = '';
+    document.querySelectorAll('.word-analysis-dropzone').forEach(zone => {
+        // Clear any existing options but keep the header and answer elements
+        const header = zone.querySelector('h3');
+        const answer = zone.querySelector('.answer');
+        zone.innerHTML = '';
+        if (header) zone.appendChild(header);
+        if (answer) {
+            zone.appendChild(answer);
+            answer.style.display = 'none';
+        }
+    });
+    
+    // Show/hide relevant drop zones based on word type
+    document.getElementById('class-drop').style.display = type === 'Verb' ? 'block' : 'none';
+    document.getElementById('meaning-drop').style.display = type === 'Verb' ? 'block' : 'none';
+    
+    // Set up answer click handlers
+    document.querySelectorAll('.show-answer').forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            const zone = this.closest('.word-analysis-dropzone');
+            const answerDiv = zone.querySelector('.answer');
+            const property = zone.id.replace('-drop', '');
+            
+            if (answerDiv.style.display === 'none') {
+                answerDiv.textContent = currentWordAnalysis[property] || 'N/A';
+                answerDiv.style.display = 'block';
+                this.textContent = '(Hide Answer)';
+            } else {
+                answerDiv.style.display = 'none';
+                this.textContent = '(Show Answer)';
+            }
+        });
+    });
+    
+    // Create properties array with all available properties
+    const properties = [];
+    if (wordData.root) properties.push({type: 'root', text: String(wordData.root)});
+    if (wordData.form) properties.push({type: 'form', text: String(wordData.form)});
+    if (wordData.number) properties.push({type: 'number', text: String(wordData.number)});
+    if (wordData.gender) properties.push({type: 'gender', text: String(wordData.gender)});
+    if (wordData.person) properties.push({type: 'person', text: String(wordData.person)});
+    if (wordData.stem) properties.push({type: 'stem', text: String(wordData.stem)});
+    if (wordData.class && type === 'Verb') properties.push({type: 'class', text: String(wordData.class)});
+    if (wordData.meaning && type === 'Verb') properties.push({type: 'meaning', text: String(wordData.meaning)});
+    
+    // Shuffle and create draggable elements
+    shuffleArray(properties);
+    properties.forEach(prop => {
+        const option = document.createElement('div');
+        option.textContent = prop.text;
+        option.classList.add('word-option');
+        option.draggable = true;
+        option.dataset.type = prop.type;
+        option.dataset.value = prop.text;
+        option.addEventListener('dragstart', wordAnalysisDragStart);
+        wordAnalysisOptions.appendChild(option);
+    });
+    
+    // Setup drop zones
+    setupWordAnalysisDropZones();
+    
+    // Show modal
+    modal.style.display = 'block';
+}
+
+// Word analysis drag start
+function wordAnalysisDragStart(e) {
+    e.dataTransfer.setData('type', e.target.dataset.type);
+    e.dataTransfer.setData('value', e.target.dataset.value);
+    e.target.classList.add('dragging');
+    setTimeout(() => {
+        e.target.classList.add('invisible');
+    }, 0);
+}
+
+// Setup word analysis drop zones
+function setupWordAnalysisDropZones() {
+    document.querySelectorAll('.word-analysis-dropzone').forEach(zone => {
+        // Drag over event
+        zone.addEventListener('dragover', e => {
+            e.preventDefault();
+            zone.classList.add('highlight');
+        });
+        
+        // Drag leave event
+        zone.addEventListener('dragleave', () => {
+            zone.classList.remove('highlight');
+        });
+        
+        // Drop event
+        zone.addEventListener('drop', e => {
+            e.preventDefault();
+            zone.classList.remove('highlight');
+            
+            const type = e.dataTransfer.getData('type');
+            const value = e.dataTransfer.getData('value');
+            const draggedElement = document.querySelector(`.word-option[data-type="${type}"]`);
+            
+            if (draggedElement && zone.id === `${type}-drop`) {
+                draggedElement.classList.remove('dragging', 'invisible');
+                
+                // Check if the property is already in a drop zone
+                const existingInZone = document.querySelector(`.word-analysis-dropzone .word-option[data-type="${type}"]`);
+                if (existingInZone) {
+                    existingInZone.remove();
+                }
+                
+                // Create a new element in the drop zone
+                const newElement = document.createElement('div');
+                newElement.textContent = value;
+                newElement.classList.add('word-option');
+                newElement.dataset.type = type;
+                newElement.dataset.value = value;
+                zone.appendChild(newElement);
+            }
+        });
+    });
+}
+
+// Check word analysis answers
+function checkWordAnalysisAnswers() {
+    const root = document.getElementById('root-drop').querySelector('.word-option')?.textContent;
+    const form = document.getElementById('form-drop').querySelector('.word-option')?.textContent;
+    const number = document.getElementById('number-drop').querySelector('.word-option')?.textContent;
+    const gender = document.getElementById('gender-drop').querySelector('.word-option')?.textContent;
+    const person = document.getElementById('person-drop').querySelector('.word-option')?.textContent;
+    const stem = document.getElementById('stem-drop').querySelector('.word-option')?.textContent;
+    const verbClass = document.getElementById('class-drop').querySelector('.word-option')?.textContent;
+    const meaning = document.getElementById('meaning-drop').querySelector('.word-option')?.textContent;
+    
+    let allCorrect = true;
+    let feedback = [];
+    
+    if (currentWordAnalysis.root && root !== String(currentWordAnalysis.root)) {
+        allCorrect = false;
+        feedback.push('Root is incorrect');
+    }
+    
+    if (currentWordAnalysis.form && form !== String(currentWordAnalysis.form)) {
+        allCorrect = false;
+        feedback.push('Form is incorrect');
+    }
+    
+    if (currentWordAnalysis.number && number !== String(currentWordAnalysis.number)) {
+        allCorrect = false;
+        feedback.push('Number is incorrect');
+    }
+    
+    if (currentWordAnalysis.gender && gender !== String(currentWordAnalysis.gender)) {
+        allCorrect = false;
+        feedback.push('Gender is incorrect');
+    }
+    
+    if (currentWordAnalysis.person && person !== String(currentWordAnalysis.person)) {
+        allCorrect = false;
+        feedback.push('Person is incorrect');
+    }
+    
+    if (currentWordAnalysis.stem && stem !== String(currentWordAnalysis.stem)) {
+        allCorrect = false;
+        feedback.push('Stem is incorrect');
+    }
+    
+    if (currentWordAnalysis.class && verbClass !== String(currentWordAnalysis.class)) {
+        allCorrect = false;
+        feedback.push('Class is incorrect');
+    }
+    
+    if (currentWordAnalysis.meaning && meaning !== String(currentWordAnalysis.meaning)) {
+        allCorrect = false;
+        feedback.push('Meaning is incorrect');
+    }
+    
+    if (allCorrect) {
+        wordAnalysisFeedback.textContent = 'Correct! Well done!';
+        wordAnalysisFeedback.style.color = 'green';
+    } else {
+        wordAnalysisFeedback.textContent = feedback.join(', ') || 'Some answers are incorrect';
+        wordAnalysisFeedback.style.color = 'red';
+    }
+}
+    
+    // Check word analysis answers
+    function checkWordAnalysisAnswers() {
+        const root = document.getElementById('root-drop').querySelector('.word-option')?.textContent;
+        const form = document.getElementById('form-drop').querySelector('.word-option')?.textContent;
+        const number = document.getElementById('number-drop').querySelector('.word-option')?.textContent;
+        const gender = document.getElementById('gender-drop').querySelector('.word-option')?.textContent;
+        const person = document.getElementById('person-drop').querySelector('.word-option')?.textContent;
+        const stem = document.getElementById('stem-drop').querySelector('.word-option')?.textContent;
+        const verbClass = document.getElementById('class-drop').querySelector('.word-option')?.textContent;
+        const meaning = document.getElementById('meaning-drop').querySelector('.word-option')?.textContent;
+        
+        let allCorrect = true;
+        let feedback = [];
+        
+        if (currentWordAnalysis.root && root !== currentWordAnalysis.root) {
+            allCorrect = false;
+            feedback.push('Root is incorrect');
+        }
+        
+        if (currentWordAnalysis.form && form !== currentWordAnalysis.form) {
+            allCorrect = false;
+            feedback.push('Form is incorrect');
+        }
+        
+        if (currentWordAnalysis.number && number !== currentWordAnalysis.number) {
+            allCorrect = false;
+            feedback.push('Number is incorrect');
+        }
+        
+        if (currentWordAnalysis.gender && gender !== currentWordAnalysis.gender) {
+            allCorrect = false;
+            feedback.push('Gender is incorrect');
+        }
+        
+        if (currentWordAnalysis.person && person !== currentWordAnalysis.person) {
+            allCorrect = false;
+            feedback.push('Person is incorrect');
+        }
+        
+        if (currentWordAnalysis.stem && stem !== currentWordAnalysis.stem) {
+            allCorrect = false;
+            feedback.push('Stem is incorrect');
+        }
+        
+        if (currentWordAnalysis.class && verbClass !== currentWordAnalysis.class) {
+            allCorrect = false;
+            feedback.push('Class is incorrect');
+        }
+        
+        if (currentWordAnalysis.meaning && meaning !== currentWordAnalysis.meaning) {
+            allCorrect = false;
+            feedback.push('Meaning is incorrect');
+        }
+        
+        if (allCorrect) {
+            wordAnalysisFeedback.textContent = 'Correct! Well done!';
+            wordAnalysisFeedback.style.color = 'green';
+        } else {
+            wordAnalysisFeedback.textContent = feedback.join(', ') || 'Some answers are incorrect';
+            wordAnalysisFeedback.style.color = 'red';
+        }
+    }
+    
+    // Utility function to shuffle array
+    function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+    }
+    
+    // Event listeners
+    hintButton.addEventListener('click', () => {
+        if (!hintsShown) {
+            showHints();
+        }
+    });
+    
+    nextButton.addEventListener('click', () => {
+        initGame();
+    });
+    
+    // Learn more buttons
+    subjectLearnMore.addEventListener('click', () => {
+        if (currentSentence.subject) {
+            initWordAnalysis(currentSentence.subject, 'Subject');
+        }
+    });
+    
+    objectLearnMore.addEventListener('click', () => {
+        if (currentSentence.object) {
+            initWordAnalysis(currentSentence.object, 'Object');
+        }
+    });
+    
+    verbLearnMore.addEventListener('click', () => {
+        initWordAnalysis(currentSentence.verb, 'Verb');
+    });
+    
+    // Modal close button
+    modalClose.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+    
+    // Close modal when clicking outside
+    window.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+    
+    // Word analysis check button
+    wordAnalysisCheck.addEventListener('click', checkWordAnalysisAnswers);
+    
+    // Initialize the game
+    setupDropZones();
+    initGame();
+</script>
+</body>
+</html>
