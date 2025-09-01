@@ -13,7 +13,7 @@ from pymongo import MongoClient
 from pymongo.errors import ConnectionFailure, ServerSelectionTimeoutError
 from bson.json_util import dumps
 from bson.objectid import ObjectId
-import python3_bcrypt as bcrypt
+import bcrypt
 import jwt
 from datetime import datetime, timedelta
 
