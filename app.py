@@ -1,3 +1,4 @@
+
 import sys
 import os
 from pathlib import Path
@@ -32,12 +33,14 @@ logger = logging.getLogger(__name__)
 app = Flask(__name__)
 CORS(app, resources={
     r"/api/*": {
-        "origins": ["http://localhost:5173", "https://*.vercel.app"],
+        "origins": ["http://localhost:5173", "https://*.vercel.app", "https://sanskrit-learning-system.vercel.app"],
         "methods": ["GET", "POST", "OPTIONS"],
-        "allow_headers": ["Content-Type", "Authorization"]
+        "allow_headers": ["Content-Type", "Authorization"],
+        "expose_headers": ["Content-Type"],
+        "max_age": 86400
     },
     r"/health": {
-        "origins": ["http://localhost:5173", "https://*.vercel.app"],
+        "origins": ["http://localhost:5173", "https://*.vercel.app", "https://sanskrit-learning-system.vercel.app"],
         "methods": ["GET"],
         "allow_headers": ["Content-Type"]
     }
@@ -279,7 +282,7 @@ def get_sentences():
 @app.route('/api/get-game', methods=['GET', 'OPTIONS'])
 def get_verb_game():
     if request.method == "OPTIONS":
-        return jsonify({}), 200
+        return jsonify({'status': 'ok'}), 200
     try:
         if not sentences:
             logger.error("No sentences available")
@@ -439,8 +442,10 @@ def get_sentence_game():
         logger.error(f"Error fetching sentence game data: {str(e)}")
         return jsonify({"error": str(e)}), 500
 
-@app.route('/api/get-tense-question', methods=['GET'])
+@app.route('/api/tense-question', methods=['GET', 'OPTIONS'])
 def get_tense_question():
+    if request.method == 'OPTIONS':
+        return jsonify({'status': 'ok'}), 200
     try:
         if sentences_collection is None:
             logger.error("No MongoDB connection")
@@ -464,8 +469,10 @@ def get_tense_question():
         logger.error(f"Error serving tense question: {str(e)}")
         return jsonify({"error": f"Failed to load question: {str(e)}"}), 500
 
-@app.route('/api/get-tense-questions', methods=['GET'])
+@app.route('/api/get-tense-questions', methods=['GET', 'OPTIONS'])
 def get_tense_questions():
+    if request.method == 'OPTIONS':
+        return jsonify({'status': 'ok'}), 200
     try:
         if sentences_collection is None:
             logger.error("No MongoDB connection")
@@ -646,13 +653,12 @@ def update_score():
             return jsonify({"error": "Unauthorized score update"}), 403
         result = users_collection.update_one(
             {"_id": ObjectId(user_id)},
-            {"$inc": {"score": int(score_increment)}},  # Use $inc to add to existing score
+            {"$inc": {"score": int(score_increment)}},
             upsert=False
         )
         if result.matched_count == 0:
             logger.error(f"User not found: {user_id}")
             return jsonify({"error": "User not found"}), 404
-        # Fetch the updated user document to get the new score
         updated_user = users_collection.find_one({"_id": ObjectId(user_id)})
         new_score = updated_user.get("score", 0)
         logger.info(f"Incremented score for user {user_id} by {score_increment}, new score: {new_score}")
@@ -696,7 +702,7 @@ def system_status():
         "port": MAIN_PORT
     })
 
-@app.route('/health', methods=['GET'])
+@app.route('/api/health', methods=['GET'])
 def health():
     try:
         if sentences_collection is None:
