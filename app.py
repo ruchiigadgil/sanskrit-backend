@@ -32,7 +32,7 @@ logger = logging.getLogger(__name__)
 app = Flask(__name__)
 CORS(app, resources={
     r"/api/*": {
-        "origins": ["http://localhost:5173", "https://*.vercel.app", "https://sanskrit-learning-system.vercel.app"],
+        "origins": ["http://localhost:5173", "https://sanskrit-frontend-plum.vercel.app", "https://sanskrit-learning-system.vercel.app"],
         "methods": ["GET", "POST", "OPTIONS"],
         "allow_headers": ["Content-Type", "Authorization"],
         "expose_headers": ["Content-Type"],
@@ -40,7 +40,7 @@ CORS(app, resources={
         "supports_credentials": False
     },
     r"/health": {
-        "origins": ["http://localhost:5173", "https://*.vercel.app", "https://sanskrit-learning-system.vercel.app"],
+        "origins": ["http://localhost:5173", "https://sanskrit-frontend-plum.vercel.app", "https://sanskrit-learning-system.vercel.app"],
         "methods": ["GET"],
         "allow_headers": ["Content-Type"],
         "supports_credentials": False
