@@ -1,4 +1,3 @@
-
 import sys
 import os
 from pathlib import Path
@@ -37,12 +36,14 @@ CORS(app, resources={
         "methods": ["GET", "POST", "OPTIONS"],
         "allow_headers": ["Content-Type", "Authorization"],
         "expose_headers": ["Content-Type"],
-        "max_age": 86400
+        "max_age": 86400,
+        "supports_credentials": False
     },
     r"/health": {
         "origins": ["http://localhost:5173", "https://*.vercel.app", "https://sanskrit-learning-system.vercel.app"],
         "methods": ["GET"],
-        "allow_headers": ["Content-Type"]
+        "allow_headers": ["Content-Type"],
+        "supports_credentials": False
     }
 })
 
@@ -254,6 +255,7 @@ def home():
             "/api/sentences",
             "/api/get-game",
             "/api/get-number-game",
+            "/api/get-number-games",
             "/api/tense-question",
             "/api/get-tense-questions",
             "/api/get-matching-game",
@@ -357,6 +359,42 @@ def get_number_game():
     except Exception as e:
         logger.error(f"Error fetching number game data: {str(e)}")
         return jsonify({"error": str(e)}), 503
+
+@app.route('/api/get-number-games', methods=['GET', 'OPTIONS'])
+def get_number_games():
+    if request.method == 'OPTIONS':
+        return jsonify({'status': 'ok'}), 200
+    try:
+        if sentences_collection is None:
+            logger.error("No MongoDB connection")
+            return jsonify({"error": "No MongoDB connection"}), 503
+        count = int(request.args.get("count", 5))
+        if count < 1 or count > 50:
+            logger.error(f"Invalid question count: {count}")
+            return jsonify({"error": "Invalid question count (1-50 allowed)"}), 400
+        all_sentences = list(sentences_collection.find({
+            "object": None,
+            "subject.person": {"$in": ["1", "2", "3"]},
+            "subject.number": {"$in": ["sg", "du", "pl"]}
+        }))
+        if not all_sentences:
+            logger.warning("No sentences available")
+            return jsonify({"error": "No sentences available", "data": []}), 404
+        selected_sentences = random.sample(all_sentences, min(count, len(all_sentences)))
+        cleaned_sentences = [
+            {
+                "sentence": s.get("sentence", ""),
+                "subject": s.get("subject", {}),
+                "verb": s.get("verb", {}),
+                "tense": s.get("tense", ""),
+                "explanation": generate_explanation(s)
+            } for s in selected_sentences
+        ]
+        logger.info(f"Serving {len(cleaned_sentences)} number game sentences")
+        return jsonify(cleaned_sentences), 200
+    except Exception as e:
+        logger.error(f"Error fetching number games: {str(e)}")
+        return jsonify({"error": f"Failed to load number games: {str(e)}", "data": []}), 500
 
 @app.route('/api/generate-matching-game', methods=['GET'])
 def generate_matching_game():
