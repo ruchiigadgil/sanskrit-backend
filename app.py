@@ -15,6 +15,7 @@ import bcrypt
 import jwt
 from datetime import datetime, timedelta
 import time
+import json
 
 # Add project root to sys.path
 root_path = str(Path(__file__).resolve().parent)
@@ -30,22 +31,30 @@ logger = logging.getLogger(__name__)
 
 # Initialize Flask app
 app = Flask(__name__)
-CORS(app, resources={
-    r"/api/*": {
-        "origins": ["http://localhost:5173", "https://sanskrit-frontend-plum.vercel.app", "https://sanskrit-learning-system.vercel.app","https://sanskrit-frontend-sanskrit-learning.vercel.app"],
-        "methods": ["GET", "POST", "OPTIONS"],
-        "allow_headers": ["Content-Type", "Authorization"],
-        "expose_headers": ["Content-Type"],
-        "max_age": 86400,
-        "supports_credentials": False
-    },
-    r"/health": {
-        "origins": ["http://localhost:5173", "https://sanskrit-frontend-plum.vercel.app", "https://sanskrit-learning-system.vercel.app","https://sanskrit-frontend-sanskrit-learning.vercel.app"],
-        "methods": ["GET"],
-        "allow_headers": ["Content-Type"],
-        "supports_credentials": False
-    }
-})
+
+# Define allowed origins
+ALLOWED_ORIGINS = [
+    "http://localhost:5173",
+    "https://sanskrit-frontend-plum.vercel.app",
+    "https://sanskrit-learning-system.vercel.app",
+    "https://sanskrit-frontend-sanskrit-learning.vercel.app"
+]
+
+# Apply CORS globally with a custom function (fallback)
+def add_cors_headers(response):
+    origin = request.headers.get('Origin')
+    if origin in ALLOWED_ORIGINS:
+        response.headers.add('Access-Control-Allow-Origin', origin)
+    else:
+        response.headers.add('Access-Control-Allow-Origin', '*')  # Fallback for simplicity; restrict in production
+    response.headers.add('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, DELETE')
+    response.headers.add('Access-Control-Allow-Headers', 'Content-Type, Authorization')
+    if request.method == 'OPTIONS':
+        response.status_code = 200
+    return response
+
+# Apply CORS headers to all responses
+app.after_request(add_cors_headers)
 
 # Configuration
 MAIN_PORT = int(os.environ.get('PORT', 10000))  # Match Render's port
@@ -559,72 +568,10 @@ def get_matching_game():
         logger.error(f"Error loading matching game data: {str(e)}")
         return jsonify({'error': str(e)}), 500
 
-# @app.route('/api/get-sentence-game', methods=['GET', 'OPTIONS'])
-# def get_sentence_game():
-#     if request.method == 'OPTIONS':
-#         return jsonify({'status': 'ok'}), 200
-#     try:
-#         if not sentences:
-#             logger.error("No sentences available in MongoDB")
-#             return jsonify({"error": "No sentences available in MongoDB"}), 404
-#         sentence_data = random.choice(sentences)
-#         if not all([
-#             sentence_data.get("sentence"),
-#             sentence_data.get("verb"),
-#             sentence_data.get("tense"),
-#             sentence_data.get("subject")
-#         ]):
-#             logger.error(f"Invalid sentence data: {sentence_data.get('sentence', 'unknown')}")
-#             return jsonify({"error": "Invalid sentence data"}), 400
-        
-#         # Shuffle words for drag-drop game
-#         words = sentence_data.get("sentence").split(" ")
-#         random.shuffle(words)
-        
-#         # Generate random mcq_options with prathama/dvitiya restriction for nouns
-#         mcq_options = {
-#             "subject": generate_noun_forms(
-#                 sentence_data["subject"]["root"],
-#                 sentence_data["subject"]["gender"],
-#                 sentence_data["subject"]["stem"],
-#                 "subject"
-#             ) if sentence_data.get("subject") else None,
-#             "object": generate_noun_forms(
-#                 sentence_data["object"]["root"],
-#                 sentence_data["object"]["gender"],
-#                 sentence_data["object"]["stem"],
-#                 "object"
-#             ) if sentence_data.get("object") else None,
-#             "verb": generate_verb_forms(
-#                 sentence_data["verb"]["root"],
-#                 sentence_data["verb"]["class"],
-#                 sentence_data["tense"]
-#             )
-#         }
-        
-#         logger.info(f"Returning sentence: {sentence_data.get('sentence')}")
-#         return jsonify({
-#             "sentence": sentence_data.get("sentence"),
-#             "words": words,
-#             "correct_answers": {
-#                 "subject": sentence_data.get("subject"),
-#                 "object": sentence_data.get("object"),
-#                 "verb": sentence_data.get("verb")
-#             },
-#             "tense": sentence_data.get("tense"),
-#             "mcq_options": mcq_options
-#         })
-#     except Exception as e:
-#         logger.error(f"Error fetching sentence game data: {str(e)}")
-#         return jsonify({"error": str(e)}), 500
-
 @app.route('/api/get-sentence-game', methods=['GET', 'OPTIONS'])
 def get_sentence_game():
     if request.method == 'OPTIONS':
         response = jsonify({'status': 'ok'})
-        response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-        response.headers.add('Access-Control-Allow-Methods', 'GET, OPTIONS')
-        response.headers.add('Access-Control-Allow-Headers', 'Content-Type, Authorization')
         return response, 200
     
     try:
@@ -667,7 +614,7 @@ def get_sentence_game():
         }
         
         logger.info(f"Returning sentence: {sentence_data.get('sentence')}")
-        response = jsonify({
+        return jsonify({
             "sentence": sentence_data.get("sentence"),
             "words": words,
             "correct_answers": {
@@ -678,8 +625,6 @@ def get_sentence_game():
             "tense": sentence_data.get("tense"),
             "mcq_options": mcq_options
         })
-        response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
-        return response, 200
     except Exception as e:
         logger.error(f"Error fetching sentence game data: {str(e)}")
         return jsonify({"error": str(e)}), 500
