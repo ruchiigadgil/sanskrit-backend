@@ -559,10 +559,74 @@ def get_matching_game():
         logger.error(f"Error loading matching game data: {str(e)}")
         return jsonify({'error': str(e)}), 500
 
+# @app.route('/api/get-sentence-game', methods=['GET', 'OPTIONS'])
+# def get_sentence_game():
+#     if request.method == 'OPTIONS':
+#         return jsonify({'status': 'ok'}), 200
+#     try:
+#         if not sentences:
+#             logger.error("No sentences available in MongoDB")
+#             return jsonify({"error": "No sentences available in MongoDB"}), 404
+#         sentence_data = random.choice(sentences)
+#         if not all([
+#             sentence_data.get("sentence"),
+#             sentence_data.get("verb"),
+#             sentence_data.get("tense"),
+#             sentence_data.get("subject")
+#         ]):
+#             logger.error(f"Invalid sentence data: {sentence_data.get('sentence', 'unknown')}")
+#             return jsonify({"error": "Invalid sentence data"}), 400
+        
+#         # Shuffle words for drag-drop game
+#         words = sentence_data.get("sentence").split(" ")
+#         random.shuffle(words)
+        
+#         # Generate random mcq_options with prathama/dvitiya restriction for nouns
+#         mcq_options = {
+#             "subject": generate_noun_forms(
+#                 sentence_data["subject"]["root"],
+#                 sentence_data["subject"]["gender"],
+#                 sentence_data["subject"]["stem"],
+#                 "subject"
+#             ) if sentence_data.get("subject") else None,
+#             "object": generate_noun_forms(
+#                 sentence_data["object"]["root"],
+#                 sentence_data["object"]["gender"],
+#                 sentence_data["object"]["stem"],
+#                 "object"
+#             ) if sentence_data.get("object") else None,
+#             "verb": generate_verb_forms(
+#                 sentence_data["verb"]["root"],
+#                 sentence_data["verb"]["class"],
+#                 sentence_data["tense"]
+#             )
+#         }
+        
+#         logger.info(f"Returning sentence: {sentence_data.get('sentence')}")
+#         return jsonify({
+#             "sentence": sentence_data.get("sentence"),
+#             "words": words,
+#             "correct_answers": {
+#                 "subject": sentence_data.get("subject"),
+#                 "object": sentence_data.get("object"),
+#                 "verb": sentence_data.get("verb")
+#             },
+#             "tense": sentence_data.get("tense"),
+#             "mcq_options": mcq_options
+#         })
+#     except Exception as e:
+#         logger.error(f"Error fetching sentence game data: {str(e)}")
+#         return jsonify({"error": str(e)}), 500
+
 @app.route('/api/get-sentence-game', methods=['GET', 'OPTIONS'])
 def get_sentence_game():
     if request.method == 'OPTIONS':
-        return jsonify({'status': 'ok'}), 200
+        response = jsonify({'status': 'ok'})
+        response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
+        response.headers.add('Access-Control-Allow-Methods', 'GET, OPTIONS')
+        response.headers.add('Access-Control-Allow-Headers', 'Content-Type, Authorization')
+        return response, 200
+    
     try:
         if not sentences:
             logger.error("No sentences available in MongoDB")
@@ -603,7 +667,7 @@ def get_sentence_game():
         }
         
         logger.info(f"Returning sentence: {sentence_data.get('sentence')}")
-        return jsonify({
+        response = jsonify({
             "sentence": sentence_data.get("sentence"),
             "words": words,
             "correct_answers": {
@@ -614,6 +678,8 @@ def get_sentence_game():
             "tense": sentence_data.get("tense"),
             "mcq_options": mcq_options
         })
+        response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
+        return response, 200
     except Exception as e:
         logger.error(f"Error fetching sentence game data: {str(e)}")
         return jsonify({"error": str(e)}), 500
