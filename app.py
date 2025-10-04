@@ -157,6 +157,120 @@ def load_verbs():
         logger.error(f"Error loading verbs: {str(e)}")
         return []
 
+# Declension data from declensions.py
+declension_map = {
+    ("masc", "अ"): {
+        "प्रथमा": ["ः", "ौ", "ाः"],
+        "द्वितीया": ["म्", "ौ", "ान्"],
+        "तृतीया": ["ेन", "ाभ्याम्", "ैः"],
+        "चतुर्थी": ["ाय", "ाभ्याम्", "ेभ्यः"],
+        "पञ्चमी": ["ातः", "ाभ्याम्", "ेभ्यः"],
+        "षष्ठी": ["स्य", "योः", "ानाम्"],
+        "सप्तमी": ["े", "योः", "ेषु"],
+        "संबोधन": ["", "ौ", "ाः"]
+    },
+    ("fem", "आ"): {
+        "प्रथमा": ["ा", "े", "ाः"],
+        "द्वितीया": ["ाम्", "े", "ाः"],
+        "तृतीया": ["या", "ाभ्याम्", "ाभिः"],
+        "चतुर्थी": ["ायै", "ाभ्याम्", "ाभ्यः"],
+        "पञ्चमी": ["ायाः", "ाभ्याम्", "ाभ्यः"],
+        "षष्ठी": ["ायाः", "योः", "ानाम्"],
+        "सप्तमी": ["ायाम्", "योः", "ासु"],
+        "संबोधन": ["े", "े", "ाः"]
+    },
+    ("neut", "अ"): {
+        "प्रथमा": ["म्", "े", "ानि"],
+        "द्वितीया": ["म्", "े", "ानि"],
+        "तृतीया": ["ेन", "ाभ्याम्", "ैः"],
+        "चतुर्थी": ["ाय", "ाभ्याम्", "ेभ्यः"],
+        "पञ्चमी": ["ातः", "ाभ्याम्", "ेभ्यः"],
+        "षष्ठी": ["स्य", "योः", "ानाम्"],
+        "सप्तमी": ["े", "योः", "ेषु"],
+        "संबोधन": ["म्", "े", "ानि"]
+    }
+}
+
+asmad_declension = {
+    "प्रथमा": ["अहम्", "आवाम्", "वयम्"],
+    "द्वितीया": ["माम्", "आवाम्", "अस्मान्"],
+    "तृतीया": ["मया", "आवाभ्याम्", "अस्माभिः"],
+    "चतुर्थी": ["मह्यम्", "आवाभ्याम्", "अस्मभ्यम्"],
+    "पञ्चमी": ["मत्", "आवाभ्याम्", "अस्मत्"],
+    "षष्ठी": ["मम", "आवयोः", "अस्माकम्"],
+    "सप्तमी": ["मयि", "आवयोः", "अस्मासु"]
+}
+
+yushmad_declension = {
+    "प्रथमा": ["त्वम्", "युवाम्", "यूयम्"],
+    "द्वितीया": ["त्वाम्", "युवाम्", "युष्मान्"],
+    "तृतीया": ["त्वया", "युवाभ्याम्", "युष्माभिः"],
+    "चतुर्थी": ["तुभ्यम्", "युवाभ्याम्", "युष्मभ्यम्"],
+    "पञ्चमी": ["त्वत्", "युवाभ्याम्", "युष्मत्"],
+    "षष्ठी": ["तव", "युवयोः", "युष्माकम्"],
+    "सप्तमी": ["त्वयि", "युवयोः", "युष्मासु"]
+}
+
+# Helper functions for sentence game
+def generate_noun_forms(root, gender, stem_type, role):
+    forms = [root]
+    vibhaktis = ["प्रथमा", "द्वितीया"]  # Restrict to prathama and dvitiya
+    numbers = ["sg", "du", "pl"]
+    
+    if root == "अस्मद्":
+        for _ in range(2):
+            vibhakti = random.choice(vibhaktis)
+            number = random.choice(numbers)
+            index = {"sg": 0, "du": 1, "pl": 2}[number]
+            form = asmad_declension[vibhakti][index]
+            if form not in forms:
+                forms.append(form)
+    elif root == "युष्मद्":
+        for _ in range(2):
+            vibhakti = random.choice(vibhaktis)
+            number = random.choice(numbers)
+            index = {"sg": 0, "du": 1, "pl": 2}[number]
+            form = yushmad_declension[vibhakti][index]
+            if form not in forms:
+                forms.append(form)
+    else:
+        decl_table = declension_map.get((gender, stem_type))
+        if decl_table:
+            for _ in range(2):
+                vibhakti = random.choice(vibhaktis)
+                number = random.choice(numbers)
+                index = {"sg": 0, "du": 1, "pl": 2}[number]
+                suffix = decl_table[vibhakti][index]
+                form = (root[:-1] if gender == "fem" and stem_type == "आ" and root.endswith("ा") else root) + suffix
+                if form not in forms:
+                    forms.append(form)
+    return list(set(forms))[:3]
+
+def generate_verb_forms(verb_root, verb_class, tense):
+    forms = [verb_root]
+    persons = ["1", "2", "3"]
+    numbers = ["sg", "du", "pl"]
+    for _ in range(2):
+        person = random.choice(persons)
+        number = random.choice(numbers)
+        key = f"{person}_{number}"
+        try:
+            suffix = conjugations[tense][verb_class][key]
+            stem = verb_root
+            if tense == "future":
+                stem = next((v.get("future_stem", verb_root) for v in verbs if v["root"] == verb_root and v["verb_class"] == verb_class), verb_root)
+            elif tense == "past":
+                stem = next((v.get("past_stem", verb_root) for v in verbs if v["root"] == verb_root and v["verb_class"] == verb_class), verb_root)
+            if not (tense == "present" and verb_class == "4P"):
+                if stem.endswith("्"):
+                    stem = stem[:-1]
+            form = stem + suffix.replace("A", "")
+            if form not in forms:
+                forms.append(form)
+        except KeyError:
+            continue
+    return list(set(forms))[:3]
+
 # Helper Functions
 def label(person, number):
     person_map = {"1": "First person", "2": "Second person", "3": "Third person"}
@@ -462,19 +576,43 @@ def get_sentence_game():
         ]):
             logger.error(f"Invalid sentence data: {sentence_data.get('sentence', 'unknown')}")
             return jsonify({"error": "Invalid sentence data"}), 400
-        hint = {
-            "subject": sentence_data.get("subject"),
-            "object": sentence_data.get("object"),
-            "verb": sentence_data.get("verb")
+        
+        # Shuffle words for drag-drop game
+        words = sentence_data.get("sentence").split(" ")
+        random.shuffle(words)
+        
+        # Generate random mcq_options with prathama/dvitiya restriction for nouns
+        mcq_options = {
+            "subject": generate_noun_forms(
+                sentence_data["subject"]["root"],
+                sentence_data["subject"]["gender"],
+                sentence_data["subject"]["stem"],
+                "subject"
+            ) if sentence_data.get("subject") else None,
+            "object": generate_noun_forms(
+                sentence_data["object"]["root"],
+                sentence_data["object"]["gender"],
+                sentence_data["object"]["stem"],
+                "object"
+            ) if sentence_data.get("object") else None,
+            "verb": generate_verb_forms(
+                sentence_data["verb"]["root"],
+                sentence_data["verb"]["class"],
+                sentence_data["tense"]
+            )
         }
+        
         logger.info(f"Returning sentence: {sentence_data.get('sentence')}")
         return jsonify({
             "sentence": sentence_data.get("sentence"),
-            "subject": sentence_data.get("subject"),
-            "object": sentence_data.get("object"),
-            "verb": sentence_data.get("verb"),
+            "words": words,
+            "correct_answers": {
+                "subject": sentence_data.get("subject"),
+                "object": sentence_data.get("object"),
+                "verb": sentence_data.get("verb")
+            },
             "tense": sentence_data.get("tense"),
-            "hint": hint
+            "mcq_options": mcq_options
         })
     except Exception as e:
         logger.error(f"Error fetching sentence game data: {str(e)}")
